@@ -1,0 +1,540 @@
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Gem.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Run.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Run.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Run.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Run.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Die.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Jump.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Run.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA0.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA2.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA3.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA4.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA5.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA6.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB0.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Platform.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_0.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_2.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_0.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_2.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_0.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_2.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_died.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_lose.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_win.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Exit.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Fonts\Hud.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sounds\ExitReached.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sounds\GemCollected.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sounds\MonsterKilled.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerFall.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerJump.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerKilled.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music.wma
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Levels\0.txt
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Levels\2.txt
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Levels\1.txt
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Platformer.exe
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Platformer.pdb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\obj\x86\Debug\Platformer (Windows).csprojResolveAssemblyReference.cache
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\obj\x86\Debug\Platformer.exe
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\obj\x86\Debug\Platformer.pdb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Die.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Die.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Die.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Die.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Gem.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Idle.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Run.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Idle.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Run.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Idle.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Run.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Idle.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Run.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Die.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Idle.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Jump.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Run.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA0.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA2.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA3.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA4.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA5.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA6.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB0.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Platform.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_0.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_2.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_0.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_2.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_0.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_2.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_died.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_lose.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_win.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Die.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Exit.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Die.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Die.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Die.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\bg1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\d1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\dl1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\dr1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\l1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\r1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\u1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\ul1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\ur1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cdl1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cdr1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cul1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cur1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\pf1.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Fonts\Hud.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\ExitReached.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\GemCollected.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\MonsterKilled.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerFall.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerJump.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerKilled.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music.wma
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Levels\0.txt
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Levels\2.txt
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Levels\1.txt
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Platformer.exe
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\bin\x86\Debug\Platformer.pdb
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\obj\x86\Debug\Platformer (Windows).csprojResolveAssemblyReference.cache
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\obj\x86\Debug\Platformer.exe
+G:\Platformer_4_0 - Scrolling\Platformer\Platformer\obj\x86\Debug\Platformer.pdb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Gem.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Run.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Run.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Run.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Run.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Die.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Jump.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Run.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA0.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA2.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA3.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA4.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA5.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA6.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB0.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Platform.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_0.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_2.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_0.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_2.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_0.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_2.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_died.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_lose.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_win.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Die.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Exit.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Die.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Die.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Die.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\bg1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\d1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\dl1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\dr1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\l1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\r1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\u1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\ul1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\ur1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cdl1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cdr1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cul1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cur1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Tiles\pf1.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Fonts\Hud.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sounds\ExitReached.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sounds\GemCollected.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sounds\MonsterKilled.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerFall.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerJump.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerKilled.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music.wma
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Levels\0.txt
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Levels\2.txt
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Content\Levels\1.txt
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Platformer.exe
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\bin\x86\Debug\Platformer.pdb
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\obj\x86\Debug\Platformer (Windows).csprojResolveAssemblyReference.cache
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\obj\x86\Debug\Platformer.exe
+C:\Users\Zach McNemar\Desktop\Platformer_4_0 - Scrolling + new tiles\Platformer\Platformer\obj\x86\Debug\Platformer.pdb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Gem.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Run.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Run.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Run.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Run.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Die.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Jump.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Run.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA0.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA2.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA3.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA4.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA5.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA6.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB0.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Platform.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_0.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_2.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_0.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_2.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_0.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_2.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_died.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_lose.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_win.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Die.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Exit.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Die.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Die.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Die.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\bg1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\d1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\dl1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\dr1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\l1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\r1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\u1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\ul1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\ur1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cdl1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cdr1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cul1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cur1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Tiles\pf1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Fonts\Hud.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\ExitReached.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\GemCollected.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\MonsterKilled.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerFall.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerJump.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerKilled.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music.wma
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Levels\0.txt
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Levels\2.txt
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Content\Levels\1.txt
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Platformer.exe
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\bin\x86\Debug\Platformer.pdb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\obj\x86\Debug\Platformer (Windows).csprojResolveAssemblyReference.cache
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\obj\x86\Debug\Platformer.exe
+C:\Users\Zach McNemar\Desktop\Software Engineering Game - Vertical Scrolling\Platformer\Platformer\obj\x86\Debug\Platformer.pdb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Gem.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Idle.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Run.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Idle.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Run.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Idle.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Run.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Idle.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Run.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Die.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Idle.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Jump.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Run.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA0.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA2.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA3.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA4.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA5.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA6.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB0.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Platform.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_0.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_2.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_0.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_2.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_0.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_2.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_died.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_lose.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_win.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Die.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Exit.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Die.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Die.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Die.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\bg1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\d1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\dl1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\dr1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\l1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\r1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\u1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\ul1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\ur1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cdl1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cdr1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cul1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cur1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\pf1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Fonts\Hud.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\ExitReached.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\GemCollected.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\MonsterKilled.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerFall.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerJump.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerKilled.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\NG42.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music.wma
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\NG42.wma
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\0.txt
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\2.txt
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\1.txt
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Platformer.exe
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Platformer.pdb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\obj\x86\Debug\Platformer (Windows).csprojResolveAssemblyReference.cache
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\obj\x86\Debug\Platformer.exe
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\obj\x86\Debug\Platformer.pdb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\stars0_0.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\stars0_1.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\stars0_2.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate - Ninja.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Die - Ninja.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Idle - Ninja.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Jump - Ninja.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Run - Ninja.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Gem.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Run.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Run.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Run.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Run.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Die.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Idle.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Jump.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Run.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA0.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA2.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA3.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA4.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA5.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA6.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB0.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Platform.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_0.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_2.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_0.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_2.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_0.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_2.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_died.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_lose.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_win.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Die.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Exit.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Die.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Die.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Die.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\bg1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\d1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\dl1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\dr1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\l1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\r1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\u1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\ul1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\ur1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cdl1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cdr1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cul1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cur1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\pf1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\stars0_0.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\stars0_1.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\stars0_2.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate - Ninja.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Die - Ninja.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Idle - Ninja.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Jump - Ninja.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Run - Ninja.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Fonts\Hud.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\ExitReached.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\GemCollected.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\MonsterKilled.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerFall.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerJump.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerKilled.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\NG42.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music.wma
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\NG42.wma
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\0.txt
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\2.txt
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\1.txt
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Platformer.exe
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Platformer.pdb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\obj\x86\Debug\Platformer (Windows).csprojResolveAssemblyReference.cache
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\obj\x86\Debug\Platformer.exe
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\obj\x86\Debug\Platformer.pdb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Arm_Gun.xnb
+C:\Users\Zach McNemar\Desktop\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Bullet.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Arm_Gun.xnb
+C:\Users\Zach McNemar\COSC-625\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Bullet.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Gem.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Idle.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Run.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Idle.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Run.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Idle.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Run.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Idle.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Run.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Die.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Idle.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Jump.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Run.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA0.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA2.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA3.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA4.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA5.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA6.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB0.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Platform.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_0.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_2.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_0.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_2.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_0.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_2.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_died.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_lose.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_win.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Die.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Exit.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Die.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Die.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Die.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\bg1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\d1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\dl1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\dr1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\l1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\r1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\u1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\ul1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\ur1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cdl1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cdr1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cul1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\cur1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\pf1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\stars0_0.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\stars0_1.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\stars0_2.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate - Ninja.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Die - Ninja.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Idle - Ninja.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Jump - Ninja.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Run - Ninja.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Arm_Gun.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Bullet.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Fonts\Hud.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\ExitReached.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\GemCollected.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\MonsterKilled.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerFall.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerJump.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerKilled.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\NG42.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music.wma
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\NG42.wma
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\0.txt
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\2.txt
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\1.txt
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Platformer.exe
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\bin\x86\Debug\Platformer.pdb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\obj\x86\Debug\Platformer (Windows).csprojResolveAssemblyReference.cache
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\obj\x86\Debug\Platformer.exe
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\Software Engineering Game\Platformer\Platformer\obj\x86\Debug\Platformer.pdb
