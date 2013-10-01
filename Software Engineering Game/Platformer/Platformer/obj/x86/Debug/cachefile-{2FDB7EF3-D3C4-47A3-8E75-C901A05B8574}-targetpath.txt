@@ -75,6 +75,9 @@ Content\Sounds\PlayerKilled.xnb
 Content\Sounds\Powerup.xnb
 Content\Sounds\NG42.xnb
 Content\Sounds\NG42.wma
+Content\Backgrounds\Layer3_0.xnb
+Content\Backgrounds\Layer3_1.xnb
+Content\Backgrounds\Layer3_2.xnb
 Content\Levels\0.txt
 Content\Levels\2.txt
 Content\Levels\1.txt

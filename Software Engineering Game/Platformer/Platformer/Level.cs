@@ -109,10 +109,17 @@ namespace Platformer
 
             // Load background layer textures. For now, all levels must
             // use the same backgrounds and only use the left-most part of them.
-            layers = new Layer[3];
+            /*layers = new Layer[3];
             layers[0] = new Layer(Content, "Backgrounds/stars0", 0.2f);
             layers[1] = new Layer(Content, "Backgrounds/Layer1", 0.5f);
-            layers[2] = new Layer(Content, "Backgrounds/Layer2", 0.8f);
+            layers[2] = new Layer(Content, "Backgrounds/Layer2", 0.8f);*/
+
+            //used to use vertical test background - use commented section above instead
+            //to use normal backgrounds
+            layers = new Layer[3];
+            layers[0] = new Layer(Content, "Backgrounds/Layer3", 0.8f);
+            layers[1] = new Layer(Content, "Backgrounds/Layer3", 0.8f);
+            layers[2] = new Layer(Content, "Backgrounds/Layer3", 0.8f);
 
             // Load sounds.
             exitReachedSound = Content.Load<SoundEffect>("Sounds/ExitReached");
@@ -586,7 +593,7 @@ namespace Platformer
         {
             spriteBatch.Begin();
             for (int i = 0; i <= EntityLayer; ++i)
-                layers[i].Draw(spriteBatch, cameraPosition);
+                layers[i].Draw(spriteBatch, cameraPosition, cameraPositionYAxis);
             spriteBatch.End();
 
             ScrollCamera(spriteBatch.GraphicsDevice.Viewport);
@@ -615,7 +622,7 @@ namespace Platformer
 
             spriteBatch.Begin();
             for (int i = EntityLayer + 1; i < layers.Length; ++i)
-                layers[i].Draw(spriteBatch, cameraPosition);
+                layers[i].Draw(spriteBatch, cameraPosition, cameraPositionYAxis);
             spriteBatch.End();
         }
 

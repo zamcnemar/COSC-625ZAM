@@ -25,20 +25,24 @@ namespace Platformer
             ScrollRate = scrollRate;
         }
 
-
-        public void Draw(SpriteBatch spriteBatch, float cameraPosition)
+        //KH - 9/30 fixed problem where background would not scroll vertically
+        public void Draw(SpriteBatch spriteBatch, float cameraPosition, float cameraPositionYaxis)
         {
             // Assume each segment is the same width.
             int segmentWidth = Textures[0].Width;
+            int segmentHeight = Textures[0].Height;
 
             // Calculate which segments to draw and how much to offset them.
             float x = cameraPosition * ScrollRate;
+            float y = cameraPositionYaxis * 0.8f;
             int leftSegment = (int)Math.Floor(x / segmentWidth);
             int rightSegment = leftSegment + 1;
+            int topSegment = (int)Math.Floor(y / segmentHeight);
             x = (x / segmentWidth - leftSegment) * -segmentWidth;
+            y = (y / segmentHeight - topSegment) * -segmentHeight;
 
-            spriteBatch.Draw(Textures[leftSegment % Textures.Length], new Vector2(x, 0.0f), Color.White);
-            spriteBatch.Draw(Textures[rightSegment % Textures.Length], new Vector2(x + segmentWidth, 0.0f), Color.White);
+            spriteBatch.Draw(Textures[leftSegment % Textures.Length], new Vector2(x, y), Color.White);
+            spriteBatch.Draw(Textures[rightSegment % Textures.Length], new Vector2(x + segmentWidth, y), Color.White);
         }
 
     }
