@@ -1,0 +1,1 @@
+C:\Users\Kyle\documents\visual studio 2010\Projects\COSC625_Platformer\COSC625_Platformer\COSC625_PlatformerContent\obj\x86\Debug\COSC625_PlatformerContent.contentprojResolveAssemblyReference.cache
