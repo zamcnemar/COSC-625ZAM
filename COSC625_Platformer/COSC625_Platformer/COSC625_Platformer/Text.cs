@@ -34,7 +34,7 @@ namespace COSC625_Platformer
             this.text = text;
             this.position = position;
             this.sColor = Color.Blue;
-            this.bColor = this.aColor = Color.Black;
+            this.bColor = this.aColor = Color.White;
         }
 
         public void Update()

@@ -26,7 +26,7 @@ namespace COSC625_Platformer.Screens
         MenuState current, previous;
 
         int selection;
-        GameObject popWindow;
+        Texture2D popWindow;
 
         public MenuScreen()
         {
@@ -54,8 +54,8 @@ namespace COSC625_Platformer.Screens
 
             #region PopUp
             popupEntries = new List<Text>();
-            popupEntries.Add(new Text("Return to Main Menu", new Vector2(590, 350)));
-            popupEntries.Add(new Text("Quit", new Vector2(590, 30.0f)));
+            popupEntries.Add(new Text("Return to Main Menu", new Vector2(550, 330)));
+            popupEntries.Add(new Text("Quit", new Vector2(550, 30.0f)));
             #endregion
 
             #region Game Over
@@ -63,9 +63,6 @@ namespace COSC625_Platformer.Screens
             gameoverEntries.Add(new Text("Restart", new Vector2(590, 600)));
             gameoverEntries.Add(new Text("Quit to Main Menu", new Vector2(590, 30.0f)));
             #endregion
-
-            //popWindow = new GameObject();
-            //popWindow.Position = new Vector2(500, 200);
         }
 
         public void UpdateTextPositioning()
@@ -95,7 +92,7 @@ namespace COSC625_Platformer.Screens
                 gameoverEntries[i].Position += new Vector2(0, gameoverEntries[i - 1].Position.Y + gameoverEntries[i - 1].Size.Y);
             #endregion
 
-            //popWindow.LoadContent(Game1.content, "Popupmenuquit");
+            popWindow = Game1.content.Load<Texture2D>("Menu/popupmenuquit");
         }
 
         public void Update(GameTime gametime)
@@ -126,7 +123,7 @@ namespace COSC625_Platformer.Screens
                         case 0: ScreenManager.gameState = GameState.Play; break;
                         case 1: mState = MenuState.Options; break;
                         case 2: mState = MenuState.Help; break;
-                        case 3: mState = MenuState.PopUp; break;
+                        case 3: mState = MenuState.PopUp;  break;
                     }
                 }
                 for (int i = 0; i < menuEntries.Count; i++)
@@ -287,6 +284,8 @@ namespace COSC625_Platformer.Screens
                 }
             }
             #endregion
+
+            MenuTransitionManagement();
         }
 
         public void Draw(SpriteBatch spriteBatch)
@@ -321,7 +320,7 @@ namespace COSC625_Platformer.Screens
                 foreach (Text t in menuEntries)
                     t.Draw(spriteBatch);
 
-                //popWindow.Draw(spriteBatch);
+                spriteBatch.Draw(popWindow, new Rectangle(500, 200, popWindow.Width, popWindow.Height), Color.White);
                 foreach (Text t in popupEntries)
                     t.Draw(spriteBatch);
             }
@@ -334,6 +333,15 @@ namespace COSC625_Platformer.Screens
                     t.Draw(spriteBatch);
             }
             #endregion
+        }
+
+        private void MenuTransitionManagement()
+        {
+            previous = current;
+            current = mState;
+
+            if (current != previous)
+                selection = 0;
         }
     }
 }

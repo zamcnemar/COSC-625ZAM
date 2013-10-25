@@ -23,7 +23,7 @@ namespace COSC625_Platformer.Screens
         PauseState current, previous;
 
         int selection = 0;
-        GameObject popWindow;
+        Texture2D popWindow;
 
         public PauseScreen()
         {
@@ -31,9 +31,9 @@ namespace COSC625_Platformer.Screens
 
             #region Pause Items
             pauseEntries = new List<Text>();
-            pauseEntries.Add(new Text("Return to Game", new Vector2(640, 500)));
-            pauseEntries.Add(new Text("View Controls", new Vector2(640, 30.0f)));
-            pauseEntries.Add(new Text("Quit to Main Menu", new Vector2(640, 30.0f)));
+            pauseEntries.Add(new Text("Return to Game", new Vector2(550, 450)));
+            pauseEntries.Add(new Text("View Controls", new Vector2(550, 30.0f)));
+            pauseEntries.Add(new Text("Quit to Main Menu", new Vector2(550, 30.0f)));
             #endregion
 
             #region Help Contents
@@ -43,12 +43,9 @@ namespace COSC625_Platformer.Screens
 
             #region PopUp
             popupEntries = new List<Text>();
-            popupEntries.Add(new Text("Return to Pause Menu", new Vector2(590, 350)));
-            popupEntries.Add(new Text("Quit to Main Menu", new Vector2(590, 30.0f)));
+            popupEntries.Add(new Text("Return to Pause Menu", new Vector2(550, 330)));
+            popupEntries.Add(new Text("Quit to Main Menu", new Vector2(550, 30.0f)));
             #endregion
-
-            //popWindow = new GameObject();
-            //popWindow.Position(500,200);
         }
 
         public void UpdateTextPositioning()
@@ -68,7 +65,7 @@ namespace COSC625_Platformer.Screens
                 popupEntries[i].Position += new Vector2(0, popupEntries[i - 1].Position.Y + helpContents[i - 1].Size.Y);
             #endregion
 
-            //popWindow.LoadContent(Game1.content, "Popupmenuquit");
+            popWindow = Game1.content.Load<Texture2D>("Menu/popupmenuquit");
         }
 
         public void Update(GameTime gametime)
@@ -177,6 +174,8 @@ namespace COSC625_Platformer.Screens
                 }
             }
             #endregion
+
+            PauseTransitionManagement();
         }
 
         public void Draw(SpriteBatch spriteBatch)
@@ -203,11 +202,20 @@ namespace COSC625_Platformer.Screens
                 foreach (Text t in pauseEntries)
                     t.Draw(spriteBatch);
 
-                //popWindow.Draw(spriteBatch);
+                spriteBatch.Draw(popWindow, new Rectangle(500, 200, popWindow.Width, popWindow.Height), Color.White);
                 foreach (Text t in popupEntries)
                     t.Draw(spriteBatch);
             }
             #endregion
+        }
+
+        private void PauseTransitionManagement()
+        {
+            previous = current;
+            current = pauseState;
+
+            if (current != previous)
+                selection = 0;
         }
     }
 }

@@ -73,19 +73,20 @@ Content\Tiles\tile1\r1.xnb
 Content\Tiles\tile1\u1.xnb
 Content\Tiles\tile1\ul1.xnb
 Content\Tiles\tile1\ur1.xnb
+Content\Backgrounds\Layer3_0.xnb
+Content\Backgrounds\Layer3_1.xnb
+Content\Backgrounds\Layer3_2.xnb
+Content\Menu\popupmenuquit.xnb
 Content\Fonts\Hud.xnb
-Content\Sounds\Music.xnb
-Content\Sounds\Ninja Gaiden - NES - Act 4-2.xnb
-Content\Sounds\MonsterKilled.xnb
-Content\Sounds\GemCollected.xnb
 Content\Sounds\ExitReached.xnb
+Content\Sounds\GemCollected.xnb
+Content\Sounds\MonsterKilled.xnb
+Content\Sounds\Music.xnb
 Content\Sounds\PlayerFall.xnb
 Content\Sounds\PlayerJump.xnb
 Content\Sounds\PlayerKilled.xnb
 Content\Sounds\Powerup.xnb
-Content\Backgrounds\Layer3_0.xnb
-Content\Backgrounds\Layer3_1.xnb
-Content\Backgrounds\Layer3_2.xnb
+Content\Sounds\Ninja Gaiden - NES - Act 4-2.xnb
 Content\Sounds\Music.wma
 Content\Sounds\Ninja Gaiden - NES - Act 4-2.wma
 Content\Levels\0.txt
