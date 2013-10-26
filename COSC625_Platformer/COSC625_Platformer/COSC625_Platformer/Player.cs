@@ -224,6 +224,9 @@ namespace COSC625_Platformer
             movement = 0.0f;
             isJumping = false;
 
+            if (isOnGround)
+                numberOfJumps = 0;
+
             if (flip == SpriteEffects.FlipHorizontally)
                 arm.position = new Vector2(position.X + 5, position.Y - 60);
             else
@@ -515,9 +518,20 @@ namespace COSC625_Platformer
                 }
                 else
                 {
+                     // Reached the apex of the jump and has double jumps
+                    if (velocityY > -MaxFallSpeed * 0.5f && !wasJumping && numberOfJumps < 1)
+                    {
+                        velocityY =
+                            JumpLaunchVelocity * (0.5f - (float)Math.Pow(jumpTime / MaxJumpTime, JumpControlPower));
+                        jumpTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                        numberOfJumps++;
+                    }
+                    else
+                    {
                     // Reached the apex of the jump
                     jumpTime = 0.0f;
                 }
+            }
             }
             else
             {
@@ -528,6 +542,8 @@ namespace COSC625_Platformer
 
             return velocityY;
         }
+            private int numberOfJumps = 0;
+    
 
         /// <summary>
         /// Detects and resolves all collisions between the player and his neighboring
