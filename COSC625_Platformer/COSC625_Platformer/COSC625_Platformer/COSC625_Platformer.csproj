@@ -113,8 +113,10 @@
     <Compile Include="GameObjects\AnimationPlayer.cs" />
     <Compile Include="GameObjects\Circle.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
-    <Compile Include="GameObjects\Gem.cs" />
+    <Compile Include="GameObjects\Items\Item.cs" />
+    <Compile Include="GameObjects\Items\Star.cs" />
     <Compile Include="GameObjects\Layer.cs" />
+    <Compile Include="GameObjects\Sprite.cs" />
     <Compile Include="GameObjects\Tile.cs" />
     <Compile Include="Levels\Level.cs" />
     <Compile Include="Player.cs" />

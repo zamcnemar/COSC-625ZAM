@@ -10,11 +10,12 @@ using Microsoft.Xna.Framework.Media;
 using System.IO;
 using COSC625_Platformer.GameObjects;
 using COSC625_Platformer.Screens;
+using COSC625_Platformer.GameObjects.Items;
 
 namespace COSC625_Platformer.Levels
 {
     /// <summary>
-    /// A uniform grid of tiles with collections of gems and enemies.
+    /// A uniform grid of tiles with collections of items and enemies.
     /// The level owns the player and controls the game's win and lose
     /// conditions as well as scoring.
     /// </summary>
@@ -35,7 +36,8 @@ namespace COSC625_Platformer.Levels
 
         public ContentManager Content = Game1.content;
 
-        private List<Gem> gems = new List<Gem>();
+        private List<Item> items = new List<Item>();
+
         public List<Enemy> enemies = new List<Enemy>();
 
         // Key locations in the level.        
@@ -190,12 +192,12 @@ namespace COSC625_Platformer.Levels
                 case 'X':
                     return LoadExitTile(x, y);
 
-                // Gem
+                // Item
                 case 'G':
-                    return LoadGemTile(x, y, false);
+                    return LoadItemTile(x, y, false);
 
                 case 'P':
-                    return LoadGemTile(x, y, true);
+                    return LoadItemTile(x, y, true);
 
                 // Floating platform
                 case '-':
@@ -355,12 +357,12 @@ namespace COSC625_Platformer.Levels
         }
 
         /// <summary>
-        /// Instantiates a gem and puts it in the level.
+        /// Instantiates a item and puts it in the level.
         /// </summary>
-        private Tile LoadGemTile(int x, int y, bool isPowerUp)
+        private Tile LoadItemTile(int x, int y, bool isPowerUp)
         {
             Point position = GetBounds(x, y).Center;
-            gems.Add(new Gem(this, new Vector2(position.X, position.Y), isPowerUp));
+            items.Add(new Item(this, new Vector2(position.X, position.Y), isPowerUp));
 
             return new Tile(null, TileCollision.Passable);
         }
@@ -447,8 +449,7 @@ namespace COSC625_Platformer.Levels
             {
                 timeRemaining -= gameTime.ElapsedGameTime;
                 Player.Update(gameTime);
-                UpdateGems(gameTime);
-
+                UpdateItems(gameTime);
                 // Falling off the bottom of the level kills the player.
                 if (Player.BoundingRectangle.Top >= Height * Tile.Height)
                     OnPlayerKilled(null);
@@ -457,7 +458,7 @@ namespace COSC625_Platformer.Levels
 
                 // The player has reached the exit if they are standing on the ground and
                 // his bounding rectangle contains the center of the exit tile. They can only
-                // exit when they have collected all of the gems.
+                // exit when they have collected all of the items.
                 if (Player.IsAlive &&
                     Player.IsOnGround &&
                     Player.BoundingRectangle.Contains(exit))
@@ -471,21 +472,18 @@ namespace COSC625_Platformer.Levels
                 timeRemaining = TimeSpan.Zero;
         }
 
-        /// <summary>
-        /// Animates each gem and checks to allows the player to collect them.
-        /// </summary>
-        private void UpdateGems(GameTime gameTime)
+        private void UpdateItems(GameTime gameTime)
         {
-            for (int i = 0; i < gems.Count; ++i)
+            for (int i = 0; i < items.Count; ++i)
             {
-                Gem gem = gems[i];
+                Item item = items[i];
 
-                gem.Update(gameTime);
+                item.Update(gameTime);
 
-                if (gem.BoundingCircle.Intersects(Player.BoundingRectangle))
+                if (item.BoundingCircle.Intersects(Player.BoundingRectangle))
                 {
-                    gems.RemoveAt(i--);
-                    OnGemCollected(gem, Player);
+                    items.RemoveAt(i--);
+                    OnItemCollected(item, Player);
                 }
             }
         }
@@ -526,15 +524,15 @@ namespace COSC625_Platformer.Levels
         }
 
         /// <summary>
-        /// Called when a gem is collected.
+        /// Called when a item is collected.
         /// </summary>
-        /// <param name="gem">The gem that was collected.</param>
-        /// <param name="collectedBy">The player who collected this gem.</param>
-        private void OnGemCollected(Gem gem, Player collectedBy)
+        /// <param name="item">The item that was collected.</param>
+        /// <param name="collectedBy">The player who collected this item.</param>
+        private void OnItemCollected(Item item, Player collectedBy)
         {
-            score += gem.PointValue;
+            score += item.PointValue;
 
-            gem.OnCollected(collectedBy);
+            item.OnCollected(collectedBy);
         }
 
         /// <summary>
@@ -587,19 +585,9 @@ namespace COSC625_Platformer.Levels
 
             DrawTiles(spriteBatch);
 
-            /* 9.28.13 - Z - attempting to limit gem draw to the bounds of the camera.
-            foreach (Gem gem in gems)
-                gem.Draw(gameTime, spriteBatch);
-             */
-
             DrawItems(gameTime, spriteBatch);
 
             Player.Draw(gameTime, spriteBatch);
-
-            /* 9.28.13 - Z - attempting to limit gem draw to the bounds of the camera.
-            foreach (Enemy enemy in enemies)
-                enemy.Draw(gameTime, spriteBatch);
-             */
 
             DrawEnemies(gameTime, spriteBatch);
 
@@ -703,13 +691,13 @@ namespace COSC625_Platformer.Levels
         }
 
         /// <summary>
-        ///  Draws each Gem in the level if it is within the set outer boundaries of the camera.
+        ///  Draws each item in the level if it is within the set outer boundaries of the camera.
         ///  </summary>
-        ///  9.28.13 - Z - Created method to limit the drawing for gems to those within a range of the screen/camera.
+        ///  9.28.13 - Z - Created method to limit the drawing for items to those within a range of the screen/camera.
         private void DrawItems(GameTime gameTime, SpriteBatch spriteBatch)
         {
 
-            // Calculate the visible range of gems on the screen.
+            // Calculate the visible range of items on the screen.
             Viewport viewport = spriteBatch.GraphicsDevice.Viewport;
             const float ViewMargin = 0.35f;
             float marginWidth = viewport.Width * ViewMargin;
@@ -717,10 +705,10 @@ namespace COSC625_Platformer.Levels
             float marginRight = cameraPosition + viewport.Width + marginWidth;
 
 
-            foreach (Gem gem in gems)
-                if (gem.Position.X > marginLeft && gem.Position.X < marginRight)
+            foreach (Item item in items)
+                if (item.Position.X > marginLeft && item.Position.X < marginRight)
                 {
-                    gem.Draw(gameTime, spriteBatch);
+                    item.Draw(gameTime, spriteBatch);
                 }
 
         }
