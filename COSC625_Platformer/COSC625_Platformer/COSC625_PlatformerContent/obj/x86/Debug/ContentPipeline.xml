@@ -796,12 +796,12 @@
     </Item>
     <Item>
       <Source>Sounds\Ninja Gaiden - NES - Act 4-2.mp3</Source>
-      <Name>Sounds\Ninja Gaiden - NES - Act 4-2</Name>
+      <Name>Sounds\NG42</Name>
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\Ninja Gaiden - NES - Act 4-2.xnb</Output>
-      <Extra>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\Ninja Gaiden - NES - Act 4-2.wma</Extra>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\NG42.xnb</Output>
+      <Extra>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\NG42.wma</Extra>
       <Time>2013-10-25T10:08:28.5209016-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>

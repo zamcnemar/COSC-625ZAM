@@ -164,7 +164,7 @@
       <Processor>SongProcessor</Processor>
     </Compile>
     <Compile Include="Sounds\Ninja Gaiden - NES - Act 4-2.mp3">
-      <Name>Ninja Gaiden - NES - Act 4-2</Name>
+      <Name>NG42</Name>
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
     </Compile>

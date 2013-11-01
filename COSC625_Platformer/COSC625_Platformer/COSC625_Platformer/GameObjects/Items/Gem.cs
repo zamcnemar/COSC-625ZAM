@@ -12,36 +12,35 @@ using COSC625_Platformer.Levels;
 
 namespace COSC625_Platformer.GameObjects.Items
 {
-    class Star : Item
+    class Gem : Item
     {
-
         public Level Level
         {
             get { return level; }
         }
         Level level;
 
-        public Star(Level level, Vector2 position)
+        public Gem(Level level, Vector2 position)
         {
             this.level = level;
             this.basePosition = position;
             active = true;
-            PointValue = 100;
-            Color = Color.Red;
+            PointValue = 30;
+            Color = Color.Blue;
 
             LoadContent();
         }
 
         public override void OnCollected(Player collectedBy)
         {
-
-            collectedBy.PowerUp();
             base.OnCollected(collectedBy);
         }
         
         public override void Update(GameTime gameTime)
         {
+
             base.Update(gameTime);
+
         }
          
 
@@ -49,17 +48,15 @@ namespace COSC625_Platformer.GameObjects.Items
         { 
             spriteTexture = Level.Content.Load<Texture2D>("Sprites/Gem");
             origin = new Vector2(spriteTexture.Width / 2.0f, spriteTexture.Height / 2.0f);
-            collectedSound = Level.Content.Load<SoundEffect>("Sounds/Powerup");
+            collectedSound = Level.Content.Load<SoundEffect>("Sounds/gemCollected");
             Size = new Rectangle(0, 0, (int)(spriteTexture.Width * Scale), (int)(spriteTexture.Height * Scale));
         }
 
 
         public override void Draw(SpriteBatch spritebatch, Color color)
         {
-
             base.Draw(spritebatch, color);
-        
-        }
 
+        }
     }
 }

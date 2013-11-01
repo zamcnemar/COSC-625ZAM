@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Audio;
 using COSC625_Platformer.Levels;
 
@@ -11,26 +12,22 @@ namespace COSC625_Platformer.GameObjects.Items
 {
     class Item : Sprite
     {
-        private Texture2D texture;
-        private Vector2 origin;
-        private SoundEffect collectedSound;
-
-        public readonly int PointValue;
-        public bool IsPowerUp { get; private set; }
-        public readonly Color Color;
-
+        protected SoundEffect collectedSound;
+        public int PointValue;
+        public Color Color;
+        public Vector2 origin;
+    
         // The item is animated from a base position along the Y axis.
-        private Vector2 basePosition;
-        private float bounce;
+        protected float bounce;
+        protected Vector2 basePosition;
 
-        public Level Level
-        {
-            get { return level; }
-        }
-        Level level;
+        // Bounce control constants
+        protected const float BounceHeight = 0.18f;
+        protected const float BounceRate = 3.0f;
+        protected const float BounceSync = -0.75f;
 
         /// <summary>
-        /// Gets the current position of this item in world space. OK
+        /// Gets the current position of this item in world space.
         /// </summary>
         public Vector2 Position
         {
@@ -41,7 +38,7 @@ namespace COSC625_Platformer.GameObjects.Items
         }
 
         /// <summary>
-        /// Gets a circle which bounds this item in world space. OK
+        /// Gets a circle which bounds this item in world space.
         /// </summary>
         public Circle BoundingCircle
         {
@@ -51,53 +48,25 @@ namespace COSC625_Platformer.GameObjects.Items
             }
         }
 
-                /// <summary>
-        /// Constructs a new item.
-        /// </summary>
-        public Item(Level level, Vector2 position, bool isPowerUp)
-        {
-            this.level = level;
-            this.basePosition = position;
-
-            IsPowerUp = isPowerUp;
-            if (IsPowerUp)
-            {
-                PointValue = 100;
-                Color = Color.Green;
-            }
-            else
-            {
-                PointValue = 30;
-                Color = Color.Blue;
-            }
-
-            LoadContent();
-        }
 
         /// <summary>
-        /// Loads the item texture and collected sound.
+        /// Constructs a new item.
         /// </summary>
-        public void LoadContent()
+        public Item()
         {
-            texture = Level.Content.Load<Texture2D>("Sprites/gem");
-            origin = new Vector2(texture.Width / 2.0f, texture.Height / 2.0f);
-            collectedSound = Level.Content.Load<SoundEffect>("Sounds/gemCollected");
+            
+
         }
 
         /// <summary>
         /// Bounces up and down in the air to entice players to collect them.
         /// </summary>
-        public void Update(GameTime gameTime)
+        public virtual void Update(GameTime gameTime)
         {
-            // Bounce control constants
-            const float BounceHeight = 0.18f;
-            const float BounceRate = 3.0f;
-            const float BounceSync = -0.75f;
-
             // Bounce along a sine curve over time.
             // Include the X coordinate so that neighboring items bounce in a nice wave pattern.            
             double t = gameTime.TotalGameTime.TotalSeconds * BounceRate + Position.X * BounceSync;
-            bounce = (float)Math.Sin(t) * BounceHeight * texture.Height;
+            bounce = (float)Math.Sin(t) * BounceHeight * spriteTexture.Height;
         }
 
         /// <summary>
@@ -107,22 +76,23 @@ namespace COSC625_Platformer.GameObjects.Items
         /// The player who collected this item. Although currently not used, this parameter would be
         /// useful for creating special powerup items. For example, a item could make the player invincible.
         /// </param>
-        public void OnCollected(Player collectedBy)
+        public virtual void OnCollected(Player collectedBy)
         {
             collectedSound.Play();
-
-            if (IsPowerUp)
-                collectedBy.PowerUp();
         }
 
+       
         /// <summary>
         /// Draws a item in the appropriate color.
         /// </summary>
-        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
+        public override void Draw(SpriteBatch spritebatch, Color color)
         {
-            spriteBatch.Draw(texture, Position, null, Color, 0.0f, origin, 1.0f, SpriteEffects.None, 0.0f);
-        }
 
+            Boundary = new Rectangle((int)this.Position.X, (int)this.Position.Y, this.Size.Width, this.Size.Height);
+            spritebatch.Draw(spriteTexture, Position, null, Color, 0.0f, origin, 1.0f, SpriteEffects.None, 0.0f);
+
+        }
+        
         
     }
 }

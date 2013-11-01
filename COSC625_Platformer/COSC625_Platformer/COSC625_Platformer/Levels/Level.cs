@@ -194,10 +194,10 @@ namespace COSC625_Platformer.Levels
 
                 // Item
                 case 'G':
-                    return LoadItemTile(x, y, false);
+                    return LoadGemTile(x, y);
 
                 case 'P':
-                    return LoadItemTile(x, y, true);
+                    return LoadPowerUpTile(x, y);
 
                 // Floating platform
                 case '-':
@@ -357,12 +357,23 @@ namespace COSC625_Platformer.Levels
         }
 
         /// <summary>
-        /// Instantiates a item and puts it in the level.
+        /// Instantiates a gem and puts it in the level.
         /// </summary>
-        private Tile LoadItemTile(int x, int y, bool isPowerUp)
+        private Tile LoadGemTile(int x, int y)
         {
             Point position = GetBounds(x, y).Center;
-            items.Add(new Item(this, new Vector2(position.X, position.Y), isPowerUp));
+            items.Add(new Gem(this, new Vector2(position.X, position.Y)));
+
+            return new Tile(null, TileCollision.Passable);
+        }
+
+        /// <summary>
+        /// Instantiates a star powerup and puts it in the level.
+        /// </summary>
+        private Tile LoadPowerUpTile(int x, int y)
+        {
+            Point position = GetBounds(x, y).Center;
+            items.Add(new Star(this, new Vector2(position.X, position.Y)));
 
             return new Tile(null, TileCollision.Passable);
         }
@@ -480,7 +491,7 @@ namespace COSC625_Platformer.Levels
 
                 item.Update(gameTime);
 
-                if (item.BoundingCircle.Intersects(Player.BoundingRectangle))
+                if (item.Boundary.Intersects(Player.BoundingRectangle))
                 {
                     items.RemoveAt(i--);
                     OnItemCollected(item, Player);
@@ -708,7 +719,7 @@ namespace COSC625_Platformer.Levels
             foreach (Item item in items)
                 if (item.Position.X > marginLeft && item.Position.X < marginRight)
                 {
-                    item.Draw(gameTime, spriteBatch);
+                    item.Draw(spriteBatch, item.Color);
                 }
 
         }
