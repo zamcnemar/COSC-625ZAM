@@ -532,6 +532,7 @@ namespace COSC625_Platformer.Levels
         /// <summary>
         /// Animates each enemy and allow them to kill the player.
         /// </summary>
+        
         private void UpdateEnemies(GameTime gameTime)
         {
             foreach (Enemy enemy in enemies)
@@ -546,11 +547,22 @@ namespace COSC625_Platformer.Levels
                     {
                         OnEnemyKilled(enemy, Player);
                     }
-                    // otherwise the player is killed.
                     else
                     {
-                        OnPlayerKilled(enemy);
+                        // otherwise the player is killed.
+                        if (enemy.IsAlive && enemy.BoundingRectangle.Intersects(Player.MeleeRectangle))
+                        {
+                            if (Player.isAttacking)
+                                OnEnemyKilled(enemy, Player);
+                                
+                        }
+
+                        if (enemy.IsAlive && enemy.BoundingRectangle.Intersects(Player.BoundingRectangle))
+                        {
+                            OnPlayerKilled(enemy);
+                        }
                     }
+
                 }
 
             }
@@ -562,6 +574,7 @@ namespace COSC625_Platformer.Levels
         private void OnEnemyKilled(Enemy enemy, Player killedBy)
         {
             enemy.OnKilled(killedBy);
+
         }
 
         /// <summary>
@@ -729,7 +742,8 @@ namespace COSC625_Platformer.Levels
             foreach (Enemy enemy in enemies)
                 if (enemy.Position.X > marginLeft && enemy.Position.X < marginRight)
                 {
-                    enemy.Draw(gameTime, spriteBatch);
+                    if(enemy.IsAlive || enemy.deathTime > 0)
+                        enemy.Draw(gameTime, spriteBatch);
                 }
 
         }

@@ -858,6 +858,24 @@
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars2_2.xnb</Output>
       <Time>2013-11-01T21:33:00.6833521-04:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\Player\Attack.png</Source>
+      <Name>Sprites\Player\Attack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Attack.xnb</Output>
+      <Time>2013-11-02T01:04:56.0036268-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\metal weapon.wav</Source>
+      <Name>Sounds\metal weapon</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\metal weapon.xnb</Output>
+      <Time>2011-12-11T01:04:18-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

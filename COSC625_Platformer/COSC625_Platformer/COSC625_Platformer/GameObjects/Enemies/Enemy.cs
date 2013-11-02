@@ -39,6 +39,7 @@ namespace COSC625_Platformer
         private SoundEffect killedSound;
         private SoundEffect jumpSound;
         private SoundEffect fallSound;
+        private SoundEffect bulletDeflect;
 
         // Constants for controling horizontal movement
         private const float MoveAcceleration = 13000.0f;
@@ -69,6 +70,11 @@ namespace COSC625_Platformer
         private bool wasJumping;
         private float jumpTime;
 
+        // Shooting Restrictions
+        public bool isShooting;
+        const float MaxShootDelay = .75f;
+        public float ShootTime = 0.0f;
+
         /// <summary>
         /// The direction this enemy is facing and moving along the X axis.
         /// </summary>
@@ -96,6 +102,10 @@ namespace COSC625_Platformer
         Level level;
 
         public bool IsAlive { get; set; }
+
+        //Melee attack stuff
+        private const float deathTimeMax = 3.0f;
+        public float deathTime = deathTimeMax;
 
         /// <summary>
         /// Position in world space of the bottom center of this enemy.
@@ -147,6 +157,8 @@ namespace COSC625_Platformer
             this.position = position;
             this.IsAlive = true;
             this.canShoot = true;
+            this.isShooting = true;
+
 
             LoadContent(spriteSet);
         }
@@ -191,6 +203,7 @@ namespace COSC625_Platformer
             killedSound = level.Content.Load<SoundEffect>("Sounds/MonsterKilled");
             jumpSound = Level.Content.Load<SoundEffect>("Sounds/PlayerJump");
             fallSound = Level.Content.Load<SoundEffect>("Sounds/PlayerFall");
+            bulletDeflect = Level.Content.Load<SoundEffect>("Sounds/metal weapon");
         }
 
         #endregion
@@ -205,62 +218,68 @@ namespace COSC625_Platformer
             float elapsed = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
             if (!IsAlive)
-                return;
-
-            ApplyPhysics(gameTime);
-
-            if (canShoot)
-            {
-                aimGun();
-
-                UpdateBullets();
-
-                if (flip == SpriteEffects.FlipHorizontally)
-                    arm.position = new Vector2(position.X + 5, position.Y - 60);
-                else
-                    arm.position = new Vector2(position.X - 5, position.Y - 60);
-            }
-
-
-            // Calculate tile position based on the side we are walking towards.
-            float posX = Position.X + localBounds.Width / 2 * (int)direction;
-            int tileX = (int)Math.Floor(posX / Tile.Width) - (int)direction;
-            int tileY = (int)Math.Floor(Position.Y / Tile.Height);
-
-            // wait and turn at impassible blocks.
-            if (waitTime > 0)
-            {
-                // Wait for some amount of time.
-                waitTime = Math.Max(0.0f, waitTime - (float)gameTime.ElapsedGameTime.TotalSeconds);
-                if (waitTime <= 0.0f)
-                {
-                    // Then turn around.
-                    direction = (FaceDirection)(-(int)direction);
-                }
-            }
+                deathTime -= elapsed;
+            //return;
             else
             {
-                // If we are about to run into a wall or off a cliff, start waiting.
-                if (Level.GetCollision(tileX + (int)direction, tileY - 1) == TileCollision.Impassable ||
-                    Level.GetCollision(tileX + (int)direction, tileY) == TileCollision.Passable)
+
+                ApplyPhysics(gameTime);
+
+                if (canShoot)
                 {
-                    waitTime = MaxWaitTime;
+                    aimGun();
+
+                    UpdateBullets();
+
+                    if (Level.Player.IsAlive)
+                        DoShoot(gameTime);
+
+                    if (flip == SpriteEffects.FlipHorizontally)
+                        arm.position = new Vector2(position.X + 5, position.Y - 60);
+                    else
+                        arm.position = new Vector2(position.X - 5, position.Y - 60);
+                }
+
+
+                // Calculate tile position based on the side we are walking towards.
+                float posX = Position.X + localBounds.Width / 2 * (int)direction;
+                int tileX = (int)Math.Floor(posX / Tile.Width) - (int)direction;
+                int tileY = (int)Math.Floor(Position.Y / Tile.Height);
+
+                // wait and turn at impassible blocks.
+                if (waitTime > 0)
+                {
+                    // Wait for some amount of time.
+                    waitTime = Math.Max(0.0f, waitTime - (float)gameTime.ElapsedGameTime.TotalSeconds);
+                    if (waitTime <= 0.0f)
+                    {
+                        // Then turn around.
+                        direction = (FaceDirection)(-(int)direction);
+                    }
                 }
                 else
                 {
-                    // Move in the current direction.
-                    velocity = new Vector2((int)direction * MoveSpeed * elapsed, 0.0f);
-                    position = position + velocity;
-                } 
+                    // If we are about to run into a wall or off a cliff, start waiting.
+                    if (Level.GetCollision(tileX + (int)direction, tileY - 1) == TileCollision.Impassable ||
+                        Level.GetCollision(tileX + (int)direction, tileY) == TileCollision.Passable)
+                    {
+                        waitTime = MaxWaitTime;
+                    }
+                    else
+                    {
+                        // Move in the current direction.
+                        velocity = new Vector2((int)direction * MoveSpeed * elapsed, 0.0f);
+                        position = position + velocity;
+                    }
+                }
+
+                isJumping = false;
+
+                if (isOnGround)
+                    numberOfJumps = 0;
+
+
             }
-
-            isJumping = false;
-
-            if (isOnGround)
-                numberOfJumps = 0;
-
-
-
         }
 
 
@@ -394,7 +413,11 @@ namespace COSC625_Platformer
                     {
                         bullet.alive = false;
                     }
-
+                    if (bulletRect.Intersects(level.Player.MeleeRectangle) && level.Player.isAttacking)
+                    {
+                        bullet.alive = false;
+                        bulletDeflect.Play(.5f, 0.0f, 0.0f);
+                    }
                     // Everything below here can below deleted if you want
                     // your bullets to shoot through all tiles.
 
@@ -457,10 +480,22 @@ namespace COSC625_Platformer
                 }
             }
 
+        }
 
-            if (Level.Player.IsAlive)
-                FireBullet();
-
+        private void DoShoot(GameTime gameTime)
+        {
+            if (isShooting)
+            {
+                if (ShootTime < 0.0f)
+                {
+                    ShootTime = MaxShootDelay;
+                    FireBullet();
+                }
+                else
+                {
+                    ShootTime -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+                }
+            }
         }
 
         private void FireBullet()
@@ -586,7 +621,7 @@ namespace COSC625_Platformer
         /// </summary>
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            if (!IsAlive)
+            if (deathTime < deathTimeMax)//!IsAlive)
             {
                 sprite.PlayAnimation(dieAnimation);
             }

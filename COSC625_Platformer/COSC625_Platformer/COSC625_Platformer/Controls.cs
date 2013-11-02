@@ -84,6 +84,11 @@ namespace COSC625_Platformer
             return (IsNewKeyPress(Keys.Z) || IsNewButtonPress(Buttons.RightTrigger, index));
         }
 
+        public bool Attack(PlayerIndex index)
+        {
+            return (IsNewKeyPress(Keys.F) || IsNewButtonPress(Buttons.X, index));
+        }
+
         public bool Jump(PlayerIndex index)
         {
             return (IsKeyPress(Keys.Space) || IsButtonPress(Buttons.A, index));

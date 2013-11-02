@@ -28,6 +28,7 @@ namespace COSC625_Platformer
         private Animation jumpAnimation;
         private Animation celebrateAnimation;
         private Animation dieAnimation;
+        private Animation attackAnimation;
         private SpriteEffects flip = SpriteEffects.None;
         private AnimationPlayer sprite;
 
@@ -114,6 +115,11 @@ namespace COSC625_Platformer
         private bool isJumping;
         private bool wasJumping;
         private float jumpTime;
+	
+        // Attacking state
+        public bool isAttacking;
+        const float MaxAttackTime = 0.33f;
+        public float AttackTime;
 
         private Rectangle localBounds;
         /// <summary>
@@ -127,6 +133,27 @@ namespace COSC625_Platformer
                 int top = (int)Math.Round(Position.Y - sprite.Origin.Y) + localBounds.Y;
 
                 return new Rectangle(left, top, localBounds.Width, localBounds.Height);
+            }
+        }
+
+        public Rectangle MeleeRectangle
+        {
+            get
+            {
+                int left = (int)Math.Round(Position.X - sprite.Origin.X) + localBounds.X;
+                int top = (int)Math.Round(Position.Y - sprite.Origin.Y) + localBounds.Y;
+                if (flip == SpriteEffects.FlipHorizontally)
+                    return new Rectangle(
+                        (left + localBounds.Width),
+                        top,
+                        localBounds.Width,
+                        localBounds.Height);
+                else
+                    return new Rectangle(
+                        (left - localBounds.Width),
+                        top,
+                        localBounds.Width,
+                        localBounds.Height);
             }
         }
 
@@ -163,6 +190,8 @@ namespace COSC625_Platformer
             jumpAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/Jump - Ninja"), 0.1f, false);
             celebrateAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/Celebrate - Ninja"), 0.1f, false);
             dieAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/Die - Ninja"), 0.1f, false);
+            attackAnimation = new Animation(level.Content.Load<Texture2D>("Sprites/Player/Attack"), 0.1f, false);
+
 
             // Calculate bounds within texture size.            
             int width = (int)(idleAnimation.FrameWidth * 0.4);
@@ -203,20 +232,33 @@ namespace COSC625_Platformer
         {
             GetInput();
 
+            DoAttack(gameTime);
+
             ApplyPhysics(gameTime);
 
             if (IsPoweredUp)
                 powerUpTime = Math.Max(0.0f, powerUpTime - (float)gameTime.ElapsedGameTime.TotalSeconds);
-
-            if (IsAlive && IsOnGround)
+ 
+            if (IsAlive)
             {
-                if (Math.Abs(Velocity.X) - 0.02f > 0)
+                if (isAttacking)
                 {
-                    sprite.PlayAnimation(runAnimation);
+                    sprite.PlayAnimation(attackAnimation);
                 }
                 else
                 {
-                    sprite.PlayAnimation(idleAnimation);
+                    if (Math.Abs(Velocity.X) - 0.02f > 0)
+                    {
+                        sprite.PlayAnimation(runAnimation);
+                    }
+                    else if (isJumping)
+                    {
+                        sprite.PlayAnimation(jumpAnimation);
+                    }
+                    else
+                    {
+                        sprite.PlayAnimation(idleAnimation);
+                    }
                 }
             }
 
@@ -433,6 +475,15 @@ namespace COSC625_Platformer
             if (ScreenManager.controls.Fire(controller))
                 FireBullet();
 
+            if (ScreenManager.controls.Attack(controller))
+            {
+                if (AttackTime == 0.0f)
+                {
+                    isAttacking = true;
+                    AttackTime = MaxAttackTime;
+                }
+            }
+
             //Pause Game
             if (ScreenManager.controls.Start(controller))
                 ScreenManager.gameState = GameState.Pause;
@@ -543,7 +594,28 @@ namespace COSC625_Platformer
             return velocityY;
         }
             private int numberOfJumps = 0;
-    
+
+        private void DoAttack(GameTime gameTime)
+        {
+           // If the player wants to attack
+           if (isAttacking)
+           {
+               // Begin or continue an attack
+               if (AttackTime > 0.0f)
+               {
+                   AttackTime -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+               }
+                else
+               {
+                   isAttacking = false;
+               }
+           }
+           else
+           {
+               //Continues not attack or cancels an attack in progress
+               AttackTime = 0.0f;
+           }
+       }           
 
         /// <summary>
         /// Detects and resolves all collisions between the player and his neighboring
