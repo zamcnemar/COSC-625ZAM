@@ -97,6 +97,8 @@ Content\Backgrounds\stars2_1.xnb
 Content\Backgrounds\stars2_2.xnb
 Content\Sprites\Player\Attack.xnb
 Content\Sounds\metal weapon.xnb
+Content\Tiles\ladder0.xnb
+Content\Sprites\Player\Climb.xnb
 Content\Levels\0.txt
 Content\Levels\1.txt
 Content\Levels\2.txt

@@ -29,6 +29,7 @@ namespace COSC625_Platformer
         private Animation celebrateAnimation;
         private Animation dieAnimation;
         private Animation attackAnimation;
+        private Animation climbAnimation;
         private SpriteEffects flip = SpriteEffects.None;
         private AnimationPlayer sprite;
 
@@ -109,7 +110,8 @@ namespace COSC625_Platformer
         /// <summary>
         /// Current user movement input.
         /// </summary>
-        private float movement;
+        //private float movement;
+        private Vector2 movement;
 
         // Jumping state
         private bool isJumping;
@@ -120,6 +122,18 @@ namespace COSC625_Platformer
         public bool isAttacking;
         const float MaxAttackTime = 0.33f;
         public float AttackTime;
+
+        // Ladder Stuff
+        private const int LadderAlignment = 12;
+
+        private bool isClimbing;
+        public bool IsClimbing
+        {
+            get { return isClimbing; }
+        }
+
+        private bool wasClimbing;
+        
 
         private Rectangle localBounds;
         /// <summary>
@@ -191,7 +205,7 @@ namespace COSC625_Platformer
             celebrateAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/Celebrate - Ninja"), 0.1f, false);
             dieAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/Die - Ninja"), 0.1f, false);
             attackAnimation = new Animation(level.Content.Load<Texture2D>("Sprites/Player/Attack"), 0.1f, false);
-
+            climbAnimation = new Animation(level.Content.Load<Texture2D>("Sprites/Player/Climb"),0.1f,true);
 
             // Calculate bounds within texture size.            
             int width = (int)(idleAnimation.FrameWidth * 0.4);
@@ -239,32 +253,48 @@ namespace COSC625_Platformer
             if (IsPoweredUp)
                 powerUpTime = Math.Max(0.0f, powerUpTime - (float)gameTime.ElapsedGameTime.TotalSeconds);
  
+
             if (IsAlive)
             {
                 if (isAttacking)
-                {
                     sprite.PlayAnimation(attackAnimation);
-                }
                 else
                 {
-                    if (Math.Abs(Velocity.X) - 0.02f > 0)
+                    if (isOnGround)
                     {
-                        sprite.PlayAnimation(runAnimation);
+                        if (Math.Abs(Velocity.X) - 0.02f > 0)
+                        {
+                            sprite.PlayAnimation(runAnimation);
+                        }
+                        else
+                            sprite.PlayAnimation(idleAnimation);
+                    }
+                    else if (isClimbing)
+                    {
+                        if (Velocity.Y - 0.02f > 0 || Velocity.Y - 0.02f < 0)
+                          sprite.PlayAnimation(climbAnimation);
+                        else
+                            sprite.PlayAnimation(idleAnimation);
                     }
                     else if (isJumping)
                     {
                         sprite.PlayAnimation(jumpAnimation);
                     }
+                    else if (!isOnGround || wasJumping)
+                        sprite.PlayAnimation(jumpAnimation);
                     else
-                    {
                         sprite.PlayAnimation(idleAnimation);
-                    }
                 }
             }
 
-            // Clear input.
-            movement = 0.0f;
+            // Reset our variable every frame.
+            movement = Vector2.Zero;
+            wasClimbing = isClimbing;
+            isClimbing = false;
+
+            //Clear input
             isJumping = false;
+
 
             if (isOnGround)
                 numberOfJumps = 0;
@@ -419,20 +449,59 @@ namespace COSC625_Platformer
         private void GetInput()
         {
             // Get analog horizontal movement.
-            movement = ScreenManager.controls.ControllerState(controller).ThumbSticks.Left.X * MoveStickScale;
+            // movement = ScreenManager.controls.ControllerState(controller).ThumbSticks.Left.X * MoveStickScale;
+            movement.X = ScreenManager.controls.ControllerState(controller).ThumbSticks.Left.X * MoveStickScale;
+            movement.Y = ScreenManager.controls.ControllerState(controller).ThumbSticks.Left.Y * MoveStickScale;
 
             // Ignore small movements to prevent running in place.
-            if (Math.Abs(movement) < 0.5f)
-                movement = 0.0f;
+            if (Math.Abs(movement.X) < 0.5f)
+                movement.X = 0.0f;
+            if (Math.Abs(movement.Y) < 0.5f)
+                movement.Y = 0.0f;
 
             // If any digital horizontal movement input is found, override the analog movement.
             if (ScreenManager.controls.Left(controller))
             {
-                movement = -1.25f;// 9.28.13 // Z - made the guy move more with 
+                movement.X = -1.25f;// 9.28.13 // Z - made the guy move more with 
             }
             else if (ScreenManager.controls.Right(controller))
             {
-                movement = 1.25f;
+                movement.X = 1.25f;
+            }
+
+            if (ScreenManager.controls.Up(controller))
+            {
+                isClimbing = false;
+
+                if (IsAlignedToLadder())
+                {
+                    //We need to check thetile behind the player,
+                    //not what he is standing on
+                    if (level.GetTileCollisionBehindPlayer(position) == TileCollision.Ladder)
+                    {
+                        isClimbing = true;
+                        isJumping = false;
+                        isOnGround = false;
+                        movement.Y = -1.0f;
+                    }
+                }
+            }
+            else if (ScreenManager.controls.Down(controller))
+            {
+                isClimbing = false;
+
+                if (IsAlignedToLadder())
+                {
+                    // Check the tile the player is standing on
+                    if (level.GetTileCollisionBelowPlayer(level.Player.Position) == TileCollision.Ladder)
+                    {
+                        isClimbing = true;
+                        isJumping = false;
+                        isOnGround = false;
+                        movement.Y = 2.0f;
+                    }
+
+                }
             }
 
             // Check if the player wants to jump.
@@ -489,6 +558,29 @@ namespace COSC625_Platformer
                 ScreenManager.gameState = GameState.Pause;
         }
 
+        //LADDER
+        private bool IsAlignedToLadder()
+        {
+            int playerOffset = ((int)position.X % Tile.Width) - Tile.Center;
+
+            if (Math.Abs(playerOffset) <= LadderAlignment &&
+                level.GetTileCollisionBelowPlayer(new Vector2(
+                    level.Player.position.X,
+                    level.Player.position.Y + 1)) == TileCollision.Ladder ||
+                level.GetTileCollisionBelowPlayer(new Vector2(
+                    level.Player.position.X,
+                    level.Player.position.Y - 1)) == TileCollision.Ladder)
+            {
+                // Align the player with the middle of the tile
+                position.X -= playerOffset;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         /// <summary>
         /// Updates the player's velocity and position based on input, gravity, etc.
         /// </summary>
@@ -500,8 +592,25 @@ namespace COSC625_Platformer
 
             // Base velocity is a combination of horizontal movement control and
             // acceleration downward due to gravity.
-            velocity.X += movement * MoveAcceleration * elapsed;
-            velocity.Y = MathHelper.Clamp(velocity.Y + GravityAcceleration * elapsed, -MaxFallSpeed, MaxFallSpeed);
+            // velocity.X += movement * MoveAcceleration * elapsed;
+            // velocity.Y = MathHelper.Clamp(velocity.Y + GravityAcceleration * elapsed, -MaxFallSpeed, MaxFallSpeed);
+            if (!isClimbing)
+            {
+                if (wasClimbing)
+                    velocity.Y = 0;
+                else
+                    velocity.Y = MathHelper.Clamp(
+                        velocity.Y + GravityAcceleration * elapsed,
+                        -MaxFallSpeed,
+                        MaxFallSpeed);
+            }
+            else
+            {
+                velocity.Y = movement.Y * MoveAcceleration * elapsed;
+            }
+
+            velocity.X += movement.X * MoveAcceleration * elapsed;
+
 
             velocity.Y = DoJump(velocity.Y, gameTime);
 
@@ -674,7 +783,22 @@ namespace COSC625_Platformer
                             {
                                 // If we crossed the top of a tile, we are on the ground.
                                 if (previousBottom <= tileBounds.Top)
-                                    isOnGround = true;
+                                {
+                                    if (collision == TileCollision.Ladder)
+                                    {
+                                        if (!isClimbing && !isJumping)
+                                        {
+                                            // When walking over a ladder
+                                            isOnGround = true;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        isOnGround = true;
+                                        isClimbing = false;
+                                        isJumping = false;
+                                    }
+                                }
 
                                 // Ignore platforms, unless we are on the ground.
                                 if (collision == TileCollision.Impassable || IsOnGround)
@@ -692,6 +816,18 @@ namespace COSC625_Platformer
                                 Position = new Vector2(Position.X + depth.X, Position.Y);
 
                                 // Perform further collisions with the new bounds.
+                                bounds = BoundingRectangle;
+                            }
+                            //LADDER
+                            else if (collision == TileCollision.Ladder && !isClimbing)
+                            {
+                                // When walking in front of a ladder, falling off a laddeer
+                                // but not climbing
+
+                                // Resolve the collision along the Y axis.
+                                Position = new Vector2(Position.X, Position.Y);
+
+                                // Perform further collsions with the new bounds
                                 bounds = BoundingRectangle;
                             }
                         }

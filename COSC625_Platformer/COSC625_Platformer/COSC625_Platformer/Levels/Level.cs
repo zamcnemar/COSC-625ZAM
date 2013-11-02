@@ -187,10 +187,13 @@ namespace COSC625_Platformer.Levels
         {
             switch (tileType)
             {
-
+                //LADDER
+                case 'H':
+                    return LoadTile("ladder0", TileCollision.Ladder);
                 // Moving platform - Horzontal
                 case 'M':
                     return LoadMovableTile(x, y, TileCollision.Platform);
+
                 // Blank space
                 case '.':
                     return new Tile(null, TileCollision.Passable);
@@ -412,6 +415,37 @@ namespace COSC625_Platformer.Levels
         /// </summary>
         public TileCollision GetCollision(int x, int y)
         {
+            // Prevent escaping past the level ends.
+            if (x < 0 || x >= Width)
+                return TileCollision.Impassable;
+            // Allow jumping past the level top and falling through the bottom.
+            if (y < 0 || y >= Height)
+                return TileCollision.Passable;
+
+            return tiles[x, y].Collision;
+        }
+
+        //LADDER
+        public TileCollision GetTileCollisionBehindPlayer(Vector2 playerPosition)
+        {
+            int x = (int)playerPosition.X / Tile.Width;
+            int y = (int)(playerPosition.Y - 1) / Tile.Height;
+
+            // Prevent escaping past the level ends.
+            if (x < 0 || x >= Width)
+                return TileCollision.Impassable;
+            // Allow jumping past the level top and falling through the bottom.
+            if (y < 0 || y >= Height)
+                return TileCollision.Passable;
+
+            return tiles[x, y].Collision;
+        }
+        //LADDER
+        public TileCollision GetTileCollisionBelowPlayer(Vector2 playerPosition)
+        {
+            int x = (int)playerPosition.X / Tile.Width;
+            int y = (int)(playerPosition.Y) / Tile.Height;
+
             // Prevent escaping past the level ends.
             if (x < 0 || x >= Width)
                 return TileCollision.Impassable;

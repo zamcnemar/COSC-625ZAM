@@ -876,6 +876,24 @@
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\metal weapon.xnb</Output>
       <Time>2011-12-11T01:04:18-05:00</Time>
     </Item>
+    <Item>
+      <Source>Tiles\ladder0.png</Source>
+      <Name>Tiles\ladder0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\ladder0.xnb</Output>
+      <Time>2013-11-02T11:43:34.1373587-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Climb.png</Source>
+      <Name>Sprites\Player\Climb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Climb.xnb</Output>
+      <Time>2013-11-02T14:42:57.4539852-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
