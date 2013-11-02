@@ -102,18 +102,19 @@ namespace COSC625_Platformer.Levels
 
             //Load background layer textures. For now, all levels must
             // use the same backgrounds and only use the left-most part of them.
-            /*layers = new Layer[3];
+            layers = new Layer[3];
             layers[0] = new Layer(Content, "Backgrounds/stars0", 0.2f);
-            layers[1] = new Layer(Content, "Backgrounds/Layer1", 0.5f);
-            layers[2] = new Layer(Content, "Backgrounds/Layer2", 0.8f);*/
+            layers[1] = new Layer(Content, "Backgrounds/stars1", 0.5f);
+            layers[2] = new Layer(Content, "Backgrounds/stars2", 0.8f);
+
 
             //used to use vertical test background - use commented section above instead
             //to use normal backgrounds
-            layers = new Layer[3];
-            layers[0] = new Layer(content, "Backgrounds/Layer3", 0.8f);
-            layers[1] = new Layer(content, "Backgrounds/Layer3", 0.8f);
-            layers[2] = new Layer(content, "Backgrounds/Layer3", 0.8f);
-
+            /*layers = new Layer[3];
+            layers[0] = new Layer(content, "Backgrounds/layer0", 0.8f);
+            layers[1] = new Layer(content, "Backgrounds/layer0", 0.8f);
+            layers[2] = new Layer(content, "Backgrounds/layer0", 0.8f);
+            */
             // Load sounds.
             exitReachedSound = content.Load<SoundEffect>("Sounds/ExitReached");
         }

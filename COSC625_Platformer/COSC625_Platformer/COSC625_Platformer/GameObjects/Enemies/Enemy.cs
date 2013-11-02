@@ -385,9 +385,13 @@ namespace COSC625_Platformer
                         bullet.sprite.Width * 4,
                         bullet.sprite.Height * 4);
 
-                    if (bulletRect.Intersects(level.Player.BoundingRectangle) && level.Player.IsAlive)
+                    if (bulletRect.Intersects(level.Player.BoundingRectangle) && level.Player.IsAlive && level.Player.IsPoweredUp == false)
                     {
                         level.Player.OnKilled(this);
+                        bullet.alive = false;
+                    }
+                    if (bulletRect.Intersects(level.Player.BoundingRectangle) && level.Player.IsAlive && level.Player.IsPoweredUp == true)
+                    {
                         bullet.alive = false;
                     }
 

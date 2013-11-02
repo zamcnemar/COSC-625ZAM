@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars0_0.xnb</Output>
-      <Time>2013-10-25T10:08:28.2008833-04:00</Time>
+      <Time>2013-11-01T20:26:02.5925304-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars0_1.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars0_1.xnb</Output>
-      <Time>2013-10-25T10:08:28.2008833-04:00</Time>
+      <Time>2013-11-01T20:26:02.5925304-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars0_2.png</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars0_2.xnb</Output>
-      <Time>2013-10-25T10:08:28.2008833-04:00</Time>
+      <Time>2013-11-01T20:26:02.5925304-04:00</Time>
     </Item>
     <Item>
       <Source>Overlays\you_died.png</Source>
@@ -803,6 +803,60 @@
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\NG42.xnb</Output>
       <Extra>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\NG42.wma</Extra>
       <Time>2013-10-25T10:08:28.5209016-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\stars1_0.png</Source>
+      <Name>Backgrounds\stars1_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars1_0.xnb</Output>
+      <Time>2013-11-01T21:27:57.5560142-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\stars1_1.png</Source>
+      <Name>Backgrounds\stars1_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars1_1.xnb</Output>
+      <Time>2013-11-01T21:27:57.5560142-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\stars1_2.png</Source>
+      <Name>Backgrounds\stars1_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars1_2.xnb</Output>
+      <Time>2013-11-01T21:27:57.5560142-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\stars2_0.png</Source>
+      <Name>Backgrounds\stars2_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars2_0.xnb</Output>
+      <Time>2013-11-01T21:33:00.6833521-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\stars2_1.png</Source>
+      <Name>Backgrounds\stars2_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars2_1.xnb</Output>
+      <Time>2013-11-01T21:33:00.6833521-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\stars2_2.png</Source>
+      <Name>Backgrounds\stars2_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars2_2.xnb</Output>
+      <Time>2013-11-01T21:33:00.6833521-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
