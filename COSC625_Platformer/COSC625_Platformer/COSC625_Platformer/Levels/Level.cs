@@ -36,6 +36,8 @@ namespace COSC625_Platformer.Levels
 
         public ContentManager Content = Game1.content;
 
+        public List<MovableTile> movableTiles = new List<MovableTile>();
+
         private List<Item> items = new List<Item>();
 
         public List<Enemy> enemies = new List<Enemy>();
@@ -185,6 +187,10 @@ namespace COSC625_Platformer.Levels
         {
             switch (tileType)
             {
+
+                // Moving platform - Horzontal
+                case 'M':
+                    return LoadMovableTile(x, y, TileCollision.Platform);
                 // Blank space
                 case '.':
                     return new Tile(null, TileCollision.Passable);
@@ -301,6 +307,13 @@ namespace COSC625_Platformer.Levels
             return new Tile(content.Load<Texture2D>("Tiles/" + name), collision);
         }
 
+        private Tile LoadMovableTile(int x, int y, TileCollision collision)
+        {
+            Point position = GetBounds(x, y).Center;
+            movableTiles.Add(new MovableTile(this, new Vector2(position.X, position.Y), collision));
+
+            return new Tile(null, TileCollision.Passable);
+        }
 
         /// <summary>
         /// Loads a tile with a random appearance.
@@ -468,6 +481,8 @@ namespace COSC625_Platformer.Levels
 
                 UpdateEnemies(gameTime);
 
+                UpdateMovableTiles(gameTime);
+
                 // The player has reached the exit if they are standing on the ground and
                 // his bounding rectangle contains the center of the exit tile. They can only
                 // exit when they have collected all of the items.
@@ -482,6 +497,20 @@ namespace COSC625_Platformer.Levels
             // Clamp the time remaining at zero.
             if (timeRemaining < TimeSpan.Zero)
                 timeRemaining = TimeSpan.Zero;
+        }
+
+        private void UpdateMovableTiles(GameTime gameTime)
+        {
+            foreach (MovableTile tile in movableTiles)
+            {
+                tile.Update(gameTime);
+
+                if (tile.PlayerIsOn)
+                {
+                    //Make player move with tile if the player is on top of tile
+                    player.Position += tile.Velocity;
+                }
+            }
         }
 
         private void UpdateItems(GameTime gameTime)
@@ -596,6 +625,9 @@ namespace COSC625_Platformer.Levels
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default, RasterizerState.CullCounterClockwise, null, cameraTransform);
 
             DrawTiles(spriteBatch);
+
+            foreach (MovableTile tile in movableTiles)
+                tile.Draw(gameTime, spriteBatch);
 
             DrawItems(gameTime, spriteBatch);
 

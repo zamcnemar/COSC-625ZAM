@@ -117,6 +117,7 @@
     <Compile Include="GameObjects\Items\Item.cs" />
     <Compile Include="GameObjects\Items\Star.cs" />
     <Compile Include="GameObjects\Layer.cs" />
+    <Compile Include="GameObjects\MovableTile.cs" />
     <Compile Include="GameObjects\Sprite.cs" />
     <Compile Include="GameObjects\Tile.cs" />
     <Compile Include="Levels\Level.cs" />
