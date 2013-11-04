@@ -222,6 +222,10 @@ namespace COSC625_Platformer.Levels
                 case 'A':
                     return LoadZombieTile(x, y);
 
+                    //Lama
+                case 'L':
+                    return LoadLamaTile(x, y);
+
                 // Platform block
                 case '~':
                     return LoadVarietyTile("BlockB", 2, TileCollision.Platform);
@@ -363,7 +367,18 @@ namespace COSC625_Platformer.Levels
         private Tile LoadZombieTile(int x, int y)
         {
             Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
-            enemies.Add(new Zombie(this, position));
+            enemies.Add(new BadGuy(this, position));
+
+            return new Tile(null, TileCollision.Passable);
+        }
+
+        /// <summary>
+        /// Instantiates an enemy and puts him in the level.
+        /// </summary>
+        private Tile LoadLamaTile(int x, int y)
+        {
+            Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
+            enemies.Add(new Lama(this, position));
 
             return new Tile(null, TileCollision.Passable);
         }

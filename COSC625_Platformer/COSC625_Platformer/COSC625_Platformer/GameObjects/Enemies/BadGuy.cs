@@ -12,17 +12,18 @@ using COSC625_Platformer.Levels;
 
 namespace COSC625_Platformer.GameObjects.Enemies
 {
-    class Zombie : Enemy
+    class BadGuy : Enemy
     {
 
-        public Zombie(Level level, Vector2 position)
+        public BadGuy(Level level, Vector2 position)
         {
             this.level = level;
             this.position = position;
             this.IsAlive = true;
             this.canShoot = true;
             this.isShooting = true;
-            this.spriteSet = "MonsterA";
+            this.spriteSet = "BadGuy";
+            this.MoveSpeed *= 2;
 
             LoadContent();
         }
@@ -388,7 +389,7 @@ namespace COSC625_Platformer.GameObjects.Enemies
             spriteSet = "Sprites/" + spriteSet + "/";
 
             // Load animations.
-            runAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Run"), 0.1f, true);
+            runAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Run"), 0.10f, true);
             idleAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Idle"), 0.15f, true);
             dieAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Die"), 0.07f, false);
 

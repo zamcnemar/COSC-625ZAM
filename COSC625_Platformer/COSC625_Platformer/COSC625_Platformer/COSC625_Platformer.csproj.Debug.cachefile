@@ -88,6 +88,12 @@ Content\Sprites\Player\Attack.xnb
 Content\Sounds\metal weapon.xnb
 Content\Tiles\ladder0.xnb
 Content\Sprites\Player\Climb.xnb
+Content\Sprites\BadGuy\Idle.xnb
+Content\Sprites\BadGuy\Die.xnb
+Content\Sprites\BadGuy\Run.xnb
+Content\Sprites\Lama\Run.xnb
+Content\Sprites\Lama\Idle.xnb
+Content\Sprites\Lama\Die.xnb
 Content\Sounds\Music.wma
 Content\Sounds\NG42.wma
 Content\Levels\0.txt

@@ -1,12 +1,3 @@
-Content\Backgrounds\Layer0_0.xnb
-Content\Backgrounds\Layer0_1.xnb
-Content\Backgrounds\Layer0_2.xnb
-Content\Backgrounds\Layer1_0.xnb
-Content\Backgrounds\Layer1_1.xnb
-Content\Backgrounds\Layer1_2.xnb
-Content\Backgrounds\Layer2_0.xnb
-Content\Backgrounds\Layer2_1.xnb
-Content\Backgrounds\Layer2_2.xnb
 Content\Backgrounds\stars0_0.xnb
 Content\Backgrounds\stars0_1.xnb
 Content\Backgrounds\stars0_2.xnb
@@ -14,18 +5,6 @@ Content\Overlays\you_died.xnb
 Content\Overlays\you_lose.xnb
 Content\Overlays\you_win.xnb
 Content\Sprites\Gem.xnb
-Content\Sprites\MonsterA\Die.xnb
-Content\Sprites\MonsterA\Idle.xnb
-Content\Sprites\MonsterA\Run.xnb
-Content\Sprites\MonsterB\Die.xnb
-Content\Sprites\MonsterB\Idle.xnb
-Content\Sprites\MonsterB\Run.xnb
-Content\Sprites\MonsterC\Die.xnb
-Content\Sprites\MonsterC\Idle.xnb
-Content\Sprites\MonsterC\Run.xnb
-Content\Sprites\MonsterD\Die.xnb
-Content\Sprites\MonsterD\Idle.xnb
-Content\Sprites\MonsterD\Run.xnb
 Content\Sprites\Player\Arm_Gun.xnb
 Content\Sprites\Player\Bullet.xnb
 Content\Sprites\Player\Celebrate - Ninja.xnb
@@ -90,6 +69,12 @@ Content\Sprites\Player\Attack.xnb
 Content\Sounds\metal weapon.xnb
 Content\Tiles\ladder0.xnb
 Content\Sprites\Player\Climb.xnb
+Content\Sprites\BadGuy\Idle.xnb
+Content\Sprites\BadGuy\Die.xnb
+Content\Sprites\BadGuy\Run.xnb
+Content\Sprites\Lama\Run.xnb
+Content\Sprites\Lama\Idle.xnb
+Content\Sprites\Lama\Die.xnb
 Content\Levels\0.txt
 Content\Levels\1.txt
 Content\Levels\2.txt

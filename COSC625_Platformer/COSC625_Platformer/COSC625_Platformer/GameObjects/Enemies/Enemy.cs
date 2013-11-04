@@ -96,7 +96,7 @@ namespace COSC625_Platformer
         /// <summary>
         /// The speed at which this enemy moves along the X axis.
         /// </summary>
-        protected const float MoveSpeed = 64.0f;
+        protected float MoveSpeed = 64.0f;
         
         public Level Level
         {

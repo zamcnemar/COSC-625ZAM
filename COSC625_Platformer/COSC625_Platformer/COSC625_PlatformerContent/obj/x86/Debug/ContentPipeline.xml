@@ -2,87 +2,6 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>Backgrounds\Layer0_0.png</Source>
-      <Name>Backgrounds\Layer0_0</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_0.xnb</Output>
-      <Time>2013-10-25T10:08:27.6218502-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Layer0_1.png</Source>
-      <Name>Backgrounds\Layer0_1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_1.xnb</Output>
-      <Time>2013-10-25T10:08:27.6258504-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Layer0_2.png</Source>
-      <Name>Backgrounds\Layer0_2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_2.xnb</Output>
-      <Time>2013-10-25T10:08:27.6298506-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Layer1_0.png</Source>
-      <Name>Backgrounds\Layer1_0</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_0.xnb</Output>
-      <Time>2013-10-25T10:08:27.6398512-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Layer1_1.png</Source>
-      <Name>Backgrounds\Layer1_1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_1.xnb</Output>
-      <Time>2013-10-25T10:08:27.6478517-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Layer1_2.png</Source>
-      <Name>Backgrounds\Layer1_2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_2.xnb</Output>
-      <Time>2013-10-25T10:08:28.1848824-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Layer2_0.png</Source>
-      <Name>Backgrounds\Layer2_0</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_0.xnb</Output>
-      <Time>2013-10-25T10:08:28.1888826-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Layer2_1.png</Source>
-      <Name>Backgrounds\Layer2_1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_1.xnb</Output>
-      <Time>2013-10-25T10:08:28.1928828-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Layer2_2.png</Source>
-      <Name>Backgrounds\Layer2_2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_2.xnb</Output>
-      <Time>2013-10-25T10:08:28.1968831-04:00</Time>
-    </Item>
-    <Item>
       <Source>Backgrounds\stars0_0.png</Source>
       <Name>Backgrounds\stars0_0</Name>
       <Importer>TextureImporter</Importer>
@@ -144,114 +63,6 @@
       <Options>None</Options>
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Gem.xnb</Output>
       <Time>2013-10-25T10:08:28.5249018-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterA\Die.png</Source>
-      <Name>Sprites\MonsterA\Die</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Die.xnb</Output>
-      <Time>2013-10-25T10:08:28.5259019-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterA\Idle.png</Source>
-      <Name>Sprites\MonsterA\Idle</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Idle.xnb</Output>
-      <Time>2013-10-25T10:08:28.5269019-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterA\Run.png</Source>
-      <Name>Sprites\MonsterA\Run</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Run.xnb</Output>
-      <Time>2013-10-25T10:08:28.5269019-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterB\Die.png</Source>
-      <Name>Sprites\MonsterB\Die</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Die.xnb</Output>
-      <Time>2013-10-25T10:08:28.527902-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterB\Idle.png</Source>
-      <Name>Sprites\MonsterB\Idle</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Idle.xnb</Output>
-      <Time>2013-10-25T10:08:28.5289021-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterB\Run.png</Source>
-      <Name>Sprites\MonsterB\Run</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Run.xnb</Output>
-      <Time>2013-10-25T10:08:28.5289021-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterC\Die.png</Source>
-      <Name>Sprites\MonsterC\Die</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Die.xnb</Output>
-      <Time>2013-10-25T10:08:28.5299021-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterC\Idle.png</Source>
-      <Name>Sprites\MonsterC\Idle</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Idle.xnb</Output>
-      <Time>2013-10-25T10:08:28.5309022-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterC\Run.png</Source>
-      <Name>Sprites\MonsterC\Run</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Run.xnb</Output>
-      <Time>2013-10-25T10:08:28.5309022-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterD\Die.png</Source>
-      <Name>Sprites\MonsterD\Die</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Die.xnb</Output>
-      <Time>2013-10-25T10:08:28.5319022-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterD\Idle.png</Source>
-      <Name>Sprites\MonsterD\Idle</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Idle.xnb</Output>
-      <Time>2013-10-25T10:08:28.5319022-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterD\Run.png</Source>
-      <Name>Sprites\MonsterD\Run</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Run.xnb</Output>
-      <Time>2013-10-25T10:08:28.5329023-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Arm_Gun.png</Source>
@@ -812,6 +623,60 @@
       <Options>None</Options>
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Climb.xnb</Output>
       <Time>2013-11-02T14:42:57.4539852-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\BadGuy\Idle.png</Source>
+      <Name>Sprites\BadGuy\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\BadGuy\Idle.xnb</Output>
+      <Time>2013-11-03T22:28:11.9864118-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\BadGuy\Die.png</Source>
+      <Name>Sprites\BadGuy\Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\BadGuy\Die.xnb</Output>
+      <Time>2013-11-03T22:28:16.5096353-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\BadGuy\Run.png</Source>
+      <Name>Sprites\BadGuy\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\BadGuy\Run.xnb</Output>
+      <Time>2013-11-03T23:10:58.9583923-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Lama\Run.png</Source>
+      <Name>Sprites\Lama\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Lama\Run.xnb</Output>
+      <Time>2013-11-03T23:58:02.3976574-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Lama\Idle.png</Source>
+      <Name>Sprites\Lama\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Lama\Idle.xnb</Output>
+      <Time>2013-11-04T00:11:13.6116989-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Lama\Die.png</Source>
+      <Name>Sprites\Lama\Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Lama\Die.xnb</Output>
+      <Time>2013-11-04T00:11:16.3721193-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

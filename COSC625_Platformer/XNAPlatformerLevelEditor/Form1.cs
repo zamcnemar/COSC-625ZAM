@@ -24,7 +24,7 @@ namespace XNAPlatformerLevelEditor
         //The number of cells to fill when using the Fill tool. Set this too high and you'll get overflow errors.
         const int MaxFillCells = 500;
 
-        readonly List<char> AnimatedSpriteChars = new List<char> { '0', 'A', 'B', 'C', 'D' };
+        readonly List<char> AnimatedSpriteChars = new List<char> { '0', 'A', 'L' };
         readonly Dictionary<char, string> CharactersDictionary = new Dictionary<char, string>()
         { 
 
@@ -56,7 +56,9 @@ namespace XNAPlatformerLevelEditor
             {'b', "/Tiles/cdr1.png"},
 
             //Sprites Make sure these are added above in the Animated Sprite Chars
-            {'A', "/Sprites/MonsterA/Idle.png"},
+            {'A', "/Sprites/BadGuy/Idle.png"},
+            {'L', "/Sprites/Lama/Idle.png"},
+
 
             //Start Position
             {'0', "/Sprites/Player/Idle - Ninja.png"},    
