@@ -26,6 +26,12 @@ namespace COSC625_Platformer.GameObjects.Items
         protected const float BounceRate = 3.0f;
         protected const float BounceSync = -0.75f;
 
+        public Level Level
+        {
+            get { return level; }
+        }
+        protected Level level;
+
         /// <summary>
         /// Gets the current position of this item in world space.
         /// </summary>

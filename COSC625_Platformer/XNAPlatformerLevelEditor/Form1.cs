@@ -51,15 +51,12 @@ namespace XNAPlatformerLevelEditor
             {'8', "/Tiles/u1.png"},
             {'9', "/Tiles/ur1.png"},
             {'f', "/Tiles/cul1.png"},
-            {'g', "/Tiles/cur1.png"},
+            {'n', "/Tiles/cur1.png"},
             {'v', "/Tiles/cdl1.png"}, 
             {'b', "/Tiles/cdr1.png"},
 
             //Sprites Make sure these are added above in the Animated Sprite Chars
             {'A', "/Sprites/MonsterA/Idle.png"},
-            {'B', "/Sprites/MonsterB/Idle.png"},
-            {'C', "/Sprites/MonsterC/Idle.png"},
-            {'D', "/Sprites/MonsterD/Idle.png"},
 
             //Start Position
             {'0', "/Sprites/Player/Idle - Ninja.png"},    

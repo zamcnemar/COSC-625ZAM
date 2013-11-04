@@ -11,6 +11,7 @@ using System.IO;
 using COSC625_Platformer.GameObjects;
 using COSC625_Platformer.Screens;
 using COSC625_Platformer.GameObjects.Items;
+using COSC625_Platformer.GameObjects.Enemies;
 
 namespace COSC625_Platformer.Levels
 {
@@ -219,13 +220,7 @@ namespace COSC625_Platformer.Levels
 
                 // Various enemies
                 case 'A':
-                    return LoadEnemyTile(x, y, "MonsterA");
-                case 'B':
-                    return LoadEnemyTile(x, y, "MonsterB");
-                case 'C':
-                    return LoadEnemyTile(x, y, "MonsterC");
-                case 'D':
-                    return LoadEnemyTile(x, y, "MonsterD");
+                    return LoadZombieTile(x, y);
 
                 // Platform block
                 case '~':
@@ -365,10 +360,10 @@ namespace COSC625_Platformer.Levels
         /// <summary>
         /// Instantiates an enemy and puts him in the level.
         /// </summary>
-        private Tile LoadEnemyTile(int x, int y, string spriteSet)
+        private Tile LoadZombieTile(int x, int y)
         {
             Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
-            enemies.Add(new Enemy(this, position, spriteSet));
+            enemies.Add(new Zombie(this, position));
 
             return new Tile(null, TileCollision.Passable);
         }

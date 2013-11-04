@@ -14,11 +14,6 @@ namespace COSC625_Platformer.GameObjects.Items
 {
     class Gem : Item
     {
-        public Level Level
-        {
-            get { return level; }
-        }
-        Level level;
 
         public Gem(Level level, Vector2 position)
         {
@@ -26,7 +21,7 @@ namespace COSC625_Platformer.GameObjects.Items
             this.basePosition = position;
             active = true;
             PointValue = 30;
-            Color = Color.Blue;
+            Color = Color.LightSteelBlue;
 
             LoadContent();
         }
