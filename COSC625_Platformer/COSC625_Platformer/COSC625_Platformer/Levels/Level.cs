@@ -220,11 +220,14 @@ namespace COSC625_Platformer.Levels
 
                 // Various enemies
                 case 'A':
-                    return LoadZombieTile(x, y);
+                    return LoadBadGuyTile(x, y);
 
                     //Lama
                 case 'L':
                     return LoadLamaTile(x, y);
+
+                case 'C':
+                    return LoadSuperBeastTile(x, y);
 
                 // Platform block
                 case '~':
@@ -284,7 +287,7 @@ namespace COSC625_Platformer.Levels
                 case 'v':
                     return LoadTile("cdl1", TileCollision.Impassable);
 
-                case 'b':
+                case 'n':
                     return LoadTile("cdr1", TileCollision.Impassable);
 
                 // Unknown tile type character
@@ -364,7 +367,7 @@ namespace COSC625_Platformer.Levels
         /// <summary>
         /// Instantiates an enemy and puts him in the level.
         /// </summary>
-        private Tile LoadZombieTile(int x, int y)
+        private Tile LoadBadGuyTile(int x, int y)
         {
             Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
             enemies.Add(new BadGuy(this, position));
@@ -379,6 +382,17 @@ namespace COSC625_Platformer.Levels
         {
             Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
             enemies.Add(new Lama(this, position));
+
+            return new Tile(null, TileCollision.Passable);
+        }
+
+        /// <summary>
+        /// Instantiates an enemy and puts him in the level.
+        /// </summary>
+        private Tile LoadSuperBeastTile(int x, int y)
+        {
+            Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
+            enemies.Add(new SuperBeast(this, position));
 
             return new Tile(null, TileCollision.Passable);
         }

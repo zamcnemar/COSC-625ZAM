@@ -667,7 +667,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Lama\Idle.xnb</Output>
-      <Time>2013-11-04T00:11:13.6116989-05:00</Time>
+      <Time>2013-11-04T17:19:21.7770949-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Lama\Die.png</Source>
@@ -677,6 +677,33 @@
       <Options>None</Options>
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Lama\Die.xnb</Output>
       <Time>2013-11-04T00:11:16.3721193-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\SuperBeast\Idle.png</Source>
+      <Name>Sprites\SuperBeast\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\SuperBeast\Idle.xnb</Output>
+      <Time>2013-11-04T18:05:11.1763516-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\SuperBeast\Run.png</Source>
+      <Name>Sprites\SuperBeast\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\SuperBeast\Run.xnb</Output>
+      <Time>2013-11-04T18:06:40.1884428-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\SuperBeast\Die.png</Source>
+      <Name>Sprites\SuperBeast\Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\SuperBeast\Die.xnb</Output>
+      <Time>2013-11-04T18:20:28.7908361-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

@@ -58,6 +58,7 @@ namespace XNAPlatformerLevelEditor
             //Sprites Make sure these are added above in the Animated Sprite Chars
             {'A', "/Sprites/BadGuy/Idle.png"},
             {'L', "/Sprites/Lama/Idle.png"},
+            {'C', "/Sprites/SuperBeast/Run.png"},
 
 
             //Start Position

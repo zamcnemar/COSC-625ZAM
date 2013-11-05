@@ -81,17 +81,27 @@ namespace COSC625_Platformer
 
         public bool Fire(PlayerIndex index)
         {
-            return (IsNewKeyPress(Keys.Z) || IsNewButtonPress(Buttons.RightTrigger, index));
+            return (IsNewKeyPress(Keys.Z) || IsNewButtonPress(Buttons.X, index));
         }
 
         public bool Attack(PlayerIndex index)
         {
-            return (IsNewKeyPress(Keys.F) || IsNewButtonPress(Buttons.X, index));
+            return (IsNewKeyPress(Keys.F) || IsNewButtonPress(Buttons.B, index));
         }
 
         public bool Jump(PlayerIndex index)
         {
             return (IsKeyPress(Keys.Space) || IsButtonPress(Buttons.A, index));
+        }
+
+        public bool aimUp(PlayerIndex index)
+        {
+            return IsButtonPress(Buttons.RightShoulder,index);
+        }
+
+        public bool aimDown(PlayerIndex index)
+        {
+            return IsButtonPress(Buttons.LeftShoulder, index);
         }
 
         public void Update()

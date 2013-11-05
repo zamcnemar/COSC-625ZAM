@@ -75,6 +75,9 @@ Content\Sprites\BadGuy\Run.xnb
 Content\Sprites\Lama\Run.xnb
 Content\Sprites\Lama\Idle.xnb
 Content\Sprites\Lama\Die.xnb
+Content\Sprites\SuperBeast\Idle.xnb
+Content\Sprites\SuperBeast\Run.xnb
+Content\Sprites\SuperBeast\Die.xnb
 Content\Levels\0.txt
 Content\Levels\1.txt
 Content\Levels\2.txt

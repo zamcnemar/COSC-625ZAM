@@ -538,7 +538,21 @@ namespace COSC625_Platformer
             // If we're not rotating our arm, default it to 
             //aim in the same direction we're facing.
             if (arm.rotation == 0 && Math.Abs(ScreenManager.controls.ControllerState(controller).ThumbSticks.Left.Length()) < 0.5f)
-                arm.rotation = -MathHelper.PiOver2;
+            {
+
+                    //arm.rotation = -MathHelper.PiOver2;
+                    arm.rotation = -MathHelper.PiOver2;
+
+            }
+
+            /*
+            //angled up shot, still working on angle down, they need to be changed as the player facing changes to update correctly
+            if (ScreenManager.controls.aimUp(controller))
+                arm.rotation = MathHelper.PiOver4;
+            else if (ScreenManager.controls.aimDown(controller))
+                arm.rotation = -MathHelper.PiOver4;
+            */
+
 
             // Shoot = RightTrigger
             if (ScreenManager.controls.Fire(controller))
