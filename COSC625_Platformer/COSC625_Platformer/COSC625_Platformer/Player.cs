@@ -80,7 +80,7 @@ namespace COSC625_Platformer
             get { return velocity; }
             set { velocity = value; }
         }
-        Vector2 velocity;
+        Vector2 velocity; 
 
         // Constants for controling horizontal movement
         private const float MoveAcceleration = 13000.0f;

@@ -705,6 +705,60 @@
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\SuperBeast\Die.xnb</Output>
       <Time>2013-11-04T18:20:28.7908361-05:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\Items\gold0.png</Source>
+      <Name>Sprites\Items\gold0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold0.xnb</Output>
+      <Time>2013-11-05T17:22:39.9707052-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\gold1.png</Source>
+      <Name>Sprites\Items\gold1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold1.xnb</Output>
+      <Time>2013-11-05T17:22:39.9863052-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\gold2.png</Source>
+      <Name>Sprites\Items\gold2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold2.xnb</Output>
+      <Time>2013-11-05T17:22:39.9863052-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\gold3.png</Source>
+      <Name>Sprites\Items\gold3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold3.xnb</Output>
+      <Time>2013-11-05T17:22:39.9863052-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\gold4.png</Source>
+      <Name>Sprites\Items\gold4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold4.xnb</Output>
+      <Time>2013-11-05T17:22:40.0175053-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\gold5.png</Source>
+      <Name>Sprites\Items\gold5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold5.xnb</Output>
+      <Time>2013-11-05T17:22:40.0331053-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

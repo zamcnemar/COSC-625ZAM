@@ -205,7 +205,7 @@ namespace COSC625_Platformer.Levels
 
                 // Item
                 case 'G':
-                    return LoadGemTile(x, y);
+                    return LoadGemTile("gold", 6 , x, y);
 
                 case 'P':
                     return LoadPowerUpTile(x, y);
@@ -400,10 +400,11 @@ namespace COSC625_Platformer.Levels
         /// <summary>
         /// Instantiates a gem and puts it in the level.
         /// </summary>
-        private Tile LoadGemTile(int x, int y)
+        private Tile LoadGemTile(String baseName, int variationCount, int x, int y)
         {
             Point position = GetBounds(x, y).Center;
-            items.Add(new Gem(this, new Vector2(position.X, position.Y)));
+            int index = random.Next(variationCount);
+            items.Add(new Gem(this, new Vector2(position.X, position.Y), index));
 
             return new Tile(null, TileCollision.Passable);
         }

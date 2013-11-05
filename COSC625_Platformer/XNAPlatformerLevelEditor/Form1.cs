@@ -33,8 +33,8 @@ namespace XNAPlatformerLevelEditor
             {'#', "/Tiles/BlockA0.png"},
             {'M', "/Tiles/BlockB0.png"},
 
-            {'G', "/Sprites/Gem.png"},
-            {'P', "/Sprites/Gem.png"},
+            {'G', "/Sprites/Items/gold0.png"},
+            {'P', "/Sprites/Items/gold4.png"},
             {'-', "/Tiles/Platform.png"},
             {'_', "/Tiles/pf1.png"},
             {'~', "/Tiles/Platform.png"}, 
@@ -58,7 +58,7 @@ namespace XNAPlatformerLevelEditor
             //Sprites Make sure these are added above in the Animated Sprite Chars
             {'A', "/Sprites/BadGuy/Idle.png"},
             {'L', "/Sprites/Lama/Idle.png"},
-            {'C', "/Sprites/SuperBeast/Run.png"},
+            {'C', "/Sprites/SuperBeast/Idle.png"},
 
 
             //Start Position

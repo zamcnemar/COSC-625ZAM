@@ -16,6 +16,11 @@ namespace COSC625_Platformer.GameObjects.Items
         public int PointValue;
         public Color Color;
         public Vector2 origin;
+
+        // Random Number for randomization of object sprites.
+        protected String basename;
+        protected int randomIndex;
+
     
         // The item is animated from a base position along the Y axis.
         protected float bounce;

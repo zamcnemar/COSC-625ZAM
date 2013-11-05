@@ -76,6 +76,12 @@ Content\Sprites\Lama\Die.xnb
 Content\Sprites\SuperBeast\Idle.xnb
 Content\Sprites\SuperBeast\Run.xnb
 Content\Sprites\SuperBeast\Die.xnb
+Content\Sprites\Items\gold0.xnb
+Content\Sprites\Items\gold1.xnb
+Content\Sprites\Items\gold2.xnb
+Content\Sprites\Items\gold3.xnb
+Content\Sprites\Items\gold4.xnb
+Content\Sprites\Items\gold5.xnb
 Content\Sounds\Music.wma
 Content\Sounds\NG42.wma
 Content\Levels\0.txt
