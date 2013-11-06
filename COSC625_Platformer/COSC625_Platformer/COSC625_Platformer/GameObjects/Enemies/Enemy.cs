@@ -50,11 +50,11 @@ namespace COSC625_Platformer
         protected const float AirDragFactor = 0.58f;
 
         // Constants for controlling vertical movement
-        protected const float MaxJumpTime = 0.35f;
-        protected const float JumpLaunchVelocity = -3500.0f;
-        protected const float GravityAcceleration = 3400.0f;
-        protected const float MaxFallSpeed = 550.0f;
-        protected const float JumpControlPower = 0.14f;
+        protected float MaxJumpTime = 0.35f;
+        protected float JumpLaunchVelocity = -3500.0f;
+        protected float GravityAcceleration = 3400.0f;
+        protected float MaxFallSpeed = 550.0f;
+        protected float JumpControlPower = 0.14f;
 
         public bool canShoot { get; set; }
 
