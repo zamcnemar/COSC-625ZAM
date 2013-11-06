@@ -24,7 +24,7 @@ namespace XNAPlatformerLevelEditor
         //The number of cells to fill when using the Fill tool. Set this too high and you'll get overflow errors.
         const int MaxFillCells = 500;
 
-        readonly List<char> AnimatedSpriteChars = new List<char> { '0', 'A', 'L', 'C', 'R', 'Q' };
+        readonly List<char> AnimatedSpriteChars = new List<char> { '0', 'A', 'L', 'C', 'R', 'Q', 'E' };
         readonly Dictionary<char, string> CharactersDictionary = new Dictionary<char, string>()
         { 
 
@@ -56,11 +56,12 @@ namespace XNAPlatformerLevelEditor
             {'b', "/Tiles/cdr1.png"},
 
             //Sprites Make sure these are added above in the Animated Sprite Chars
-            {'A', "/Sprites/BadGuy/Idle.png"},
-            {'L', "/Sprites/Lama/Idle.png"},
-            {'C', "/Sprites/SuperBeast/Idle.png"},
-            {'R', "/Sprites/BadGuy/Idle.png"},
-            {'Q', "/Sprites/BadGuy/Idle.png"},
+            {'A', "/Sprites/Enemies/BadGuy/Idle.png"},
+            {'L', "/Sprites/Enemies/Lama/Idle.png"},
+            {'C', "/Sprites/Enemies/SuperBeast/Idle.png"},
+            {'R', "/Sprites/Enemies/BadGuy/Idle.png"},
+            {'Q', "/Sprites/Enemies/Bat/Idle.png"},
+            {'E', "/Sprites/Enemies/EvilLama/Idle.png"},
 
             //Start Position
             {'0', "/Sprites/Player/Idle - Ninja.png"},    
@@ -74,6 +75,7 @@ namespace XNAPlatformerLevelEditor
         // enter it in the format that I have used. 
         //Zach's Directory
         string pathToContentFolder = "C:/Users/Zach McNemar/Documents/GitHub/COSC-625ZAM/COSC625_Platformer/COSC625_Platformer/COSC625_PlatformerContent";
+        //string pathToContentFolder = "C:/Users/zamcnemar0/Desktop/GitHub/COSC-625ZAM/COSC625_Platformer/COSC625_Platformer/COSC625_PlatformerContent";
         //Devontee
         //string pathToContentFolder;
 

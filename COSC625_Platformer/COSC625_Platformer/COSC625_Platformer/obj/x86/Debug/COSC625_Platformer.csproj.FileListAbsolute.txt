@@ -292,3 +292,104 @@ C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Pl
 C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold3.xnb
 C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold4.xnb
 C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold5.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Fonts\Hud.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Overlays\you_died.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Overlays\you_lose.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Overlays\you_win.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Gem.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Arm_Gun.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Bullet.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate - Ninja.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Die - Ninja.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Die.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Idle - Ninja.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Idle.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Jump - Ninja.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Jump.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Run - Ninja.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Run.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\bg1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA0.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA2.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA3.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA4.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA5.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA6.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockB0.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockB1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\cdl1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\cdr1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\checkered.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\cul1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\cur1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\d1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\dl1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\dr1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\Exit.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\l1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\pf1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\Platform.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\r1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\u1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\ul1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\ur1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer3_0.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer3_1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer3_2.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Menu\popupmenuquit.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars1_0.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars1_1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars1_2.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars2_0.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars2_1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars2_2.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars0_0.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars0_1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars0_2.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Attack.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\ladder0.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Climb.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold0.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold1.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold2.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold3.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold4.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold5.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\ExitReached.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\GemCollected.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\MonsterKilled.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\Music.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\PlayerFall.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\PlayerJump.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\PlayerKilled.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\NG42.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\metal weapon.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\Music.wma
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\NG42.wma
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Levels\0.txt
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Levels\1.txt
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Levels\2.txt
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\COSC625_Platformer.exe
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\COSC625_Platformer.pdb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\obj\x86\Debug\COSC625_Platformer.exe
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\obj\x86\Debug\COSC625_Platformer.pdb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\BadGuy\Idle.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\BadGuy\Die.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\BadGuy\Run.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Lama\Run.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Lama\Die.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Lama\Idle.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Idle.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Run.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Die.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Bat\Run.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Bat\Die.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Bat\Idle.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\EvilLama\Die.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\EvilLama\Idle.xnb
+C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\EvilLama\Run.xnb

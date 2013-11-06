@@ -12,17 +12,17 @@ using COSC625_Platformer.Levels;
 
 namespace COSC625_Platformer.GameObjects.Enemies
 {
-    class BatMan : Enemy
+    class Bat : Enemy
     {
 
-        public BatMan(Level level, Vector2 position)
+        public Bat(Level level, Vector2 position)
         {
             this.level = level;
             this.position = position;
             this.IsAlive = true;
             this.canShoot = true;
             this.isShooting = true;
-            this.spriteSet = "BadGuy";
+            this.spriteSet = "Bat";
             this.MoveSpeed *= 4;
             this.MaxWaitTime = .10f;
 
@@ -95,7 +95,7 @@ namespace COSC625_Platformer.GameObjects.Enemies
         {
             base.LoadContent();
 
-            spriteSet = "Sprites/" + spriteSet + "/";
+            spriteSet = "Sprites/Enemies/" + spriteSet + "/";
 
             // Load animations.
             runAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Run"), 0.10f, true);

@@ -12,24 +12,16 @@ using COSC625_Platformer.Levels;
 
 namespace COSC625_Platformer.GameObjects.Enemies
 {
-    class RunningMan : Enemy
+    class EvilLama : Enemy
     {
 
-        public RunningMan(Level level, Vector2 position)
+        public EvilLama(Level level, Vector2 position)
         {
             this.level = level;
             this.position = position;
             this.IsAlive = true;
-            this.canShoot = false;
-            this.isShooting = false;
-            this.spriteSet = "BadGuy";
-            this.MoveSpeed *= 6;
-
-            this.MaxJumpTime = 0.35f;
-            this.JumpLaunchVelocity = -3500.0f;
-            this.GravityAcceleration = 20000.0f;
-            this.MaxFallSpeed = 2000f;
-            this.JumpControlPower = 0.14f;
+            this.spriteSet = "EvilLama";
+            this.MoveSpeed *= 2;
 
             LoadContent();
         }
@@ -52,20 +44,12 @@ namespace COSC625_Platformer.GameObjects.Enemies
             else  // AI Section
             {
                 ApplyPhysics(gameTime);
-                RunningAI(gameTime, elapsed);
 
-                if (isOnGround)
-                    numberOfJumps = 0;
+                pacingAI(gameTime, elapsed);
             }
         }
 
-        /// <summary>
-        /// Enemy Character runs until they hit a wall and turns around and continues running
-        /// The character ignores all clif
-        /// </summary>
-        /// <param name="gameTime"></param>
-        /// <param name="elapsedTime"></param>
-        protected void RunningAI(GameTime gameTime, float elapsedTime)
+        protected void pacingAI(GameTime gameTime, float elapsedTime)
         {
             // Calculate tile position based on the side we are walking towards.
             float posX = Position.X + localBounds.Width / 2 * (int)direction;
@@ -86,7 +70,8 @@ namespace COSC625_Platformer.GameObjects.Enemies
             else
             {
                 // If we are about to run into a wall or off a cliff, start waiting.
-                if (Level.GetCollision(tileX + (int)direction, tileY - 1) == TileCollision.Impassable)
+                if (Level.GetCollision(tileX + (int)direction, tileY - 1) == TileCollision.Impassable ||
+                    Level.GetCollision(tileX + (int)direction, tileY) == TileCollision.Passable)
                 {
                     waitTime = MaxWaitTime;
                 }
@@ -99,7 +84,6 @@ namespace COSC625_Platformer.GameObjects.Enemies
             }
         }
 
-
         /// <summary>
         /// Updates the Enemy's velocity and position based gravity, etc.
         /// </summary>
@@ -111,8 +95,6 @@ namespace COSC625_Platformer.GameObjects.Enemies
 
             if (!IsOnGround)
                 velocity.Y = MathHelper.Clamp(velocity.Y + GravityAcceleration * elapsed, -MaxFallSpeed, MaxFallSpeed);
-
-            velocity.Y = DoJump(velocity.Y, gameTime);
 
             // Apply pseudo-drag horizontally.
             if (IsOnGround)
@@ -138,58 +120,6 @@ namespace COSC625_Platformer.GameObjects.Enemies
         }
 
 
-
-        private float DoJump(float velocityY, GameTime gameTime)
-        {
-            // If the player wants to jump
-            if (isJumping)
-            {
-                // Begin or continue a jump
-                if ((!wasJumping && IsOnGround) || jumpTime > 0.0f)
-                {
-                    if (jumpTime == 0.0f)
-                        jumpSound.Play();
-
-                    jumpTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
-                    sprite.PlayAnimation(runAnimation);
-                }
-
-                // If we are in the ascent of the jump
-                if (0.0f < jumpTime && jumpTime <= MaxJumpTime)
-                {
-                    // Fully override the vertical velocity with a power curve that gives players more control over the top of the jump
-                    velocityY = JumpLaunchVelocity * (1.0f - (float)Math.Pow(jumpTime / MaxJumpTime, JumpControlPower));
-                }
-                else
-                {
-                    // Reached the apex of the jump and has double jumps
-                    if (velocityY > -MaxFallSpeed * 0.5f && !wasJumping && numberOfJumps < 1)
-                    {
-                        velocityY =
-                            JumpLaunchVelocity * (0.5f - (float)Math.Pow(jumpTime / MaxJumpTime, JumpControlPower));
-                        jumpTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
-                        numberOfJumps++;
-                    }
-                    else
-                    {
-                        // Reached the apex of the jump
-                        jumpTime = 0.0f;
-                    }
-                }
-            }
-            else
-            {
-                // Continues not jumping or cancels a jump in progress
-                jumpTime = 0.0f;
-            }
-            wasJumping = isJumping;
-
-            return velocityY;
-        }
-        private int numberOfJumps = 0;
-
-
-       
         #endregion
 
 
@@ -202,7 +132,7 @@ namespace COSC625_Platformer.GameObjects.Enemies
             spriteSet = "Sprites/Enemies/" + spriteSet + "/";
 
             // Load animations.
-            runAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Run"), 0.10f, true);
+            runAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Run"), 0.20f, true);
             idleAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Idle"), 0.15f, true);
             dieAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Die"), 0.07f, false);
 

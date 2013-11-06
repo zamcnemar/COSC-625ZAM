@@ -386,7 +386,7 @@ namespace COSC625_Platformer.GameObjects.Enemies
         {
             base.LoadContent();
 
-            spriteSet = "Sprites/" + spriteSet + "/";
+            spriteSet = "Sprites/Enemies/" + spriteSet + "/";
 
             // Load animations.
             runAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Run"), 0.10f, true);

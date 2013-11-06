@@ -108,11 +108,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controls.cs" />
-    <Compile Include="GameObjects\Enemies\BatMan.cs" />
+    <Compile Include="GameObjects\Enemies\Bat.cs" />
     <Compile Include="GameObjects\Enemies\Enemy.cs" />
     <Compile Include="GameObjects\Animation.cs" />
     <Compile Include="GameObjects\AnimationPlayer.cs" />
     <Compile Include="GameObjects\Circle.cs" />
+    <Compile Include="GameObjects\Enemies\EvilLama.cs" />
     <Compile Include="GameObjects\Enemies\Lama.cs" />
     <Compile Include="GameObjects\Enemies\BadGuy.cs" />
     <Compile Include="GameObjects\Enemies\RunningMan.cs" />
