@@ -229,6 +229,13 @@ namespace COSC625_Platformer.Levels
                 case 'C':
                     return LoadSuperBeastTile(x, y);
 
+                case 'R':
+                    return LoadRunningManTile(x, y);
+
+                case 'Q':
+                    return LoadBatManTile(x, y);
+
+
                 // Platform block
                 case '~':
                     return LoadVarietyTile("BlockB", 2, TileCollision.Platform);
@@ -371,6 +378,28 @@ namespace COSC625_Platformer.Levels
         {
             Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
             enemies.Add(new BadGuy(this, position));
+
+            return new Tile(null, TileCollision.Passable);
+        }
+
+        /// <summary>
+        /// Instantiates an enemy and puts him in the level.
+        /// </summary>
+        private Tile LoadBatManTile(int x, int y)
+        {
+            Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
+            enemies.Add(new BatMan(this, position));
+
+            return new Tile(null, TileCollision.Passable);
+        }
+
+        /// <summary>
+        /// Instantiates an enemy and puts him in the level.
+        /// </summary>
+        private Tile LoadRunningManTile(int x, int y)
+        {
+            Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
+            enemies.Add(new RunningMan(this, position));
 
             return new Tile(null, TileCollision.Passable);
         }

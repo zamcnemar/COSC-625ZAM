@@ -91,7 +91,7 @@ namespace COSC625_Platformer
         /// <summary>
         /// How long to wait before turning around.
         /// </summary>
-        protected const float MaxWaitTime = 0.5f;
+        protected float MaxWaitTime = 0.5f;
 
         /// <summary>
         /// The speed at which this enemy moves along the X axis.
