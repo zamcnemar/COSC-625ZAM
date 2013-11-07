@@ -50,6 +50,8 @@ namespace COSC625_Platformer
         }
         bool isAlive;
 
+        public int lives = 3;
+
         // Powerup state
         private const float MaxPowerUpTime = 6.0f;
         private float powerUpTime;
@@ -910,6 +912,7 @@ namespace COSC625_Platformer
                 fallSound.Play();
 
             sprite.PlayAnimation(dieAnimation);
+            lives--;
         }
 
         /// <summary>

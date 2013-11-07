@@ -813,6 +813,15 @@
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\EvilLama\Run.xnb</Output>
       <Time>2013-11-06T11:27:14.0115066-05:00</Time>
     </Item>
+    <Item>
+      <Source>Overlays\spotlight2.png</Source>
+      <Name>Overlays\spotlight2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Overlays\spotlight2.xnb</Output>
+      <Time>2013-11-07T12:07:39.2530963-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

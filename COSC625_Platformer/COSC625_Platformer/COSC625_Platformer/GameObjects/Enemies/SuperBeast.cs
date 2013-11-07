@@ -46,7 +46,13 @@ namespace COSC625_Platformer.GameObjects.Enemies
                 ApplyPhysics(gameTime);
 
                 pacingAI(gameTime, elapsed);
+
+                if (SpotlightRectangle.Intersects(Level.Player.BoundingRectangle))
+                    iSeeYou = true;
+                else
+                    iSeeYou = false;
             }
+
         }
 
         protected void pacingAI(GameTime gameTime, float elapsedTime)
@@ -160,7 +166,15 @@ namespace COSC625_Platformer.GameObjects.Enemies
 
         public override void Draw(GameTime gameTime, SpriteBatch spritebatch)
         {
+            //Draws a visual representation of the enemy's field of view.
+            if (iSeeYou)
+                spritebatch.Draw(spotlightTexture, SpotlightRectangle, null, Color.Red);
+            else
+                spritebatch.Draw(spotlightTexture, SpotlightRectangle, null, Color.White);
+
             base.Draw(gameTime, spritebatch);
+
+
         }
 
         #endregion

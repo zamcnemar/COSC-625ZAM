@@ -145,6 +145,36 @@ namespace COSC625_Platformer
             }
         }
 
+        protected Rectangle SpotlightRectangle
+        {
+            get
+            {
+                int left = (int)Math.Round
+                     (Position.X - sprite.Origin.X) +
+                     localBounds.X;
+                int top = (int)Math.Round
+                     (Position.Y - sprite.Origin.Y) +
+                     localBounds.Y;
+
+                if ((int)direction == 1)
+                    return new Rectangle(
+                         left + localBounds.Width,
+                         top,
+                         spotlightTexture.Width,
+                         (spotlightTexture.Height));
+                else
+                    return new Rectangle(
+                         left - spotlightTexture.Width,
+                         top,
+                         spotlightTexture.Width,
+                         (spotlightTexture.Height));
+            }
+        }
+
+        protected bool iSeeYou;
+
+        public Texture2D spotlightTexture;
+
         public virtual void OnKilled(Player killedBy)
         {
             IsAlive = false;
@@ -164,6 +194,7 @@ namespace COSC625_Platformer
         public virtual void LoadContent()
         {
             LoadGun();
+            spotlightTexture = level.Content.Load<Texture2D>("Overlays/spotlight2");
         }
 
         private void LoadGun()

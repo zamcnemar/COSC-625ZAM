@@ -90,6 +90,7 @@ Content\Sprites\Enemies\Bat\Idle.xnb
 Content\Sprites\Enemies\EvilLama\Die.xnb
 Content\Sprites\Enemies\EvilLama\Idle.xnb
 Content\Sprites\Enemies\EvilLama\Run.xnb
+Content\Overlays\spotlight2.xnb
 Content\Levels\0.txt
 Content\Levels\1.txt
 Content\Levels\2.txt
