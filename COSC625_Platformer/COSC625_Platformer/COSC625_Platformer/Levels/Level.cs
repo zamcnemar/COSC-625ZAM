@@ -39,6 +39,8 @@ namespace COSC625_Platformer.Levels
 
         public List<MovableTile> movableTiles = new List<MovableTile>();
 
+        public List<MovableTileV> movableTilesV = new List<MovableTileV>();
+
         private List<Item> items = new List<Item>();
 
         public List<Enemy> enemies = new List<Enemy>();
@@ -191,9 +193,14 @@ namespace COSC625_Platformer.Levels
                 //LADDER
                 case 'H':
                     return LoadTile("ladder0", TileCollision.Ladder);
+
                 // Moving platform - Horzontal
                 case 'M':
                     return LoadMovableTile(x, y, TileCollision.Platform);
+
+                // Moving platform - Vertical
+                case 'T':
+                    return LoadMovableTileV(x, y, TileCollision.Impassable);
 
                 // Blank space
                 case '.':
@@ -237,6 +244,9 @@ namespace COSC625_Platformer.Levels
 
                 case 'Q':
                     return LoadBatTile(x, y);
+
+                case 'W':
+                    return LoadNinjaTile(x, y);
 
 
                 // Platform block
@@ -329,6 +339,16 @@ namespace COSC625_Platformer.Levels
 
             return new Tile(null, TileCollision.Passable);
         }
+        /// <summary>
+        /// Instantiates a vertical moving tile.
+        /// </summary>
+        private Tile LoadMovableTileV(int x, int y, TileCollision collision)
+        {
+            Point position = GetBounds(x, y).Center;
+            movableTilesV.Add(new MovableTileV(this, new Vector2(position.X, position.Y), collision));
+
+            return new Tile(null, TileCollision.Passable);
+        }
 
         /// <summary>
         /// Loads a tile with a random appearance.
@@ -381,6 +401,17 @@ namespace COSC625_Platformer.Levels
         {
             Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
             enemies.Add(new BadGuy(this, position));
+
+            return new Tile(null, TileCollision.Passable);
+        }
+
+        /// <summary>
+        /// Instantiates an enemy and puts him in the level.
+        /// </summary>
+        private Tile LoadNinjaTile(int x, int y)
+        {
+            Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
+            enemies.Add(new Ninja(this, position));
 
             return new Tile(null, TileCollision.Passable);
         }
@@ -584,6 +615,7 @@ namespace COSC625_Platformer.Levels
                 UpdateEnemies(gameTime);
 
                 UpdateMovableTiles(gameTime);
+                UpdateMovableTilesV(gameTime);
 
                 // The player has reached the exit if they are standing on the ground and
                 // his bounding rectangle contains the center of the exit tile. They can only
@@ -604,6 +636,20 @@ namespace COSC625_Platformer.Levels
         private void UpdateMovableTiles(GameTime gameTime)
         {
             foreach (MovableTile tile in movableTiles)
+            {
+                tile.Update(gameTime);
+
+                if (tile.PlayerIsOn)
+                {
+                    //Make player move with tile if the player is on top of tile
+                    player.Position += tile.Velocity;
+                }
+            }
+        }
+
+        private void UpdateMovableTilesV(GameTime gameTime)
+        {
+            foreach (MovableTileV tile in movableTilesV)
             {
                 tile.Update(gameTime);
 
@@ -742,6 +788,9 @@ namespace COSC625_Platformer.Levels
             DrawTiles(spriteBatch);
 
             foreach (MovableTile tile in movableTiles)
+                tile.Draw(gameTime, spriteBatch);
+
+            foreach (MovableTileV tile in movableTilesV)
                 tile.Draw(gameTime, spriteBatch);
 
             DrawItems(gameTime, spriteBatch);

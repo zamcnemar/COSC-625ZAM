@@ -109,6 +109,7 @@
   <ItemGroup>
     <Compile Include="Controls.cs" />
     <Compile Include="GameObjects\Enemies\Bat.cs" />
+    <Compile Include="GameObjects\Enemies\Ninja.cs" />
     <Compile Include="GameObjects\Enemies\Enemy.cs" />
     <Compile Include="GameObjects\Animation.cs" />
     <Compile Include="GameObjects\AnimationPlayer.cs" />
@@ -124,6 +125,7 @@
     <Compile Include="GameObjects\Items\Star.cs" />
     <Compile Include="GameObjects\Layer.cs" />
     <Compile Include="GameObjects\MovableTile.cs" />
+    <Compile Include="GameObjects\MovableTileV.cs" />
     <Compile Include="GameObjects\Sprite.cs" />
     <Compile Include="GameObjects\Tile.cs" />
     <Compile Include="Levels\Level.cs" />

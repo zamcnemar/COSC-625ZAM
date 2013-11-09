@@ -274,7 +274,7 @@ namespace COSC625_Platformer
                     else if (isClimbing)
                     {
                         if (Velocity.Y - 0.02f > 0 || Velocity.Y - 0.02f < 0)
-                          sprite.PlayAnimation(climbAnimation);
+                            sprite.PlayAnimation(climbAnimation);
                         else
                             sprite.PlayAnimation(idleAnimation);
                     }
@@ -760,7 +760,7 @@ namespace COSC625_Platformer
             // Reset flag to search for ground collision.
             isOnGround = false;
 
-            //For each potentially colliding movable tile.
+            //For each potentially colliding Horizontal movable tile.
             foreach (var movableTile in level.movableTiles)
             {
                 // Reset flag to search for movable tile collision.
@@ -775,6 +775,23 @@ namespace COSC625_Platformer
                 }
 
                 bounds = HandleCollision(bounds, movableTile.Collision, movableTile.BoundingRectangle);
+            }
+
+            //For each potentially colliding Horizontal movable tile.
+            foreach (var movableTileV in level.movableTilesV)
+            {
+                // Reset flag to search for movable tile collision.
+                movableTileV.PlayerIsOn = false;
+
+                //check to see if player is on tile.
+                if ((BoundingRectangle.Bottom == movableTileV.BoundingRectangle.Top + 1) &&
+                    (BoundingRectangle.Left >= movableTileV.BoundingRectangle.Left - (BoundingRectangle.Width / 2) &&
+                    BoundingRectangle.Right <= movableTileV.BoundingRectangle.Right + (BoundingRectangle.Width / 2)))
+                {
+                    movableTileV.PlayerIsOn = true;
+                }
+
+                bounds = HandleCollision(bounds, movableTileV.Collision, movableTileV.BoundingRectangle);
             }
 
             // For each potentially colliding tile,

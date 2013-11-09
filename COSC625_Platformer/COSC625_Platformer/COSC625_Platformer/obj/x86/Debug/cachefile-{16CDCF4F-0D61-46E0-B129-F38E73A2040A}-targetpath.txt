@@ -8,13 +8,9 @@ Content\Sprites\Player\Bullet.xnb
 Content\Sprites\Player\Celebrate - Ninja.xnb
 Content\Sprites\Player\Celebrate.xnb
 Content\Sprites\Player\Die - Ninja.xnb
-Content\Sprites\Player\Die.xnb
 Content\Sprites\Player\Idle - Ninja.xnb
-Content\Sprites\Player\Idle.xnb
 Content\Sprites\Player\Jump - Ninja.xnb
-Content\Sprites\Player\Jump.xnb
 Content\Sprites\Player\Run - Ninja.xnb
-Content\Sprites\Player\Run.xnb
 Content\Tiles\bg1.xnb
 Content\Tiles\BlockA0.xnb
 Content\Tiles\BlockA1.xnb
@@ -57,12 +53,33 @@ Content\Backgrounds\stars0_2.xnb
 Content\Sprites\Player\Attack.xnb
 Content\Tiles\ladder0.xnb
 Content\Sprites\Player\Climb.xnb
+Content\Sprites\Enemies\BadGuy\Idle.xnb
+Content\Sprites\Enemies\BadGuy\Die.xnb
+Content\Sprites\Enemies\BadGuy\Run.xnb
+Content\Sprites\Enemies\Lama\Run.xnb
+Content\Sprites\Enemies\Lama\Die.xnb
+Content\Sprites\Enemies\Lama\Idle.xnb
+Content\Sprites\Enemies\SuperBeast\Idle.xnb
+Content\Sprites\Enemies\SuperBeast\Run.xnb
+Content\Sprites\Enemies\SuperBeast\Die.xnb
 Content\Sprites\Items\gold0.xnb
 Content\Sprites\Items\gold1.xnb
 Content\Sprites\Items\gold2.xnb
 Content\Sprites\Items\gold3.xnb
 Content\Sprites\Items\gold4.xnb
 Content\Sprites\Items\gold5.xnb
+Content\Sprites\Enemies\Bat\Run.xnb
+Content\Sprites\Enemies\Bat\Die.xnb
+Content\Sprites\Enemies\Bat\Idle.xnb
+Content\Sprites\Enemies\EvilLama\Die.xnb
+Content\Sprites\Enemies\EvilLama\Idle.xnb
+Content\Sprites\Enemies\EvilLama\Run.xnb
+Content\Overlays\spotlight2.xnb
+Content\Sprites\Enemies\SuperBeast\Prowl.xnb
+Content\Sprites\Enemies\Ninja\Idle.xnb
+Content\Sprites\Enemies\Ninja\Run.xnb
+Content\Sprites\Enemies\SuperBeast\Chase.xnb
+Content\Sprites\Enemies\Ninja\Die.xnb
 Content\Sounds\ExitReached.xnb
 Content\Sounds\GemCollected.xnb
 Content\Sounds\MonsterKilled.xnb
@@ -75,22 +92,7 @@ Content\Sounds\Powerup.xnb
 Content\Sounds\NG42.xnb
 Content\Sounds\NG42.wma
 Content\Sounds\metal weapon.xnb
-Content\Sprites\Enemies\BadGuy\Idle.xnb
-Content\Sprites\Enemies\BadGuy\Die.xnb
-Content\Sprites\Enemies\BadGuy\Run.xnb
-Content\Sprites\Enemies\Lama\Run.xnb
-Content\Sprites\Enemies\Lama\Die.xnb
-Content\Sprites\Enemies\Lama\Idle.xnb
-Content\Sprites\Enemies\SuperBeast\Idle.xnb
-Content\Sprites\Enemies\SuperBeast\Run.xnb
-Content\Sprites\Enemies\SuperBeast\Die.xnb
-Content\Sprites\Enemies\Bat\Run.xnb
-Content\Sprites\Enemies\Bat\Die.xnb
-Content\Sprites\Enemies\Bat\Idle.xnb
-Content\Sprites\Enemies\EvilLama\Die.xnb
-Content\Sprites\Enemies\EvilLama\Idle.xnb
-Content\Sprites\Enemies\EvilLama\Run.xnb
-Content\Overlays\spotlight2.xnb
+Content\Tiles\Vblock.xnb
 Content\Levels\0.txt
 Content\Levels\1.txt
 Content\Levels\2.txt

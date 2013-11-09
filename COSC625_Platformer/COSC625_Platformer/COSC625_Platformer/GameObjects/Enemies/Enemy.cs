@@ -27,6 +27,7 @@ namespace COSC625_Platformer
         // GameObjects
         protected GameObject arm;
         protected GameObject[] bullets;
+        protected int numbullets = 1;
 
         protected String spriteSet;
 
@@ -145,6 +146,9 @@ namespace COSC625_Platformer
             }
         }
 
+        /// <summary>
+        /// returns the enemy's vision rectangle.
+        /// </summary>
         protected Rectangle SpotlightRectangle
         {
             get
@@ -205,8 +209,8 @@ namespace COSC625_Platformer
                 arm = new GameObject(Level.Content.Load<Texture2D>("Sprites/Player/Arm_Gun"));
 
                 // Temp bullet count = 12
-                bullets = new GameObject[1];
-                for (int i = 0; i < 1; i++)
+                bullets = new GameObject[numbullets];
+                for (int i = 0; i < numbullets; i++)
                 {
                     bullets[i] = new GameObject(Level.Content.Load<Texture2D>("Sprites/Player/Bullet"));
                 }
