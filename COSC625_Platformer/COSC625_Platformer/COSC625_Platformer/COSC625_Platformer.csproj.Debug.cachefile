@@ -78,8 +78,8 @@ Content\Overlays\spotlight2.xnb
 Content\Sprites\Enemies\SuperBeast\Prowl.xnb
 Content\Sprites\Enemies\Ninja\Idle.xnb
 Content\Sprites\Enemies\Ninja\Run.xnb
-Content\Sprites\Enemies\SuperBeast\Chase.xnb
 Content\Sprites\Enemies\Ninja\Die.xnb
+Content\Tiles\Vblock.xnb
 Content\Sounds\ExitReached.xnb
 Content\Sounds\GemCollected.xnb
 Content\Sounds\MonsterKilled.xnb
@@ -90,7 +90,7 @@ Content\Sounds\PlayerKilled.xnb
 Content\Sounds\Powerup.xnb
 Content\Sounds\NG42.xnb
 Content\Sounds\metal weapon.xnb
-Content\Tiles\Vblock.xnb
+Content\Sprites\Enemies\SuperBeast\Charge.xnb
 Content\Sounds\Music.wma
 Content\Sounds\NG42.wma
 Content\Levels\0.txt

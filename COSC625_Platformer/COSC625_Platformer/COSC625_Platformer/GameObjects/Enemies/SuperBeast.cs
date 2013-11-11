@@ -14,6 +14,29 @@ namespace COSC625_Platformer.GameObjects.Enemies
 {
     class SuperBeast : Enemy
     {
+        /// <summary>
+        /// Facing direction along the X axis.
+        /// </summary>
+        public enum AI
+        {
+            Pacing,
+            Prowling,
+            Charging
+        }
+
+        /// <summary>
+        /// The direction this enemy is facing and moving along the X axis.
+        /// </summary>
+        protected AI currentAI = AI.Pacing;
+
+        Animation prowlAnimation;
+        Animation chargeAnimation;
+
+        float baseMovespeed = 64.0f;
+
+        public static float maxChaseWaitTime = 1.0f;
+
+        protected float chaseWaitTime = maxChaseWaitTime;
 
         public SuperBeast(Level level, Vector2 position)
         {
@@ -21,7 +44,7 @@ namespace COSC625_Platformer.GameObjects.Enemies
             this.position = position;
             this.IsAlive = true;
             this.spriteSet = "SuperBeast";
-            this.MoveSpeed *= 2;
+            this.MoveSpeed = baseMovespeed * 2;
 
             LoadContent();
         }
@@ -45,12 +68,33 @@ namespace COSC625_Platformer.GameObjects.Enemies
             {
                 ApplyPhysics(gameTime);
 
-                pacingAI(gameTime, elapsed);
+                if (currentAI == AI.Pacing)
+                {
+                    pacingAI(gameTime, elapsed);
+                }
+
+                if (currentAI == AI.Prowling)
+                {
+                    prowlAI(gameTime, elapsed);
+                }
+
+                if (currentAI == AI.Charging)
+                {
+                    chargeAI(gameTime, elapsed);
+                }
 
                 if (SpotlightRectangle.Intersects(Level.Player.BoundingRectangle))
+                {
+                    if (currentAI != AI.Charging)
+                    {
+                        currentAI = AI.Prowling;
+                    }
                     iSeeYou = true;
+                }
                 else
+                {
                     iSeeYou = false;
+                }
             }
 
         }
@@ -89,6 +133,37 @@ namespace COSC625_Platformer.GameObjects.Enemies
                 }
             }
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gameTime"></param>
+        /// <param name="elapsedTime"></param>
+        protected void prowlAI(GameTime gameTime, float elapsedTime)
+        {
+            MoveSpeed = 0;
+            
+            if (chaseWaitTime <= 0.0f)
+            {
+                currentAI = AI.Charging;
+            }
+            else
+                chaseWaitTime -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gameTime"></param>
+        /// <param name="elapsedTime"></param>
+        protected void chargeAI(GameTime gameTime, float elapsedTime)
+        {
+            MoveSpeed = baseMovespeed * 8;
+            pacingAI(gameTime, elapsedTime);
+
+        }
+        
 
         /// <summary>
         /// Updates the Enemy's velocity and position based gravity, etc.
@@ -141,6 +216,9 @@ namespace COSC625_Platformer.GameObjects.Enemies
             runAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Run"), 0.20f, true);
             idleAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Idle"), 0.15f, true);
             dieAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Die"), 0.07f, false);
+            prowlAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Prowl"), 0.15f, false);
+            chargeAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Charge"), 0.05f, true);
+
 
             sprite.PlayAnimation(idleAnimation);
 
@@ -170,9 +248,35 @@ namespace COSC625_Platformer.GameObjects.Enemies
             if (iSeeYou)
                 spritebatch.Draw(spotlightTexture, SpotlightRectangle, null, Color.Red);
             else
-                spritebatch.Draw(spotlightTexture, SpotlightRectangle, null, Color.White);
+                spritebatch.Draw(spotlightTexture, SpotlightRectangle, null, Color.Green);
 
-            base.Draw(gameTime, spritebatch);
+            if (deathTime < deathTimeMax)//!IsAlive)
+            {
+                sprite.PlayAnimation(dieAnimation);
+            }
+            else if (!Level.Player.IsAlive ||
+                      Level.ReachedExit ||
+                      Level.TimeRemaining == TimeSpan.Zero ||
+                      waitTime > 0)
+            {
+                sprite.PlayAnimation(idleAnimation);
+            }
+            else if (currentAI == AI.Pacing)
+            {
+                sprite.PlayAnimation(runAnimation);
+            }
+            else if (currentAI == AI.Prowling)
+            {
+                sprite.PlayAnimation(prowlAnimation);
+            }
+            else if (currentAI == AI.Charging)
+            {
+                sprite.PlayAnimation(chargeAnimation);
+            }
+
+            // Draw facing the way the enemy is moving.
+            SpriteEffects flip = direction > 0 ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
+            sprite.Draw(gameTime, spritebatch, Position, flip, Color.White);
 
 
         }

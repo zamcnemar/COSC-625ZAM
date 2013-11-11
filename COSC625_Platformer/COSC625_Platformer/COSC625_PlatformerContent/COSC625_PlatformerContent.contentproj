@@ -576,8 +576,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sprites\Enemies\SuperBeast\Chase.png">
-      <Name>Chase</Name>
+    <Compile Include="Sprites\Enemies\SuperBeast\Charge.png">
+      <Name>Charge</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
