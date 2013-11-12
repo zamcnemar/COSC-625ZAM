@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controls.cs" />
+    <Compile Include="GameObjects\ColorChanger.cs" />
     <Compile Include="GameObjects\Enemies\Bat.cs" />
     <Compile Include="GameObjects\Enemies\Ninja.cs" />
     <Compile Include="GameObjects\Enemies\Enemy.cs" />

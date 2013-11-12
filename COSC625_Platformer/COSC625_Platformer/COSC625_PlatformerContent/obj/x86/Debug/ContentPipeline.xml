@@ -8,7 +8,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Fonts\Hud.xnb</Output>
-      <Time>2013-11-06T09:57:08.4480078-05:00</Time>
+      <Time>2013-11-12T09:29:11.9895058-05:00</Time>
     </Item>
     <Item>
       <Source>Overlays\you_died.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Overlays\you_died.xnb</Output>
-      <Time>2013-11-06T09:57:08.4520082-05:00</Time>
+      <Time>2013-11-12T09:29:11.9895058-05:00</Time>
     </Item>
     <Item>
       <Source>Overlays\you_lose.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Overlays\you_lose.xnb</Output>
-      <Time>2013-11-06T09:57:08.4530083-05:00</Time>
+      <Time>2013-11-12T09:29:11.9895058-05:00</Time>
     </Item>
     <Item>
       <Source>Overlays\you_win.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Overlays\you_win.xnb</Output>
-      <Time>2013-11-06T09:57:08.4540084-05:00</Time>
+      <Time>2013-11-12T09:29:11.9995061-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Gem.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Gem.xnb</Output>
-      <Time>2013-11-06T09:57:08.5360166-05:00</Time>
+      <Time>2013-11-12T09:29:12.3195157-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Arm_Gun.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Arm_Gun.xnb</Output>
-      <Time>2013-11-06T09:57:08.5450175-05:00</Time>
+      <Time>2013-11-12T09:29:12.329516-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Bullet.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Bullet.xnb</Output>
-      <Time>2013-11-06T09:57:08.5470177-05:00</Time>
+      <Time>2013-11-12T09:29:12.3395163-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Celebrate - Ninja.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate - Ninja.xnb</Output>
-      <Time>2013-11-06T09:57:08.5480178-05:00</Time>
+      <Time>2013-11-12T09:29:12.3395163-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Celebrate.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb</Output>
-      <Time>2013-11-06T09:57:08.550018-05:00</Time>
+      <Time>2013-11-12T09:29:12.3395163-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Die - Ninja.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Die - Ninja.xnb</Output>
-      <Time>2013-11-06T09:57:08.5520182-05:00</Time>
+      <Time>2013-11-12T09:29:12.3395163-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Idle - Ninja.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Idle - Ninja.xnb</Output>
-      <Time>2013-11-06T09:57:08.5540184-05:00</Time>
+      <Time>2013-11-12T09:29:12.3395163-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Jump - Ninja.png</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Jump - Ninja.xnb</Output>
-      <Time>2013-11-06T09:57:08.5560186-05:00</Time>
+      <Time>2013-11-12T09:29:12.3495166-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Run - Ninja.png</Source>
@@ -116,7 +116,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Run - Ninja.xnb</Output>
-      <Time>2013-11-06T09:57:08.5580188-05:00</Time>
+      <Time>2013-11-12T09:29:12.3495166-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\bg1.png</Source>
@@ -125,7 +125,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\bg1.xnb</Output>
-      <Time>2013-11-06T09:57:08.5760206-05:00</Time>
+      <Time>2013-11-12T09:29:12.3595169-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA0.png</Source>
@@ -134,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA0.xnb</Output>
-      <Time>2013-11-06T09:57:08.5670197-05:00</Time>
+      <Time>2013-11-12T09:29:12.3495166-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA1.png</Source>
@@ -143,7 +143,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA1.xnb</Output>
-      <Time>2013-11-06T09:57:08.5680198-05:00</Time>
+      <Time>2013-11-12T09:29:12.3495166-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA2.png</Source>
@@ -152,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA2.xnb</Output>
-      <Time>2013-11-06T09:57:08.5690199-05:00</Time>
+      <Time>2013-11-12T09:29:12.3495166-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA3.png</Source>
@@ -161,7 +161,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA3.xnb</Output>
-      <Time>2013-11-06T09:57:08.5690199-05:00</Time>
+      <Time>2013-11-12T09:29:12.3495166-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA4.png</Source>
@@ -170,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA4.xnb</Output>
-      <Time>2013-11-06T09:57:08.57002-05:00</Time>
+      <Time>2013-11-12T09:29:12.3495166-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA5.png</Source>
@@ -179,7 +179,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA5.xnb</Output>
-      <Time>2013-11-06T09:57:08.5710201-05:00</Time>
+      <Time>2013-11-12T09:29:12.3495166-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA6.png</Source>
@@ -188,7 +188,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA6.xnb</Output>
-      <Time>2013-11-06T09:57:08.5720202-05:00</Time>
+      <Time>2013-11-12T09:29:12.3495166-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockB0.png</Source>
@@ -197,7 +197,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockB0.xnb</Output>
-      <Time>2013-11-06T09:57:08.5730203-05:00</Time>
+      <Time>2013-11-12T09:29:12.3595169-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockB1.png</Source>
@@ -206,7 +206,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockB1.xnb</Output>
-      <Time>2013-11-06T09:57:08.5740204-05:00</Time>
+      <Time>2013-11-12T09:29:12.3595169-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\cdl1.png</Source>
@@ -215,7 +215,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\cdl1.xnb</Output>
-      <Time>2013-11-06T09:57:08.5760206-05:00</Time>
+      <Time>2013-11-12T09:29:12.3595169-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\cdr1.png</Source>
@@ -224,7 +224,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\cdr1.xnb</Output>
-      <Time>2013-11-06T09:57:08.5770207-05:00</Time>
+      <Time>2013-11-12T09:29:12.3595169-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\checkered.png</Source>
@@ -233,7 +233,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\checkered.xnb</Output>
-      <Time>2013-11-06T09:57:08.5780208-05:00</Time>
+      <Time>2013-11-12T09:29:12.3595169-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\cul1.png</Source>
@@ -242,7 +242,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\cul1.xnb</Output>
-      <Time>2013-11-06T09:57:08.5790209-05:00</Time>
+      <Time>2013-11-12T09:29:12.3595169-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\cur1.png</Source>
@@ -251,7 +251,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\cur1.xnb</Output>
-      <Time>2013-11-06T09:57:08.5790209-05:00</Time>
+      <Time>2013-11-12T09:29:12.3595169-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\d1.png</Source>
@@ -260,7 +260,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\d1.xnb</Output>
-      <Time>2013-11-06T09:57:08.580021-05:00</Time>
+      <Time>2013-11-12T09:29:12.3695172-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\dl1.png</Source>
@@ -269,7 +269,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\dl1.xnb</Output>
-      <Time>2013-11-06T09:57:08.5810211-05:00</Time>
+      <Time>2013-11-12T09:29:12.3695172-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\dr1.png</Source>
@@ -278,7 +278,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\dr1.xnb</Output>
-      <Time>2013-11-06T09:57:08.5820212-05:00</Time>
+      <Time>2013-11-12T09:29:12.3695172-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\Exit.png</Source>
@@ -287,7 +287,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\Exit.xnb</Output>
-      <Time>2013-11-06T09:57:08.5740204-05:00</Time>
+      <Time>2013-11-12T09:29:12.3595169-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\l1.png</Source>
@@ -296,7 +296,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\l1.xnb</Output>
-      <Time>2013-11-06T09:57:08.5820212-05:00</Time>
+      <Time>2013-11-12T09:29:12.3695172-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\pf1.png</Source>
@@ -305,7 +305,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\pf1.xnb</Output>
-      <Time>2013-11-06T09:57:08.5840214-05:00</Time>
+      <Time>2013-11-12T09:29:12.3695172-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\Platform.png</Source>
@@ -314,7 +314,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\Platform.xnb</Output>
-      <Time>2013-11-06T09:57:08.5750205-05:00</Time>
+      <Time>2013-11-12T09:29:12.3595169-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\r1.png</Source>
@@ -323,7 +323,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\r1.xnb</Output>
-      <Time>2013-11-06T09:57:08.5840214-05:00</Time>
+      <Time>2013-11-12T09:29:12.3695172-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\u1.png</Source>
@@ -332,7 +332,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\u1.xnb</Output>
-      <Time>2013-11-06T09:57:08.5850215-05:00</Time>
+      <Time>2013-11-12T09:29:12.3695172-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\ul1.png</Source>
@@ -341,7 +341,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\ul1.xnb</Output>
-      <Time>2013-11-06T09:57:08.5860216-05:00</Time>
+      <Time>2013-11-12T09:29:12.3695172-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\ur1.png</Source>
@@ -350,7 +350,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\ur1.xnb</Output>
-      <Time>2013-11-06T09:57:08.5870217-05:00</Time>
+      <Time>2013-11-12T09:29:12.3695172-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Layer3_0.png</Source>
@@ -359,7 +359,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer3_0.xnb</Output>
-      <Time>2013-11-06T09:57:08.4310061-05:00</Time>
+      <Time>2013-11-12T09:29:11.9695052-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Layer3_1.png</Source>
@@ -368,7 +368,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer3_1.xnb</Output>
-      <Time>2013-11-06T09:57:08.4320062-05:00</Time>
+      <Time>2013-11-12T09:29:11.9695052-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Layer3_2.png</Source>
@@ -377,7 +377,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer3_2.xnb</Output>
-      <Time>2013-11-06T09:57:08.4340064-05:00</Time>
+      <Time>2013-11-12T09:29:11.9695052-05:00</Time>
     </Item>
     <Item>
       <Source>Menu\popupmenuquit.png</Source>
@@ -386,7 +386,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Menu\popupmenuquit.xnb</Output>
-      <Time>2013-11-06T09:57:08.4510081-05:00</Time>
+      <Time>2013-11-12T09:29:11.9895058-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars1_0.png</Source>
@@ -395,7 +395,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars1_0.xnb</Output>
-      <Time>2013-11-06T09:57:08.4390069-05:00</Time>
+      <Time>2013-11-12T09:29:11.9795055-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars1_1.png</Source>
@@ -404,7 +404,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars1_1.xnb</Output>
-      <Time>2013-11-06T09:57:08.440007-05:00</Time>
+      <Time>2013-11-12T09:29:11.9795055-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars1_2.png</Source>
@@ -413,7 +413,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars1_2.xnb</Output>
-      <Time>2013-11-06T09:57:08.4410071-05:00</Time>
+      <Time>2013-11-12T09:29:11.9795055-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars2_0.png</Source>
@@ -422,7 +422,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars2_0.xnb</Output>
-      <Time>2013-11-06T09:57:08.4420072-05:00</Time>
+      <Time>2013-11-12T09:29:11.9795055-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars2_1.png</Source>
@@ -431,7 +431,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars2_1.xnb</Output>
-      <Time>2013-11-06T09:57:08.4430073-05:00</Time>
+      <Time>2013-11-12T09:29:11.9795055-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars2_2.png</Source>
@@ -440,7 +440,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars2_2.xnb</Output>
-      <Time>2013-11-06T09:57:08.4450075-05:00</Time>
+      <Time>2013-11-12T09:29:11.9795055-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars0_0.png</Source>
@@ -449,7 +449,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars0_0.xnb</Output>
-      <Time>2013-11-06T09:57:08.4350065-05:00</Time>
+      <Time>2013-11-12T09:29:11.9695052-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars0_1.png</Source>
@@ -458,7 +458,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars0_1.xnb</Output>
-      <Time>2013-11-06T09:57:08.4360066-05:00</Time>
+      <Time>2013-11-12T09:29:11.9795055-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars0_2.png</Source>
@@ -467,7 +467,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars0_2.xnb</Output>
-      <Time>2013-11-06T09:57:08.4380068-05:00</Time>
+      <Time>2013-11-12T09:29:11.9795055-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Attack.png</Source>
@@ -476,7 +476,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Attack.xnb</Output>
-      <Time>2013-11-06T09:57:08.5460176-05:00</Time>
+      <Time>2013-11-12T09:29:12.329516-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\ladder0.png</Source>
@@ -485,7 +485,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\ladder0.xnb</Output>
-      <Time>2013-11-06T09:57:08.5830213-05:00</Time>
+      <Time>2013-11-12T09:29:12.3695172-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Climb.png</Source>
@@ -494,7 +494,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Climb.xnb</Output>
-      <Time>2013-11-06T09:57:08.5510181-05:00</Time>
+      <Time>2013-11-12T09:29:12.3395163-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\BadGuy\Idle.png</Source>
@@ -503,7 +503,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\BadGuy\Idle.xnb</Output>
-      <Time>2013-11-06T09:57:08.5330163-05:00</Time>
+      <Time>2013-11-12T09:29:12.1995121-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\BadGuy\Die.png</Source>
@@ -512,7 +512,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\BadGuy\Die.xnb</Output>
-      <Time>2013-11-06T09:57:08.5320162-05:00</Time>
+      <Time>2013-11-12T09:29:12.1895118-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\BadGuy\Run.png</Source>
@@ -521,7 +521,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\BadGuy\Run.xnb</Output>
-      <Time>2013-11-06T09:57:08.5340164-05:00</Time>
+      <Time>2013-11-12T09:29:12.1995121-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\Lama\Run.png</Source>
@@ -530,7 +530,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Lama\Run.xnb</Output>
-      <Time>2013-11-06T09:57:08.5440174-05:00</Time>
+      <Time>2013-11-12T09:29:12.2095124-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\Lama\Die.png</Source>
@@ -539,7 +539,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Lama\Die.xnb</Output>
-      <Time>2013-11-06T09:57:08.5420172-05:00</Time>
+      <Time>2013-11-12T09:29:12.1995121-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\Lama\Idle.png</Source>
@@ -548,7 +548,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Lama\Idle.xnb</Output>
-      <Time>2013-11-06T09:57:08.5430173-05:00</Time>
+      <Time>2013-11-12T09:29:12.1995121-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\SuperBeast\Idle.png</Source>
@@ -557,7 +557,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Idle.xnb</Output>
-      <Time>2013-11-06T09:57:08.5630193-05:00</Time>
+      <Time>2013-11-12T09:29:12.3195157-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\SuperBeast\Run.png</Source>
@@ -566,7 +566,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Run.xnb</Output>
-      <Time>2013-11-06T09:57:08.5660196-05:00</Time>
+      <Time>2013-11-12T09:29:12.3195157-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\SuperBeast\Die.png</Source>
@@ -575,7 +575,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Die.xnb</Output>
-      <Time>2013-11-06T09:57:08.5620192-05:00</Time>
+      <Time>2013-11-12T09:29:12.3195157-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\gold0.png</Source>
@@ -584,7 +584,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold0.xnb</Output>
-      <Time>2013-11-06T09:57:08.5370167-05:00</Time>
+      <Time>2013-11-12T09:29:12.9595349-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\gold1.png</Source>
@@ -593,7 +593,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold1.xnb</Output>
-      <Time>2013-11-06T09:57:08.5380168-05:00</Time>
+      <Time>2013-11-12T09:29:12.9495346-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\gold2.png</Source>
@@ -602,7 +602,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold2.xnb</Output>
-      <Time>2013-11-06T09:57:08.5390169-05:00</Time>
+      <Time>2013-11-12T09:29:12.9495346-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\gold3.png</Source>
@@ -611,7 +611,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold3.xnb</Output>
-      <Time>2013-11-06T09:57:08.5390169-05:00</Time>
+      <Time>2013-11-12T09:29:12.329516-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\gold4.png</Source>
@@ -620,7 +620,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold4.xnb</Output>
-      <Time>2013-11-06T09:57:08.540017-05:00</Time>
+      <Time>2013-11-12T09:29:12.329516-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\gold5.png</Source>
@@ -629,7 +629,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold5.xnb</Output>
-      <Time>2013-11-06T09:57:08.5410171-05:00</Time>
+      <Time>2013-11-12T09:29:12.329516-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\Bat\Run.png</Source>
@@ -638,7 +638,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Bat\Run.xnb</Output>
-      <Time>2013-11-06T10:48:38.8300116-05:00</Time>
+      <Time>2013-11-12T09:29:12.1995121-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\Bat\Die.png</Source>
@@ -647,7 +647,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Bat\Die.xnb</Output>
-      <Time>2013-11-06T10:58:55.0186243-05:00</Time>
+      <Time>2013-11-12T09:29:12.1995121-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\Bat\Idle.png</Source>
@@ -656,7 +656,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Bat\Idle.xnb</Output>
-      <Time>2013-11-06T11:01:22.100331-05:00</Time>
+      <Time>2013-11-12T09:29:12.9595349-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\EvilLama\Die.png</Source>
@@ -665,7 +665,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\EvilLama\Die.xnb</Output>
-      <Time>2013-11-06T11:27:14.0145069-05:00</Time>
+      <Time>2013-11-12T09:29:12.1995121-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\EvilLama\Idle.png</Source>
@@ -674,7 +674,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\EvilLama\Idle.xnb</Output>
-      <Time>2013-11-06T11:27:14.0165071-05:00</Time>
+      <Time>2013-11-12T09:29:12.1995121-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\EvilLama\Run.png</Source>
@@ -683,7 +683,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\EvilLama\Run.xnb</Output>
-      <Time>2013-11-06T11:27:14.0115066-05:00</Time>
+      <Time>2013-11-12T09:29:12.1995121-05:00</Time>
     </Item>
     <Item>
       <Source>Overlays\spotlight2.png</Source>
@@ -692,7 +692,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Overlays\spotlight2.xnb</Output>
-      <Time>2013-11-07T12:07:39.2530963-05:00</Time>
+      <Time>2013-11-12T09:29:11.9895058-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\SuperBeast\Prowl.png</Source>
@@ -701,7 +701,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Prowl.xnb</Output>
-      <Time>2013-11-11T11:38:47.6059266-05:00</Time>
+      <Time>2013-11-12T09:29:12.3195157-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\Ninja\Idle.png</Source>
@@ -710,7 +710,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Ninja\Idle.xnb</Output>
-      <Time>2013-11-11T11:38:47.5989259-05:00</Time>
+      <Time>2013-11-12T09:29:12.2995151-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\Ninja\Run.png</Source>
@@ -719,7 +719,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Ninja\Run.xnb</Output>
-      <Time>2013-11-11T11:38:47.599926-05:00</Time>
+      <Time>2013-11-12T09:29:12.2995151-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\Ninja\Die.png</Source>
@@ -728,7 +728,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Ninja\Die.xnb</Output>
-      <Time>2013-11-11T11:38:47.5979258-05:00</Time>
+      <Time>2013-11-12T09:29:12.2995151-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\Vblock.png</Source>
@@ -737,7 +737,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\Vblock.xnb</Output>
-      <Time>2013-11-11T11:38:47.6069267-05:00</Time>
+      <Time>2013-11-12T09:29:12.3595169-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\ExitReached.wma</Source>
@@ -746,7 +746,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\ExitReached.xnb</Output>
-      <Time>2013-11-06T09:57:08.4560086-05:00</Time>
+      <Time>2013-11-12T09:29:11.9995061-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\GemCollected.wma</Source>
@@ -755,7 +755,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\GemCollected.xnb</Output>
-      <Time>2013-11-06T09:57:08.4580088-05:00</Time>
+      <Time>2013-11-12T09:29:11.9995061-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\MonsterKilled.wma</Source>
@@ -764,7 +764,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\MonsterKilled.xnb</Output>
-      <Time>2013-11-06T09:57:08.460009-05:00</Time>
+      <Time>2013-11-12T09:29:11.9995061-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\Music.wma</Source>
@@ -774,7 +774,7 @@
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\Music.xnb</Output>
       <Extra>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\Music.wma</Extra>
-      <Time>2013-11-06T09:57:08.4920122-05:00</Time>
+      <Time>2013-11-12T09:29:12.1495106-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\PlayerFall.wma</Source>
@@ -783,7 +783,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\PlayerFall.xnb</Output>
-      <Time>2013-11-06T09:57:08.5260156-05:00</Time>
+      <Time>2013-11-12T09:29:12.1895118-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\PlayerJump.wma</Source>
@@ -792,7 +792,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\PlayerJump.xnb</Output>
-      <Time>2013-11-06T09:57:08.5270157-05:00</Time>
+      <Time>2013-11-12T09:29:12.1895118-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\PlayerKilled.wma</Source>
@@ -801,7 +801,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\PlayerKilled.xnb</Output>
-      <Time>2013-11-06T09:57:08.5280158-05:00</Time>
+      <Time>2013-11-12T09:29:12.1895118-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\Powerup.wma</Source>
@@ -810,7 +810,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb</Output>
-      <Time>2013-11-06T09:57:08.5290159-05:00</Time>
+      <Time>2013-11-12T09:29:12.1895118-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\Ninja Gaiden - NES - Act 4-2.mp3</Source>
@@ -820,7 +820,7 @@
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\NG42.xnb</Output>
       <Extra>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\NG42.wma</Extra>
-      <Time>2013-11-06T09:57:08.5240154-05:00</Time>
+      <Time>2013-11-12T09:29:12.1895118-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\metal weapon.wav</Source>
@@ -829,7 +829,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\metal weapon.xnb</Output>
-      <Time>2013-11-06T09:57:08.5310161-05:00</Time>
+      <Time>2013-11-12T09:29:12.1895118-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\SuperBeast\Charge.png</Source>
@@ -838,7 +838,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Charge.xnb</Output>
-      <Time>2013-11-11T11:38:47.6039264-05:00</Time>
+      <Time>2013-11-12T09:29:12.3095154-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
