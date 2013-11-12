@@ -64,7 +64,7 @@ namespace COSC625_Platformer.Screens
             //So we have to catch the exception and throw it away
             try
             {
-                MediaPlayer.Volume = .30f;
+                MediaPlayer.Volume = .35f;
                 MediaPlayer.IsRepeating = true;
                 MediaPlayer.Play(Game1.content.Load<Song>("Sounds/NG42"));
             }
@@ -97,7 +97,7 @@ namespace COSC625_Platformer.Screens
             // to get the player back to playing.
             if (ScreenManager.controls.AButton(PlayerIndex.One))
             {
-                if (!level.Player.IsAlive && level.Player.lives > 0)
+                if (!level.Player.IsAlive)
                 {
                     level.StartNewLife();
                 }
@@ -107,10 +107,6 @@ namespace COSC625_Platformer.Screens
                         LoadNextLevel();
                     else
                         ReloadCurrentLevel();
-                }
-                else if (!level.Player.IsAlive && level.Player.lives <= 0)
-                {
-                     ScreenManager.gameState = GameState.Menu;
                 }
             }
         }
@@ -181,10 +177,6 @@ namespace COSC625_Platformer.Screens
             // Draw score
             float timeHeight = ScreenManager.spriteFont.MeasureString(timeString).Y;
             DrawShadowedString(spriteBatch, ScreenManager.spriteFont, "SCORE: " + level.Score.ToString(), hudLocation + new Vector2(0.0f, timeHeight * 1.2f), Color.Yellow);
-
-            // Draw Lives 
-            float livesHeight = ScreenManager.spriteFont.MeasureString(timeString).Y;
-            DrawShadowedString(spriteBatch, ScreenManager.spriteFont, "Lives: " + level.Player.lives.ToString(), hudLocation + new Vector2(0.0f, timeHeight * 2.4f), Color.Yellow);
            
             // Determine the status overlay message to show.
             Texture2D status = null;
@@ -201,10 +193,7 @@ namespace COSC625_Platformer.Screens
             }
             else if (!level.Player.IsAlive)
             {
-                if (level.Player.lives > 0)
-                    status = diedOverlay;
-                else
-                    status = loseOverlay;    
+                status = diedOverlay;
             }
 
             if (status != null)

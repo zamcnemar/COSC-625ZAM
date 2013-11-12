@@ -16,11 +16,6 @@ namespace COSC625_Platformer.GameObjects.Items
         public int PointValue;
         public Color Color;
         public Vector2 origin;
-
-        // Random Number for randomization of object sprites.
-        protected String basename;
-        protected int randomIndex;
-
     
         // The item is animated from a base position along the Y axis.
         protected float bounce;
@@ -30,12 +25,6 @@ namespace COSC625_Platformer.GameObjects.Items
         protected const float BounceHeight = 0.18f;
         protected const float BounceRate = 3.0f;
         protected const float BounceSync = -0.75f;
-
-        public Level Level
-        {
-            get { return level; }
-        }
-        protected Level level;
 
         /// <summary>
         /// Gets the current position of this item in world space.

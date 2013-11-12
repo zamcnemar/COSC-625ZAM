@@ -29,12 +29,6 @@ namespace COSC625_Platformer.GameObjects
         /// past it to the left and right, but can not fall down through the top of it.
         /// </summary>
         Platform = 2,
-
-        /// <summary>
-        /// A climbable tile by the player character that can be stood on like a platform.
-        ///</summary>
-        ///
-        Ladder = 3,
     }
 
     /// <summary>
@@ -47,7 +41,6 @@ namespace COSC625_Platformer.GameObjects
 
         public const int Width = 40; //40
         public const int Height = 32; //32
-        public const int Center = Width / 2;
 
         public static readonly Vector2 Size = new Vector2(Width, Height);
 
