@@ -2,85 +2,13 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>Backgrounds\Layer0_0.png</Source>
-      <Name>Backgrounds\Layer0_0</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
+      <Source>Fonts\Hud.spritefont</Source>
+      <Name>Fonts\Hud</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_0.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Layer0_1.png</Source>
-      <Name>Backgrounds\Layer0_1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Layer0_2.png</Source>
-      <Name>Backgrounds\Layer0_2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_2.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Layer1_0.png</Source>
-      <Name>Backgrounds\Layer1_0</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_0.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Layer1_1.png</Source>
-      <Name>Backgrounds\Layer1_1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Layer1_2.png</Source>
-      <Name>Backgrounds\Layer1_2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_2.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Layer2_0.png</Source>
-      <Name>Backgrounds\Layer2_0</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_0.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Layer2_1.png</Source>
-      <Name>Backgrounds\Layer2_1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Layer2_2.png</Source>
-      <Name>Backgrounds\Layer2_2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_2.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Fonts\Hud.xnb</Output>
+      <Time>2013-11-06T09:57:08.4480078-05:00</Time>
     </Item>
     <Item>
       <Source>Overlays\you_died.png</Source>
@@ -88,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Overlays\you_died.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Overlays\you_died.xnb</Output>
+      <Time>2013-11-06T09:57:08.4520082-05:00</Time>
     </Item>
     <Item>
       <Source>Overlays\you_lose.png</Source>
@@ -97,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Overlays\you_lose.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Overlays\you_lose.xnb</Output>
+      <Time>2013-11-06T09:57:08.4530083-05:00</Time>
     </Item>
     <Item>
       <Source>Overlays\you_win.png</Source>
@@ -106,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Overlays\you_win.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Overlays\you_win.xnb</Output>
+      <Time>2013-11-06T09:57:08.4540084-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Gem.png</Source>
@@ -115,116 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Gem.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterA\Die.png</Source>
-      <Name>Sprites\MonsterA\Die</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Die.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterA\Idle.png</Source>
-      <Name>Sprites\MonsterA\Idle</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Idle.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterA\Run.png</Source>
-      <Name>Sprites\MonsterA\Run</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Run.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterB\Die.png</Source>
-      <Name>Sprites\MonsterB\Die</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Die.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterB\Idle.png</Source>
-      <Name>Sprites\MonsterB\Idle</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Idle.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterB\Run.png</Source>
-      <Name>Sprites\MonsterB\Run</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Run.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterC\Die.png</Source>
-      <Name>Sprites\MonsterC\Die</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Die.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterC\Idle.png</Source>
-      <Name>Sprites\MonsterC\Idle</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Idle.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterC\Run.png</Source>
-      <Name>Sprites\MonsterC\Run</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Run.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterD\Die.png</Source>
-      <Name>Sprites\MonsterD\Die</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Die.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterD\Idle.png</Source>
-      <Name>Sprites\MonsterD\Idle</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Idle.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\MonsterD\Run.png</Source>
-      <Name>Sprites\MonsterD\Run</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Run.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Gem.xnb</Output>
+      <Time>2013-11-06T09:57:08.5360166-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Arm_Gun.png</Source>
@@ -232,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Arm_Gun.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Arm_Gun.xnb</Output>
+      <Time>2013-11-06T09:57:08.5450175-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Bullet.png</Source>
@@ -241,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Bullet.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Bullet.xnb</Output>
+      <Time>2013-11-06T09:57:08.5470177-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Celebrate - Ninja.png</Source>
@@ -250,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate - Ninja.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate - Ninja.xnb</Output>
+      <Time>2013-11-06T09:57:08.5480178-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Celebrate.png</Source>
@@ -259,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb</Output>
+      <Time>2013-11-06T09:57:08.550018-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Die - Ninja.png</Source>
@@ -268,17 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Die - Ninja.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\Player\Die.png</Source>
-      <Name>Sprites\Player\Die</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Die.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Die - Ninja.xnb</Output>
+      <Time>2013-11-06T09:57:08.5520182-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Idle - Ninja.png</Source>
@@ -286,17 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Idle - Ninja.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\Player\Idle.png</Source>
-      <Name>Sprites\Player\Idle</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Idle.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Idle - Ninja.xnb</Output>
+      <Time>2013-11-06T09:57:08.5540184-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Jump - Ninja.png</Source>
@@ -304,17 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Jump - Ninja.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\Player\Jump.png</Source>
-      <Name>Sprites\Player\Jump</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Jump.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Jump - Ninja.xnb</Output>
+      <Time>2013-11-06T09:57:08.5560186-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Run - Ninja.png</Source>
@@ -322,17 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Run - Ninja.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\Player\Run.png</Source>
-      <Name>Sprites\Player\Run</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Run.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Run - Ninja.xnb</Output>
+      <Time>2013-11-06T09:57:08.5580188-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\bg1.png</Source>
@@ -340,8 +124,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\bg1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\bg1.xnb</Output>
+      <Time>2013-11-06T09:57:08.5760206-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA0.png</Source>
@@ -349,8 +133,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA0.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA0.xnb</Output>
+      <Time>2013-11-06T09:57:08.5670197-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA1.png</Source>
@@ -358,8 +142,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA1.xnb</Output>
+      <Time>2013-11-06T09:57:08.5680198-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA2.png</Source>
@@ -367,8 +151,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA2.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA2.xnb</Output>
+      <Time>2013-11-06T09:57:08.5690199-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA3.png</Source>
@@ -376,8 +160,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA3.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA3.xnb</Output>
+      <Time>2013-11-06T09:57:08.5690199-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA4.png</Source>
@@ -385,8 +169,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA4.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA4.xnb</Output>
+      <Time>2013-11-06T09:57:08.57002-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA5.png</Source>
@@ -394,8 +178,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA5.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA5.xnb</Output>
+      <Time>2013-11-06T09:57:08.5710201-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA6.png</Source>
@@ -403,8 +187,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA6.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockA6.xnb</Output>
+      <Time>2013-11-06T09:57:08.5720202-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockB0.png</Source>
@@ -412,8 +196,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockB0.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockB0.xnb</Output>
+      <Time>2013-11-06T09:57:08.5730203-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockB1.png</Source>
@@ -421,8 +205,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockB1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\BlockB1.xnb</Output>
+      <Time>2013-11-06T09:57:08.5740204-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\cdl1.png</Source>
@@ -430,8 +214,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\cdl1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\cdl1.xnb</Output>
+      <Time>2013-11-06T09:57:08.5760206-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\cdr1.png</Source>
@@ -439,8 +223,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\cdr1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\cdr1.xnb</Output>
+      <Time>2013-11-06T09:57:08.5770207-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\checkered.png</Source>
@@ -448,8 +232,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\checkered.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\checkered.xnb</Output>
+      <Time>2013-11-06T09:57:08.5780208-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\cul1.png</Source>
@@ -457,8 +241,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\cul1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\cul1.xnb</Output>
+      <Time>2013-11-06T09:57:08.5790209-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\cur1.png</Source>
@@ -466,8 +250,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\cur1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\cur1.xnb</Output>
+      <Time>2013-11-06T09:57:08.5790209-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\d1.png</Source>
@@ -475,8 +259,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\d1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\d1.xnb</Output>
+      <Time>2013-11-06T09:57:08.580021-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\dl1.png</Source>
@@ -484,8 +268,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\dl1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\dl1.xnb</Output>
+      <Time>2013-11-06T09:57:08.5810211-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\dr1.png</Source>
@@ -493,8 +277,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\dr1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\dr1.xnb</Output>
+      <Time>2013-11-06T09:57:08.5820212-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\Exit.png</Source>
@@ -502,8 +286,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\Exit.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\Exit.xnb</Output>
+      <Time>2013-11-06T09:57:08.5740204-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\l1.png</Source>
@@ -511,8 +295,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\l1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\l1.xnb</Output>
+      <Time>2013-11-06T09:57:08.5820212-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\pf1.png</Source>
@@ -520,8 +304,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\pf1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\pf1.xnb</Output>
+      <Time>2013-11-06T09:57:08.5840214-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\Platform.png</Source>
@@ -529,8 +313,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\Platform.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\Platform.xnb</Output>
+      <Time>2013-11-06T09:57:08.5750205-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\r1.png</Source>
@@ -538,8 +322,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\r1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\r1.xnb</Output>
+      <Time>2013-11-06T09:57:08.5840214-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\u1.png</Source>
@@ -547,8 +331,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\u1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\u1.xnb</Output>
+      <Time>2013-11-06T09:57:08.5850215-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\ul1.png</Source>
@@ -556,8 +340,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\ul1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\ul1.xnb</Output>
+      <Time>2013-11-06T09:57:08.5860216-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\ur1.png</Source>
@@ -565,89 +349,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\ur1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Tiles\tile1\bg1.png</Source>
-      <Name>Tiles\tile1\bg1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\tile1\bg1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Tiles\tile1\d1.png</Source>
-      <Name>Tiles\tile1\d1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\tile1\d1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Tiles\tile1\dl1.png</Source>
-      <Name>Tiles\tile1\dl1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\tile1\dl1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Tiles\tile1\dr1.png</Source>
-      <Name>Tiles\tile1\dr1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\tile1\dr1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Tiles\tile1\l1.png</Source>
-      <Name>Tiles\tile1\l1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\tile1\l1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Tiles\tile1\r1.png</Source>
-      <Name>Tiles\tile1\r1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\tile1\r1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Tiles\tile1\u1.png</Source>
-      <Name>Tiles\tile1\u1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\tile1\u1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Tiles\tile1\ul1.png</Source>
-      <Name>Tiles\tile1\ul1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\tile1\ul1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Tiles\tile1\ur1.png</Source>
-      <Name>Tiles\tile1\ur1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\tile1\ur1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\ur1.xnb</Output>
+      <Time>2013-11-06T09:57:08.5870217-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Layer3_0.png</Source>
@@ -655,8 +358,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer3_0.xnb</Output>
-      <Time>2013-11-11T17:49:30-05:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer3_0.xnb</Output>
+      <Time>2013-11-06T09:57:08.4310061-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Layer3_1.png</Source>
@@ -664,8 +367,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer3_1.xnb</Output>
-      <Time>2013-11-11T17:50:29-05:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer3_1.xnb</Output>
+      <Time>2013-11-06T09:57:08.4320062-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Layer3_2.png</Source>
@@ -673,8 +376,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer3_2.xnb</Output>
-      <Time>2013-11-11T17:53:46-05:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\Layer3_2.xnb</Output>
+      <Time>2013-11-06T09:57:08.4340064-05:00</Time>
     </Item>
     <Item>
       <Source>Menu\popupmenuquit.png</Source>
@@ -682,8 +385,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Menu\popupmenuquit.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Menu\popupmenuquit.xnb</Output>
+      <Time>2013-11-06T09:57:08.4510081-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars1_0.png</Source>
@@ -691,8 +394,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars1_0.xnb</Output>
-      <Time>2013-11-11T17:58:15-05:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars1_0.xnb</Output>
+      <Time>2013-11-06T09:57:08.4390069-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars1_1.png</Source>
@@ -700,8 +403,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars1_1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars1_1.xnb</Output>
+      <Time>2013-11-06T09:57:08.440007-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars1_2.png</Source>
@@ -709,8 +412,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars1_2.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars1_2.xnb</Output>
+      <Time>2013-11-06T09:57:08.4410071-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars2_0.png</Source>
@@ -718,8 +421,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars2_0.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars2_0.xnb</Output>
+      <Time>2013-11-06T09:57:08.4420072-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars2_1.png</Source>
@@ -727,8 +430,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars2_1.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars2_1.xnb</Output>
+      <Time>2013-11-06T09:57:08.4430073-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars2_2.png</Source>
@@ -736,8 +439,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars2_2.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars2_2.xnb</Output>
+      <Time>2013-11-06T09:57:08.4450075-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars0_0.png</Source>
@@ -745,8 +448,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars0_0.xnb</Output>
-      <Time>2013-11-11T17:54:04-05:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars0_0.xnb</Output>
+      <Time>2013-11-06T09:57:08.4350065-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars0_1.png</Source>
@@ -754,8 +457,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars0_1.xnb</Output>
-      <Time>2013-11-11T17:57:38-05:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars0_1.xnb</Output>
+      <Time>2013-11-06T09:57:08.4360066-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\stars0_2.png</Source>
@@ -763,8 +466,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars0_2.xnb</Output>
-      <Time>2013-11-11T17:57:56-05:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Backgrounds\stars0_2.xnb</Output>
+      <Time>2013-11-06T09:57:08.4380068-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Attack.png</Source>
@@ -772,17 +475,269 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Attack.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Attack.xnb</Output>
+      <Time>2013-11-06T09:57:08.5460176-05:00</Time>
     </Item>
     <Item>
-      <Source>Fonts\Hud.spritefont</Source>
-      <Name>Fonts\Hud</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
+      <Source>Tiles\ladder0.png</Source>
+      <Name>Tiles\ladder0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Fonts\Hud.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\ladder0.xnb</Output>
+      <Time>2013-11-06T09:57:08.5830213-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Climb.png</Source>
+      <Name>Sprites\Player\Climb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Climb.xnb</Output>
+      <Time>2013-11-06T09:57:08.5510181-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\BadGuy\Idle.png</Source>
+      <Name>Sprites\Enemies\BadGuy\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\BadGuy\Idle.xnb</Output>
+      <Time>2013-11-06T09:57:08.5330163-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\BadGuy\Die.png</Source>
+      <Name>Sprites\Enemies\BadGuy\Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\BadGuy\Die.xnb</Output>
+      <Time>2013-11-06T09:57:08.5320162-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\BadGuy\Run.png</Source>
+      <Name>Sprites\Enemies\BadGuy\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\BadGuy\Run.xnb</Output>
+      <Time>2013-11-06T09:57:08.5340164-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\Lama\Run.png</Source>
+      <Name>Sprites\Enemies\Lama\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Lama\Run.xnb</Output>
+      <Time>2013-11-06T09:57:08.5440174-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\Lama\Die.png</Source>
+      <Name>Sprites\Enemies\Lama\Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Lama\Die.xnb</Output>
+      <Time>2013-11-06T09:57:08.5420172-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\Lama\Idle.png</Source>
+      <Name>Sprites\Enemies\Lama\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Lama\Idle.xnb</Output>
+      <Time>2013-11-06T09:57:08.5430173-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\SuperBeast\Idle.png</Source>
+      <Name>Sprites\Enemies\SuperBeast\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Idle.xnb</Output>
+      <Time>2013-11-06T09:57:08.5630193-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\SuperBeast\Run.png</Source>
+      <Name>Sprites\Enemies\SuperBeast\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Run.xnb</Output>
+      <Time>2013-11-06T09:57:08.5660196-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\SuperBeast\Die.png</Source>
+      <Name>Sprites\Enemies\SuperBeast\Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Die.xnb</Output>
+      <Time>2013-11-06T09:57:08.5620192-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\gold0.png</Source>
+      <Name>Sprites\Items\gold0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold0.xnb</Output>
+      <Time>2013-11-06T09:57:08.5370167-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\gold1.png</Source>
+      <Name>Sprites\Items\gold1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold1.xnb</Output>
+      <Time>2013-11-06T09:57:08.5380168-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\gold2.png</Source>
+      <Name>Sprites\Items\gold2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold2.xnb</Output>
+      <Time>2013-11-06T09:57:08.5390169-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\gold3.png</Source>
+      <Name>Sprites\Items\gold3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold3.xnb</Output>
+      <Time>2013-11-06T09:57:08.5390169-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\gold4.png</Source>
+      <Name>Sprites\Items\gold4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold4.xnb</Output>
+      <Time>2013-11-06T09:57:08.540017-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\gold5.png</Source>
+      <Name>Sprites\Items\gold5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\gold5.xnb</Output>
+      <Time>2013-11-06T09:57:08.5410171-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\Bat\Run.png</Source>
+      <Name>Sprites\Enemies\Bat\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Bat\Run.xnb</Output>
+      <Time>2013-11-06T10:48:38.8300116-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\Bat\Die.png</Source>
+      <Name>Sprites\Enemies\Bat\Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Bat\Die.xnb</Output>
+      <Time>2013-11-06T10:58:55.0186243-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\Bat\Idle.png</Source>
+      <Name>Sprites\Enemies\Bat\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Bat\Idle.xnb</Output>
+      <Time>2013-11-06T11:01:22.100331-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\EvilLama\Die.png</Source>
+      <Name>Sprites\Enemies\EvilLama\Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\EvilLama\Die.xnb</Output>
+      <Time>2013-11-06T11:27:14.0145069-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\EvilLama\Idle.png</Source>
+      <Name>Sprites\Enemies\EvilLama\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\EvilLama\Idle.xnb</Output>
+      <Time>2013-11-06T11:27:14.0165071-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\EvilLama\Run.png</Source>
+      <Name>Sprites\Enemies\EvilLama\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\EvilLama\Run.xnb</Output>
+      <Time>2013-11-06T11:27:14.0115066-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Overlays\spotlight2.png</Source>
+      <Name>Overlays\spotlight2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Overlays\spotlight2.xnb</Output>
+      <Time>2013-11-07T12:07:39.2530963-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\SuperBeast\Prowl.png</Source>
+      <Name>Sprites\Enemies\SuperBeast\Prowl</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Prowl.xnb</Output>
+      <Time>2013-11-11T11:38:47.6059266-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\Ninja\Idle.png</Source>
+      <Name>Sprites\Enemies\Ninja\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Ninja\Idle.xnb</Output>
+      <Time>2013-11-11T11:38:47.5989259-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\Ninja\Run.png</Source>
+      <Name>Sprites\Enemies\Ninja\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Ninja\Run.xnb</Output>
+      <Time>2013-11-11T11:38:47.599926-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\Ninja\Die.png</Source>
+      <Name>Sprites\Enemies\Ninja\Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Ninja\Die.xnb</Output>
+      <Time>2013-11-11T11:38:47.5979258-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Vblock.png</Source>
+      <Name>Tiles\Vblock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\Vblock.xnb</Output>
+      <Time>2013-11-11T11:38:47.6069267-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\ExitReached.wma</Source>
@@ -790,8 +745,8 @@
       <Importer>WmaImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\ExitReached.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\ExitReached.xnb</Output>
+      <Time>2013-11-06T09:57:08.4560086-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\GemCollected.wma</Source>
@@ -799,8 +754,8 @@
       <Importer>WmaImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\GemCollected.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\GemCollected.xnb</Output>
+      <Time>2013-11-06T09:57:08.4580088-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\MonsterKilled.wma</Source>
@@ -808,8 +763,8 @@
       <Importer>WmaImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\MonsterKilled.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\MonsterKilled.xnb</Output>
+      <Time>2013-11-06T09:57:08.460009-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\Music.wma</Source>
@@ -817,9 +772,9 @@
       <Importer>WmaImporter</Importer>
       <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\Music.xnb</Output>
-      <Extra>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\Music.wma</Extra>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\Music.xnb</Output>
+      <Extra>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\Music.wma</Extra>
+      <Time>2013-11-06T09:57:08.4920122-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\PlayerFall.wma</Source>
@@ -827,8 +782,8 @@
       <Importer>WmaImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\PlayerFall.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\PlayerFall.xnb</Output>
+      <Time>2013-11-06T09:57:08.5260156-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\PlayerJump.wma</Source>
@@ -836,8 +791,8 @@
       <Importer>WmaImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\PlayerJump.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\PlayerJump.xnb</Output>
+      <Time>2013-11-06T09:57:08.5270157-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\PlayerKilled.wma</Source>
@@ -845,8 +800,8 @@
       <Importer>WmaImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\PlayerKilled.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\PlayerKilled.xnb</Output>
+      <Time>2013-11-06T09:57:08.5280158-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\Powerup.wma</Source>
@@ -854,8 +809,8 @@
       <Importer>WmaImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb</Output>
+      <Time>2013-11-06T09:57:08.5290159-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\Ninja Gaiden - NES - Act 4-2.mp3</Source>
@@ -863,9 +818,9 @@
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\NG42.xnb</Output>
-      <Extra>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\NG42.wma</Extra>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\NG42.xnb</Output>
+      <Extra>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\NG42.wma</Extra>
+      <Time>2013-11-06T09:57:08.5240154-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\metal weapon.wav</Source>
@@ -873,48 +828,57 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\metal weapon.xnb</Output>
-      <Time>2013-11-02T02:07:50-04:00</Time>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\metal weapon.xnb</Output>
+      <Time>2013-11-06T09:57:08.5310161-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\SuperBeast\Charge.png</Source>
+      <Name>Sprites\Enemies\SuperBeast\Charge</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Charge.xnb</Output>
+      <Time>2013-11-11T11:38:47.6039264-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
-      <TargetProfile>Reach</TargetProfile>
+      <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_PlatformerContent\</RootDirectory>
-      <LoggerRootDirectory>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\</LoggerRootDirectory>
-      <IntermediateDirectory>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_PlatformerContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>D:\COSC625\COSC-625ZAM-9c70527c2c044bfac980ba99c1e168295834b020\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_PlatformerContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_PlatformerContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2013-09-15T14:22:45.5245851-04:00</Value>
+        <Value>2013-09-30T08:49:40.2158015-04:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

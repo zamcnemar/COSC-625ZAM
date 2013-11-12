@@ -79,30 +79,29 @@ namespace COSC625_Platformer
             return (IsKeyPress(Keys.Left) || IsButtonPress(Buttons.LeftThumbstickLeft, index) || IsButtonPress(Buttons.DPadLeft, index));
         }
 
-        public bool UpRight(PlayerIndex index)
-        {
-            return ((IsKeyPress(Keys.Up) && IsKeyPress(Keys.Right)) || (IsButtonPress(Buttons.LeftThumbstickUp, index) && IsButtonPress(Buttons.LeftThumbstickRight, index)) || (IsButtonPress(Buttons.DPadUp, index) && IsButtonPress(Buttons.DPadRight, index)));
-        }
-
-        public bool UpLeft(PlayerIndex index)
-        {
-            return ((IsKeyPress(Keys.Up) && IsKeyPress(Keys.Left)) || (IsButtonPress(Buttons.LeftThumbstickUp, index) && IsButtonPress(Buttons.LeftThumbstickLeft, index)) || (IsButtonPress(Buttons.DPadUp, index) && IsButtonPress(Buttons.DPadLeft, index)));
-        }
-
         public bool Fire(PlayerIndex index)
         {
-            return (IsNewKeyPress(Keys.Z) || IsNewButtonPress(Buttons.RightTrigger, index));
+            return (IsNewKeyPress(Keys.Z) || IsNewButtonPress(Buttons.X, index));
         }
 
         public bool Attack(PlayerIndex index)
         {
-            return (IsNewKeyPress(Keys.F) || IsNewButtonPress(Buttons.X, index));
+            return (IsNewKeyPress(Keys.F) || IsNewButtonPress(Buttons.B, index));
         }
-
 
         public bool Jump(PlayerIndex index)
         {
             return (IsKeyPress(Keys.Space) || IsButtonPress(Buttons.A, index));
+        }
+
+        public bool aimUp(PlayerIndex index)
+        {
+            return IsButtonPress(Buttons.RightShoulder,index);
+        }
+
+        public bool aimDown(PlayerIndex index)
+        {
+            return IsButtonPress(Buttons.LeftShoulder, index);
         }
 
         public void Update()

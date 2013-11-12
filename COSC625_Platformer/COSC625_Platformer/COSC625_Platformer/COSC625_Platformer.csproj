@@ -13,7 +13,7 @@
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
     <XnaPlatform>Windows</XnaPlatform>
-    <XnaProfile>Reach</XnaProfile>
+    <XnaProfile>HiDef</XnaProfile>
     <XnaCrossPlatformGroupID>ae6794e7-d125-403c-a573-13818d5b9fb8</XnaCrossPlatformGroupID>
     <XnaOutputType>Game</XnaOutputType>
     <ApplicationIcon>Game.ico</ApplicationIcon>
@@ -108,16 +108,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controls.cs" />
+    <Compile Include="GameObjects\Enemies\Bat.cs" />
+    <Compile Include="GameObjects\Enemies\Ninja.cs" />
     <Compile Include="GameObjects\Enemies\Enemy.cs" />
     <Compile Include="GameObjects\Animation.cs" />
     <Compile Include="GameObjects\AnimationPlayer.cs" />
     <Compile Include="GameObjects\Circle.cs" />
+    <Compile Include="GameObjects\Enemies\EvilLama.cs" />
+    <Compile Include="GameObjects\Enemies\Lama.cs" />
+    <Compile Include="GameObjects\Enemies\BadGuy.cs" />
+    <Compile Include="GameObjects\Enemies\RunningMan.cs" />
+    <Compile Include="GameObjects\Enemies\SuperBeast.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
     <Compile Include="GameObjects\Items\Gem.cs" />
     <Compile Include="GameObjects\Items\Item.cs" />
     <Compile Include="GameObjects\Items\Star.cs" />
     <Compile Include="GameObjects\Layer.cs" />
     <Compile Include="GameObjects\MovableTile.cs" />
+    <Compile Include="GameObjects\MovableTileV.cs" />
     <Compile Include="GameObjects\Sprite.cs" />
     <Compile Include="GameObjects\Tile.cs" />
     <Compile Include="Levels\Level.cs" />
@@ -169,7 +177,6 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
   <!--

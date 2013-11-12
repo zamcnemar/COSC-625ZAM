@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C# Express 2010
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COSC625_Platformer", "COSC625_Platformer\COSC625_Platformer\COSC625_Platformer.csproj", "{B79E28D6-BC91-4825-9E6D-E499066C2573}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "COSC625_PlatformerContent", "COSC625_Platformer\COSC625_PlatformerContent\COSC625_PlatformerContent.contentproj", "{16CDCF4F-0D61-46E0-B129-F38E73A2040A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COSC625_PlatformerContent", "COSC625_Platformer\COSC625_PlatformerContent\COSC625_PlatformerContent.contentproj", "{16CDCF4F-0D61-46E0-B129-F38E73A2040A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XNAPlatformerLevelEditor", "XNAPlatformerLevelEditor\XNAPlatformerLevelEditor.csproj", "{C58AD8F6-ABE2-4C72-9E31-3B6ED6450CB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +19,10 @@ Global
 		{B79E28D6-BC91-4825-9E6D-E499066C2573}.Release|x86.Build.0 = Release|x86
 		{16CDCF4F-0D61-46E0-B129-F38E73A2040A}.Debug|x86.ActiveCfg = Debug|x86
 		{16CDCF4F-0D61-46E0-B129-F38E73A2040A}.Release|x86.ActiveCfg = Release|x86
+		{C58AD8F6-ABE2-4C72-9E31-3B6ED6450CB2}.Debug|x86.ActiveCfg = Debug|x86
+		{C58AD8F6-ABE2-4C72-9E31-3B6ED6450CB2}.Debug|x86.Build.0 = Debug|x86
+		{C58AD8F6-ABE2-4C72-9E31-3B6ED6450CB2}.Release|x86.ActiveCfg = Release|x86
+		{C58AD8F6-ABE2-4C72-9E31-3B6ED6450CB2}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

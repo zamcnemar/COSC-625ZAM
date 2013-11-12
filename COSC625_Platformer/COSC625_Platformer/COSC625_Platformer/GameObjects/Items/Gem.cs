@@ -14,19 +14,18 @@ namespace COSC625_Platformer.GameObjects.Items
 {
     class Gem : Item
     {
-        public Level Level
-        {
-            get { return level; }
-        }
-        Level level;
 
-        public Gem(Level level, Vector2 position)
+        public Gem(Level level, Vector2 position, int randomIndex)
         {
             this.level = level;
             this.basePosition = position;
             active = true;
             PointValue = 30;
-            Color = Color.Blue;
+            Color = Color.LightSteelBlue;
+            basename = "gold";
+            this.randomIndex = randomIndex;
+            
+
 
             LoadContent();
         }
@@ -46,7 +45,8 @@ namespace COSC625_Platformer.GameObjects.Items
 
         public void LoadContent()
         { 
-            spriteTexture = Level.Content.Load<Texture2D>("Sprites/Gem");
+            spriteTexture = Level.Content.Load<Texture2D>("Sprites/Items/"+basename + randomIndex);
+            //spriteTexture = Level.Content.Load<Texture2D>("Sprites/Gem");
             origin = new Vector2(spriteTexture.Width / 2.0f, spriteTexture.Height / 2.0f);
             collectedSound = Level.Content.Load<SoundEffect>("Sounds/gemCollected");
             Size = new Rectangle(0, 0, (int)(spriteTexture.Width * Scale), (int)(spriteTexture.Height * Scale));
