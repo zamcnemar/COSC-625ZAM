@@ -318,52 +318,52 @@ namespace COSC625_Platformer
                 {
                     //And set it to alive
                     bullet.alive = true;
-                    if (ScreenManager.controls.UpRight(controller))
-                    {
-                        float armCos = (float)Math.Cos(arm.rotation - MathHelper.PiOver2);
-                        float armSin = (float)Math.Sin(arm.rotation - MathHelper.PiOver2);
+                    //if (ScreenManager.controls.UpRight(controller))
+                    //{
+                    //    float armCos = (float)Math.Cos(arm.rotation - MathHelper.PiOver2);
+                    //    float armSin = (float)Math.Sin(arm.rotation - MathHelper.PiOver2);
 
-                        //float armCos = (float)Math.Cos(45.0);
-                        //float armSin = (float)Math.Sin(45.0);
+                    //    //float armCos = (float)Math.Cos(45.0);
+                    //    //float armSin = (float)Math.Sin(45.0);
 
-                        // bullet.position = Vector2FromAngle(.785,true);
+                    //    // bullet.position = Vector2FromAngle(.785,true);
 
-                        bullet.position = new Vector2(
-                           arm.position.X + 42 * armCos,
-                           arm.position.Y + 42 * armSin);
-
-
-
-                        bullet.Velocity = new Vector2(
-                            (float)Math.Cos(arm.rotation - MathHelper.PiOver4 + MathHelper.Pi + MathHelper.PiOver2),
-                            (float)Math.Sin(arm.rotation - MathHelper.PiOver4 + MathHelper.Pi + MathHelper.PiOver2)) * 15.0f;
-
-
-                    }
-
-
-                    else if (ScreenManager.controls.UpLeft(controller))
-                    {
-                        float armCos = (float)Math.Cos(arm.rotation - MathHelper.PiOver2);
-                        float armSin = (float)Math.Sin(arm.rotation - MathHelper.PiOver2);
-
-                        //float armCos = (float)Math.Cos(45.0);
-                        //float armSin = (float)Math.Sin(45.0);
-
-                        // bullet.position = Vector2FromAngle(.785,true);
-
-                        bullet.position = new Vector2(
-                           arm.position.X + 42 * armCos,
-                           arm.position.Y + 42 * armSin);
+                    //    bullet.position = new Vector2(
+                    //       arm.position.X + 42 * armCos,
+                    //       arm.position.Y + 42 * armSin);
 
 
 
-                        bullet.Velocity = new Vector2(
-                            (float)Math.Cos(arm.rotation - MathHelper.PiOver4 - (2 * MathHelper.Pi)),
-                            (float)Math.Sin(arm.rotation - MathHelper.PiOver4 - (2 * MathHelper.Pi))) * 15.0f;
+                    //    bullet.Velocity = new Vector2(
+                    //        (float)Math.Cos(arm.rotation - MathHelper.PiOver4 + MathHelper.Pi + MathHelper.PiOver2),
+                    //        (float)Math.Sin(arm.rotation - MathHelper.PiOver4 + MathHelper.Pi + MathHelper.PiOver2)) * 15.0f;
 
-                    }
-                    else if (flip == SpriteEffects.FlipHorizontally) //Facing right
+
+                    //}
+
+
+                    //else if (ScreenManager.controls.UpLeft(controller))
+                    //{
+                    //    float armCos = (float)Math.Cos(arm.rotation - MathHelper.PiOver2);
+                    //    float armSin = (float)Math.Sin(arm.rotation - MathHelper.PiOver2);
+
+                    //    //float armCos = (float)Math.Cos(45.0);
+                    //    //float armSin = (float)Math.Sin(45.0);
+
+                    //    // bullet.position = Vector2FromAngle(.785,true);
+
+                    //    bullet.position = new Vector2(
+                    //       arm.position.X + 42 * armCos,
+                    //       arm.position.Y + 42 * armSin);
+
+
+
+                    //    bullet.Velocity = new Vector2(
+                    //        (float)Math.Cos(arm.rotation - MathHelper.PiOver4 - (2 * MathHelper.Pi)),
+                    //        (float)Math.Sin(arm.rotation - MathHelper.PiOver4 - (2 * MathHelper.Pi))) * 15.0f;
+
+                    //}
+                    if (flip == SpriteEffects.FlipHorizontally) //Facing right
                     {
                         float armCos = (float)Math.Cos(arm.rotation - MathHelper.PiOver2);
                         float armSin = (float)Math.Sin(arm.rotation - MathHelper.PiOver2);
@@ -589,6 +589,24 @@ namespace COSC625_Platformer
                     //arm.rotation = -MathHelper.PiOver2;
                     arm.rotation = -MathHelper.PiOver2;
 
+            }
+
+            //Change angle of gun based on controls
+            if (ScreenManager.controls.UpRight(controller))
+            {
+                arm.rotation = MathHelper.PiOver4;
+            }
+            else if (ScreenManager.controls.UpLeft(controller))
+            {
+                arm.rotation = -MathHelper.PiOver4;
+            }
+            else if (ScreenManager.controls.DownLeft(controller))
+            {
+                arm.rotation = -MathHelper.PiOver4 + MathHelper.Pi + MathHelper.PiOver2;
+            }
+            else if (ScreenManager.controls.DownRight(controller))
+            {
+                arm.rotation = -MathHelper.PiOver4 - MathHelper.Pi;
             }
 
             /*

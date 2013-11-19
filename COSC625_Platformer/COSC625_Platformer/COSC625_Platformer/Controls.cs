@@ -88,6 +88,14 @@ namespace COSC625_Platformer
         {
             return ((IsKeyPress(Keys.Up) && IsKeyPress(Keys.Left)) || (IsButtonPress(Buttons.LeftThumbstickUp, index) && IsButtonPress(Buttons.LeftThumbstickLeft, index)) || (IsButtonPress(Buttons.DPadUp, index) && IsButtonPress(Buttons.DPadLeft, index)));
         }
+        public bool DownLeft(PlayerIndex index)
+        {
+            return ((IsKeyPress(Keys.Down) && IsKeyPress(Keys.Left)) || (IsButtonPress(Buttons.LeftThumbstickDown, index) && IsButtonPress(Buttons.LeftThumbstickLeft, index)) || (IsButtonPress(Buttons.DPadDown, index) && IsButtonPress(Buttons.DPadLeft, index)));
+        }
+        public bool DownRight(PlayerIndex index)
+        {
+            return ((IsKeyPress(Keys.Down) && IsKeyPress(Keys.Right)) || (IsButtonPress(Buttons.LeftThumbstickDown, index) && IsButtonPress(Buttons.LeftThumbstickRight, index)) || (IsButtonPress(Buttons.DPadDown, index) && IsButtonPress(Buttons.DPadRight, index)));
+        }
 
         public bool Fire(PlayerIndex index)
         {
