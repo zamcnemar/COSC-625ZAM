@@ -608,6 +608,14 @@ namespace COSC625_Platformer
             {
                 arm.rotation = -MathHelper.PiOver4 - MathHelper.Pi;
             }
+            else if (ScreenManager.controls.Up(controller))
+            {
+                arm.rotation = 2 * MathHelper.Pi;
+            }
+            else if (ScreenManager.controls.Down(controller))
+            {
+                arm.rotation = MathHelper.Pi;
+            }
 
             /*
             //angled up shot, still working on angle down, they need to be changed as the player facing changes to update correctly
