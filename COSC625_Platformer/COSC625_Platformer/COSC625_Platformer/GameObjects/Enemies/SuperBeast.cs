@@ -15,13 +15,15 @@ namespace COSC625_Platformer.GameObjects.Enemies
     class SuperBeast : Enemy
     {
         /// <summary>
-        /// Facing direction along the X axis.
+        /// The Enemy Enumeration states that control the enemy logic.
         /// </summary>
         public enum AI
         {
             Pacing,
             Prowling,
-            Charging
+            Charging,
+            Unprowling,
+            Shooting
         }
 
         /// <summary>
@@ -31,12 +33,18 @@ namespace COSC625_Platformer.GameObjects.Enemies
 
         Animation prowlAnimation;
         Animation chargeAnimation;
+        Animation unprowlAnimation;
+
 
         float baseMovespeed = 64.0f;
 
         public static float maxChaseWaitTime = 1.0f;
 
         protected float chaseWaitTime = maxChaseWaitTime;
+
+        public static float maxShootWaitTime = 0.5f;
+
+        protected float shootWaitTime = maxShootWaitTime;
 
         public SuperBeast(Level level, Vector2 position)
         {
@@ -45,6 +53,9 @@ namespace COSC625_Platformer.GameObjects.Enemies
             this.IsAlive = true;
             this.spriteSet = "SuperBeast";
             this.MoveSpeed = baseMovespeed * 2;
+            this.MaxWaitTime = 0.001f;
+            this.maxHealth = 10;
+            this.health = 10;
 
             LoadContent();
         }
@@ -53,6 +64,12 @@ namespace COSC625_Platformer.GameObjects.Enemies
         {
             base.OnKilled(killedBy);
         }
+
+        public override void OnHurt(Player hurtby, int dmgAmt)
+        {
+            base.OnHurt(hurtby, dmgAmt);
+        }
+
 
         #region Update
 
@@ -83,9 +100,19 @@ namespace COSC625_Platformer.GameObjects.Enemies
                     chargeAI(gameTime, elapsed);
                 }
 
+                if (currentAI == AI.Unprowling)
+                {
+                    unprowlAI(gameTime, elapsed);
+                }
+
+                if (currentAI == AI.Shooting)
+                {
+                    shootemAI(gameTime, elapsed);
+                }
+
                 if (SpotlightRectangle.Intersects(Level.Player.BoundingRectangle))
                 {
-                    if (currentAI != AI.Charging)
+                    if (currentAI != AI.Charging && currentAI == AI.Pacing)
                     {
                         currentAI = AI.Prowling;
                     }
@@ -134,6 +161,23 @@ namespace COSC625_Platformer.GameObjects.Enemies
             }
         }
 
+        protected void turnAroundAI(GameTime gameTime, float elapsedTime)
+        {
+            // wait and turn at impassible blocks.
+            if (waitTime > 0)
+            {
+                // Wait for some amount of time.
+                waitTime = Math.Max(0.0f, waitTime - elapsedTime);
+                if (waitTime <= 0.0f)
+                {
+                    // Then turn around.
+                    direction = (FaceDirection)(-(int)direction);
+                    currentAI = AI.Unprowling;
+                    
+                }
+            }
+        }
+
         /// <summary>
         /// 
         /// </summary>
@@ -143,9 +187,10 @@ namespace COSC625_Platformer.GameObjects.Enemies
         {
             MoveSpeed = 0;
             
-            if (chaseWaitTime <= 0.0f)
+            if (chaseWaitTime <= 0.0f && currentAI != AI.Charging)
             {
                 currentAI = AI.Charging;
+                chaseWaitTime = maxChaseWaitTime;
             }
             else
                 chaseWaitTime -= (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -162,8 +207,54 @@ namespace COSC625_Platformer.GameObjects.Enemies
             MoveSpeed = baseMovespeed * 8;
             pacingAI(gameTime, elapsedTime);
 
+            if (currentAI == AI.Charging && waitTime > 0)
+            {
+                turnAroundAI(gameTime, elapsedTime);
+            }
+            
         }
-        
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gameTime"></param>
+        /// <param name="elapsedTime"></param>
+        protected void unprowlAI(GameTime gameTime, float elapsedTime)
+        {
+            MoveSpeed = 0;
+
+            if (chaseWaitTime <= 0.0f && currentAI != AI.Charging)
+            {
+                currentAI = AI.Shooting;
+                chaseWaitTime = maxChaseWaitTime;
+            }
+            else
+                chaseWaitTime -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+
+            
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gameTime"></param>
+        /// <param name="elapsedTime"></param>
+        protected void shootemAI(GameTime gameTime, float elapsedTime)
+        {
+
+            if (shootWaitTime <= 0.0f && currentAI != AI.Charging)
+            {
+                currentAI = AI.Prowling;
+                shootWaitTime = maxShootWaitTime;
+            }
+            else
+            {
+                shootWaitTime -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+                // shoot the missle
+
+            }
+        }
 
         /// <summary>
         /// Updates the Enemy's velocity and position based gravity, etc.
@@ -218,6 +309,8 @@ namespace COSC625_Platformer.GameObjects.Enemies
             dieAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Die"), 0.07f, false);
             prowlAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Prowl"), 0.15f, false);
             chargeAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Charge"), 0.05f, true);
+            unprowlAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "UnProwl"), 0.05f, false);
+
 
 
             sprite.PlayAnimation(idleAnimation);
@@ -256,14 +349,13 @@ namespace COSC625_Platformer.GameObjects.Enemies
             }
             else if (!Level.Player.IsAlive ||
                       Level.ReachedExit ||
-                      Level.TimeRemaining == TimeSpan.Zero ||
-                      waitTime > 0)
+                      Level.TimeRemaining == TimeSpan.Zero)
             {
                 sprite.PlayAnimation(idleAnimation);
             }
             else if (currentAI == AI.Pacing)
             {
-                sprite.PlayAnimation(runAnimation);
+                    sprite.PlayAnimation(runAnimation);
             }
             else if (currentAI == AI.Prowling)
             {
@@ -272,6 +364,14 @@ namespace COSC625_Platformer.GameObjects.Enemies
             else if (currentAI == AI.Charging)
             {
                 sprite.PlayAnimation(chargeAnimation);
+            }
+            else if (currentAI == AI.Unprowling)
+            {
+                sprite.PlayAnimation(unprowlAnimation);
+            }
+            else if (currentAI == AI.Shooting)
+            {
+
             }
 
             // Draw facing the way the enemy is moving.

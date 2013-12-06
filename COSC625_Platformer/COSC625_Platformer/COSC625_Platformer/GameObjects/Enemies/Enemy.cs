@@ -59,6 +59,9 @@ namespace COSC625_Platformer
 
         public bool canShoot { get; set; }
 
+        protected int maxHealth = 1;
+        protected int health = 1;
+
 
         /// <summary>
         /// Gets whether or not the player's feet are on the ground.
@@ -107,7 +110,7 @@ namespace COSC625_Platformer
          
         public bool IsAlive { get; set; }
 
-        //good dead bodies go away.
+        //Removes the defeated enemies from the updating after a certain amount of time.
         protected const float deathTimeMax = 3.0f;
         public float deathTime = deathTimeMax;
          
@@ -185,6 +188,18 @@ namespace COSC625_Platformer
             killedSound.Play();
         }
 
+
+        public virtual void OnHurt(Player hurtby, int dmgAmt)
+        {
+            this.health -= dmgAmt;
+
+            if (health < 0)
+            {
+                this.OnKilled(hurtby);
+            }
+            else
+                killedSound.Play();
+        }
         public Enemy()
         {
 
