@@ -647,6 +647,7 @@ namespace COSC625_Platformer
                     //{
                     //    float armCos = (float)Math.Cos(arm.rotation - MathHelper.PiOver2);
                     //    float armSin = (float)Math.Sin(arm.rotation - MathHelper.PiOver2);
+<<<<<<< HEAD
 >>>>>>> parent of 5af21d2... 5 bullet spreadshot implementation
 
                     //    //float armCos = (float)Math.Cos(45.0);
@@ -705,14 +706,15 @@ namespace COSC625_Platformer
                     {
                         float armCos = (float)Math.Cos(arm.rotation - MathHelper.PiOver2);
                         float armSin = (float)Math.Sin(arm.rotation - MathHelper.PiOver2);
+=======
 
-                        // Set the initial position of our bullets at the end of our gun arm
-                        // 42 is obtained by taking the width of the Arm_Gun texture / 2
-                        // and subtracting the width of the Bullet texture / 2. ((96/2)=(12/2))
-                        bullet.position = new Vector2(
-                            arm.position.X + 42 * armCos,
-                            arm.position.Y + 42 * armSin);
+                    //    //float armCos = (float)Math.Cos(45.0);
+                    //    //float armSin = (float)Math.Sin(45.0);
+>>>>>>> parent of 5af21d2... 5 bullet spreadshot implementation
 
+                    //    // bullet.position = Vector2FromAngle(.785,true);
+
+<<<<<<< HEAD
                         // And give it a velocity of the direction we're aiming.
                         // Increae/decrease speed by changeing 15.0f
 <<<<<<< HEAD
@@ -949,6 +951,21 @@ namespace COSC625_Platformer
                 arm.rotation = -MathHelper.PiOver2;
 
 =======
+=======
+                    //    bullet.position = new Vector2(
+                    //       arm.position.X + 42 * armCos,
+                    //       arm.position.Y + 42 * armSin);
+
+
+
+                    //    bullet.Velocity = new Vector2(
+                    //        (float)Math.Cos(arm.rotation - MathHelper.PiOver4 + MathHelper.Pi + MathHelper.PiOver2),
+                    //        (float)Math.Sin(arm.rotation - MathHelper.PiOver4 + MathHelper.Pi + MathHelper.PiOver2)) * 15.0f;
+
+
+                    //}
+
+>>>>>>> parent of 5af21d2... 5 bullet spreadshot implementation
 
                     //else if (ScreenManager.controls.UpLeft(controller))
                     //{
