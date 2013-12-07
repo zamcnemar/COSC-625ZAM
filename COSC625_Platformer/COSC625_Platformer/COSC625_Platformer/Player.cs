@@ -309,7 +309,7 @@ namespace COSC625_Platformer
             UpdateBullets();
         }
 
-        private void FireBullet(double angle)
+        private void FireBullet()
         {
             foreach (GameObject bullet in bullets)
             {
@@ -318,7 +318,51 @@ namespace COSC625_Platformer
                 {
                     //And set it to alive
                     bullet.alive = true;
+                    //if (ScreenManager.controls.UpRight(controller))
+                    //{
+                    //    float armCos = (float)Math.Cos(arm.rotation - MathHelper.PiOver2);
+                    //    float armSin = (float)Math.Sin(arm.rotation - MathHelper.PiOver2);
 
+                    //    //float armCos = (float)Math.Cos(45.0);
+                    //    //float armSin = (float)Math.Sin(45.0);
+
+                    //    // bullet.position = Vector2FromAngle(.785,true);
+
+                    //    bullet.position = new Vector2(
+                    //       arm.position.X + 42 * armCos,
+                    //       arm.position.Y + 42 * armSin);
+
+
+
+                    //    bullet.Velocity = new Vector2(
+                    //        (float)Math.Cos(arm.rotation - MathHelper.PiOver4 + MathHelper.Pi + MathHelper.PiOver2),
+                    //        (float)Math.Sin(arm.rotation - MathHelper.PiOver4 + MathHelper.Pi + MathHelper.PiOver2)) * 15.0f;
+
+
+                    //}
+
+
+                    //else if (ScreenManager.controls.UpLeft(controller))
+                    //{
+                    //    float armCos = (float)Math.Cos(arm.rotation - MathHelper.PiOver2);
+                    //    float armSin = (float)Math.Sin(arm.rotation - MathHelper.PiOver2);
+
+                    //    //float armCos = (float)Math.Cos(45.0);
+                    //    //float armSin = (float)Math.Sin(45.0);
+
+                    //    // bullet.position = Vector2FromAngle(.785,true);
+
+                    //    bullet.position = new Vector2(
+                    //       arm.position.X + 42 * armCos,
+                    //       arm.position.Y + 42 * armSin);
+
+
+
+                    //    bullet.Velocity = new Vector2(
+                    //        (float)Math.Cos(arm.rotation - MathHelper.PiOver4 - (2 * MathHelper.Pi)),
+                    //        (float)Math.Sin(arm.rotation - MathHelper.PiOver4 - (2 * MathHelper.Pi))) * 15.0f;
+
+                    //}
                     if (flip == SpriteEffects.FlipHorizontally) //Facing right
                     {
                         float armCos = (float)Math.Cos(arm.rotation - MathHelper.PiOver2);
@@ -333,23 +377,14 @@ namespace COSC625_Platformer
 
                         // And give it a velocity of the direction we're aiming.
                         // Increae/decrease speed by changeing 15.0f
-                        //  bullet.Velocity = new Vector2(
-                        //  (float)Math.Cos(arm.rotation - MathHelper.PiOver2),
-                        // (float)Math.Sin(arm.rotation - MathHelper.PiOver2)) * 15.0f;
-
                         bullet.Velocity = new Vector2(
-                            (float)Math.Cos(arm.rotation - MathHelper.ToRadians((float)angle)),
-                            (float)Math.Sin(arm.rotation - MathHelper.ToRadians((float)angle))) * 15.0f;
-
+                            (float)Math.Cos(arm.rotation - MathHelper.PiOver2),
+                            (float)Math.Sin(arm.rotation - MathHelper.PiOver2)) * 15.0f;
                     }
-
                     else //Facing left
                     {
-                        float armCos = (float)Math.Cos(arm.rotation + MathHelper.ToRadians((float)angle));
-                        float armSin = (float)Math.Sin(arm.rotation + MathHelper.ToRadians((float)angle));
-
-                        // float armCos = (float)Math.Cos(arm.rotation + MathHelper.PiOver2);
-                        //float armSin = (float)Math.Sin(arm.rotation + MathHelper.PiOver2);
+                        float armCos = (float)Math.Cos(arm.rotation + MathHelper.PiOver2);
+                        float armSin = (float)Math.Sin(arm.rotation + MathHelper.PiOver2);
 
                         //Set the initial position of our bullet at the end of our gun arm
                         //42 is obtained be taking the width of the Arm_Gun texture / 2
@@ -361,9 +396,9 @@ namespace COSC625_Platformer
                         //And give it a velocity of the direction we're aiming.
                         //Increase/decrease speed by changing 15.0f
                         bullet.Velocity = new Vector2(
-                          -armCos,
-                          -armSin) * 15.0f;
-                    }         
+                           -armCos,
+                           -armSin) * 15.0f;
+                    }
 
                     return;
                 }// End if
@@ -593,14 +628,7 @@ namespace COSC625_Platformer
 
             // Shoot = RightTrigger
             if (ScreenManager.controls.Fire(controller))
-            {
-                //increment angle by 45 to spread by 3 bullets or 22.5 for 5 bullets
-                for (double angle = 45; angle <= 135; angle = angle + 22.5)
-                {
-                    FireBullet(angle);
-                }
-                //FireBullet();
-            }
+                FireBullet();
 
             if (ScreenManager.controls.Attack(controller))
             {
