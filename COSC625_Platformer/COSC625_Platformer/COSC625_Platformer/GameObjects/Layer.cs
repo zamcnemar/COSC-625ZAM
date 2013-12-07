@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Content;
 
 namespace COSC625_Platformer.GameObjects
 {
-    class Layer
+    public class Layer
     {
 
         public Texture2D[] Textures { get; private set; }

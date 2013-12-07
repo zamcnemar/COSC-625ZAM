@@ -48,10 +48,13 @@ namespace COSC625_Platformer.GameObjects.Enemies
                 pacingAI(gameTime, elapsed);
             }
 
-            if (SpotlightRectangle.Intersects(Level.Player.BoundingRectangle))
-                iSeeYou = true;
-            else
-                iSeeYou = false;
+            foreach (Player p in GameScreen.players)
+            {
+                if (SpotlightRectangle.Intersects(p.BoundingRectangle))
+                    iSeeYou = true;
+                else
+                    iSeeYou = false;
+            }
         }
 
         protected void pacingAI(GameTime gameTime, float elapsedTime)

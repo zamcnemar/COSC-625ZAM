@@ -8,9 +8,8 @@ using COSC625_Platformer.Levels;
 
 namespace COSC625_Platformer.GameObjects
 {
-    class MovableTile
+    public class MovableTile
     {
-
         private Texture2D texture;
         private Vector2 origin;
 

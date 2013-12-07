@@ -123,7 +123,7 @@ namespace COSC625_Platformer.Screens
                         case 0: ScreenManager.gameState = GameState.Play; break;
                         case 1: mState = MenuState.Options; break;
                         case 2: mState = MenuState.Help; break;
-                        case 3: mState = MenuState.PopUp;  break;
+                        case 3: mState = MenuState.PopUp; break;
                     }
                 }
                 for (int i = 0; i < menuEntries.Count; i++)
@@ -264,7 +264,7 @@ namespace COSC625_Platformer.Screens
                 {
                     switch (selection)
                     {
-                        case 0: ScreenManager.gameState = GameState.Play;break;
+                        case 0: ScreenManager.gameState = GameState.Play; break;
                         case 1: mState = MenuState.Main; break;
                     }
                 }

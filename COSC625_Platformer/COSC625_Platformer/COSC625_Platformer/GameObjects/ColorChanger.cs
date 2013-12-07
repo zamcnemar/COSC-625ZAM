@@ -29,16 +29,16 @@ namespace COSC625_Platformer.GameObjects
         /// </summary
         /// 
         public bool IsActive { get; set; }
- 
+
         public ColorChanger(float timeBetweenColors, bool isActive, params Color[] colors)
         {
             this.colors = colors;
             this.timeBetweenColors = timeBetweenColors;
             this.IsActive = isActive;
- 
+
             Reset(IsActive);
         }
- 
+
         public void Reset(bool isActive)
         {
             //Set our initial color. If no colors OR we're not active
@@ -48,33 +48,33 @@ namespace COSC625_Platformer.GameObjects
                 CurrentColor = Color.White;
             else
                 CurrentColor = colors[0];
- 
+
             nextColorIndex = 1;
             elapsed = 0f;
             IsActive = isActive;
         }
- 
+
         public void Update(GameTime gameTime)
         {
             //If we deactivate the ColorChanger or we only
             //use a single color then we don't need to update
             if (!IsActive || colors.Length == 1)
                 return;
- 
+
             //Keep track of the time so we know when to change colors
             elapsed += (float)gameTime.ElapsedGameTime.TotalSeconds;
- 
+
             //If it's time to change colors, do so!
             if (elapsed >= timeBetweenColors)
             {
                 //If we've passed the last color, start at the beginning
                 if (++nextColorIndex >= colors.Length)
                     nextColorIndex = 0;
- 
+
                 //Reset the time so we can start over again
                 elapsed = 0f;
             }
- 
+
             //Interpolate our CurrentColor through our list of colors!
             CurrentColor = Color.Lerp(
                 CurrentColor,

@@ -21,7 +21,7 @@ namespace COSC625_Platformer.GameObjects.Items
         protected String basename;
         protected int randomIndex;
 
-    
+
         // The item is animated from a base position along the Y axis.
         protected float bounce;
         protected Vector2 basePosition;
@@ -65,7 +65,7 @@ namespace COSC625_Platformer.GameObjects.Items
         /// </summary>
         public Item()
         {
-            
+
 
         }
 
@@ -92,7 +92,7 @@ namespace COSC625_Platformer.GameObjects.Items
             collectedSound.Play();
         }
 
-       
+
         /// <summary>
         /// Draws a item in the appropriate color.
         /// </summary>
@@ -103,7 +103,7 @@ namespace COSC625_Platformer.GameObjects.Items
             spritebatch.Draw(spriteTexture, Position, null, Color, 0.0f, origin, 1.0f, SpriteEffects.None, 0.0f);
 
         }
-        
-        
+
+
     }
 }

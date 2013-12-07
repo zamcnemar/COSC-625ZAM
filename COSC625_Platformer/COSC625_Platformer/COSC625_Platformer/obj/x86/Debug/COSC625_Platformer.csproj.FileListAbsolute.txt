@@ -396,7 +396,6 @@ C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Pl
 C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Prowl.xnb
 C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Ninja\Idle.xnb
 C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Ninja\Run.xnb
-C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Chase.xnb
 C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Ninja\Die.xnb
 C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\Vblock.xnb
 C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Prowl.xnb
@@ -405,3 +404,5 @@ C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platfo
 C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\Ninja\Die.xnb
 C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\Vblock.xnb
 C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Charge.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\Charge.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\UnProwl.xnb

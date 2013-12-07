@@ -15,12 +15,12 @@ namespace COSC625_Platformer
     /// <summary>
     /// Our fearless adventurer!
     /// </summary>
-    class Player
+    public class Player
     {
         // GameObjects
         GameObject arm;
         GameObject[] bullets;
-        public PlayerIndex controller = PlayerIndex.One;
+        public PlayerIndex controller;
 
         // Animations
         private Animation idleAnimation;
@@ -82,7 +82,7 @@ namespace COSC625_Platformer
             get { return velocity; }
             set { velocity = value; }
         }
-        Vector2 velocity; 
+        Vector2 velocity;
 
         // Constants for controling horizontal movement
         private const float MoveAcceleration = 13000.0f;
@@ -119,7 +119,7 @@ namespace COSC625_Platformer
         private bool isJumping;
         private bool wasJumping;
         private float jumpTime;
-	
+
         // Attacking state
         public bool isAttacking;
         const float MaxAttackTime = 0.33f;
@@ -135,7 +135,7 @@ namespace COSC625_Platformer
         }
 
         private bool wasClimbing;
-        
+
 
         private Rectangle localBounds;
         /// <summary>
@@ -207,7 +207,7 @@ namespace COSC625_Platformer
             celebrateAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/Celebrate - Ninja"), 0.1f, false);
             dieAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/Die - Ninja"), 0.1f, false);
             attackAnimation = new Animation(level.Content.Load<Texture2D>("Sprites/Player/Attack"), 0.1f, false);
-            climbAnimation = new Animation(level.Content.Load<Texture2D>("Sprites/Player/Climb"),0.1f,true);
+            climbAnimation = new Animation(level.Content.Load<Texture2D>("Sprites/Player/Climb"), 0.1f, true);
 
             // Calculate bounds within texture size.            
             int width = (int)(idleAnimation.FrameWidth * 0.4);
@@ -254,7 +254,7 @@ namespace COSC625_Platformer
 
             if (IsPoweredUp)
                 powerUpTime = Math.Max(0.0f, powerUpTime - (float)gameTime.ElapsedGameTime.TotalSeconds);
- 
+
 
             if (IsAlive)
             {
@@ -539,7 +539,7 @@ namespace COSC625_Platformer
                 if (IsAlignedToLadder())
                 {
                     // Check the tile the player is standing on
-                    if (level.GetTileCollisionBelowPlayer(level.Player.Position) == TileCollision.Ladder)
+                    if (level.GetTileCollisionBelowPlayer(this.Position) == TileCollision.Ladder)
                     {
                         isClimbing = true;
                         isJumping = false;
@@ -550,9 +550,19 @@ namespace COSC625_Platformer
                 }
             }
 
+            //Boundary conditions
+            if (position.X < Level.cameraPosition + BoundingRectangle.Width / 2)
+                position.X = level.cameraPosition + BoundingRectangle.Width / 2;
+            if (position.X > level.cameraPosition + Game1.screenWidth - BoundingRectangle.Width / 2)
+                position.X = level.cameraPosition + Game1.screenWidth - BoundingRectangle.Width / 2;
+            if (position.Y > level.cameraPositionYAxis + Game1.screenHeight)
+                OnKilled(null);
+            if (position.Y < level.cameraPositionYAxis)
+                position.Y = level.cameraPositionYAxis;
+
             // Check if the player wants to jump.
             isJumping = ScreenManager.controls.Jump(controller);
-         
+
 
             // Arm Rotation
             // 9.28.13 - Z - Noticed movement is slower with the Thumbstics than with pad or keyboard.
@@ -586,8 +596,8 @@ namespace COSC625_Platformer
             if (arm.rotation == 0 && Math.Abs(ScreenManager.controls.ControllerState(controller).ThumbSticks.Left.Length()) < 0.5f)
             {
 
-                    //arm.rotation = -MathHelper.PiOver2;
-                    arm.rotation = -MathHelper.PiOver2;
+                //arm.rotation = -MathHelper.PiOver2;
+                arm.rotation = -MathHelper.PiOver2;
 
             }
 
@@ -651,11 +661,11 @@ namespace COSC625_Platformer
 
             if (Math.Abs(playerOffset) <= LadderAlignment &&
                 level.GetTileCollisionBelowPlayer(new Vector2(
-                    level.Player.position.X,
-                    level.Player.position.Y + 1)) == TileCollision.Ladder ||
+                    this.position.X,
+                    this.position.Y + 1)) == TileCollision.Ladder ||
                 level.GetTileCollisionBelowPlayer(new Vector2(
-                    level.Player.position.X,
-                    level.Player.position.Y - 1)) == TileCollision.Ladder)
+                    this.position.X,
+                    this.position.Y - 1)) == TileCollision.Ladder)
             {
                 // Align the player with the middle of the tile
                 position.X -= playerOffset;
@@ -764,7 +774,7 @@ namespace COSC625_Platformer
                 }
                 else
                 {
-                     // Reached the apex of the jump and has double jumps
+                    // Reached the apex of the jump and has double jumps
                     if (velocityY > -MaxFallSpeed * 0.5f && !wasJumping && numberOfJumps < 1)
                     {
                         velocityY =
@@ -774,10 +784,10 @@ namespace COSC625_Platformer
                     }
                     else
                     {
-                    // Reached the apex of the jump
-                    jumpTime = 0.0f;
+                        // Reached the apex of the jump
+                        jumpTime = 0.0f;
+                    }
                 }
-            }
             }
             else
             {
@@ -788,29 +798,29 @@ namespace COSC625_Platformer
 
             return velocityY;
         }
-            private int numberOfJumps = 0;
+        private int numberOfJumps = 0;
 
         private void DoAttack(GameTime gameTime)
         {
-           // If the player wants to attack
-           if (isAttacking)
-           {
-               // Begin or continue an attack
-               if (AttackTime > 0.0f)
-               {
-                   AttackTime -= (float)gameTime.ElapsedGameTime.TotalSeconds;
-               }
+            // If the player wants to attack
+            if (isAttacking)
+            {
+                // Begin or continue an attack
+                if (AttackTime > 0.0f)
+                {
+                    AttackTime -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+                }
                 else
-               {
-                   isAttacking = false;
-               }
-           }
-           else
-           {
-               //Continues not attack or cancels an attack in progress
-               AttackTime = 0.0f;
-           }
-       }           
+                {
+                    isAttacking = false;
+                }
+            }
+            else
+            {
+                //Continues not attack or cancels an attack in progress
+                AttackTime = 0.0f;
+            }
+        }
 
         /// <summary>
         /// Detects and resolves all collisions between the player and his neighboring
@@ -950,29 +960,29 @@ namespace COSC625_Platformer
             {
                 float absDepthX = Math.Abs(depth.X);
                 float absDepthY = Math.Abs(depth.Y);
- 
+
                 // Resolve the collision along the shallow axis.
                 if (absDepthY < absDepthX || collision == TileCollision.Platform)
                 {
                     // If we crossed the top of a tile, we are on the ground.
                     if (previousBottom <= tileBounds.Top)
                         isOnGround = true;
- 
+
                     // Ignore platforms, unless we are on the ground.
                     if (collision == TileCollision.Impassable || IsOnGround)
                     {
                         // Resolve the collision along the Y axis.
                         Position = new Vector2(Position.X, Position.Y + depth.Y);
- 
+
                         // Perform further collisions with the new bounds.
                         bounds = BoundingRectangle;
                     }
                 }
-                else if(collision == TileCollision.Impassable) // Ignore platforms.
+                else if (collision == TileCollision.Impassable) // Ignore platforms.
                 {
                     // Resolve the collision along the X axis.
                     Position = new Vector2(Position.X + depth.X, Position.Y);
- 
+
                     // Perform further collisions with the new bounds.
                     bounds = BoundingRectangle;
                 }

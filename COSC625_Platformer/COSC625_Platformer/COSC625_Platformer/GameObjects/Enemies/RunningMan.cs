@@ -189,7 +189,7 @@ namespace COSC625_Platformer.GameObjects.Enemies
         private int numberOfJumps = 0;
 
 
-       
+
         #endregion
 
 

@@ -11,7 +11,7 @@ namespace COSC625_Platformer.GameObjects
     /// A general usage class for potential objects like bullets and guns that need to be
     /// rotated, transposed or translated in the game.
     /// </summary>
-    class GameObject
+    public class GameObject
     {
         public Texture2D sprite;
         public Vector2 position;

@@ -24,7 +24,7 @@ namespace COSC625_Platformer.GameObjects.Items
             Color = Color.LightSteelBlue;
             basename = "gold";
             this.randomIndex = randomIndex;
-            
+
 
 
             LoadContent();
@@ -34,18 +34,18 @@ namespace COSC625_Platformer.GameObjects.Items
         {
             base.OnCollected(collectedBy);
         }
-        
+
         public override void Update(GameTime gameTime)
         {
 
             base.Update(gameTime);
 
         }
-         
+
 
         public void LoadContent()
-        { 
-            spriteTexture = Level.Content.Load<Texture2D>("Sprites/Items/"+basename + randomIndex);
+        {
+            spriteTexture = Level.Content.Load<Texture2D>("Sprites/Items/" + basename + randomIndex);
             //spriteTexture = Level.Content.Load<Texture2D>("Sprites/Gem");
             origin = new Vector2(spriteTexture.Width / 2.0f, spriteTexture.Height / 2.0f);
             collectedSound = Level.Content.Load<SoundEffect>("Sounds/gemCollected");

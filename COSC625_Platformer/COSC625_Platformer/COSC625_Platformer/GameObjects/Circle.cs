@@ -9,7 +9,7 @@ namespace COSC625_Platformer.GameObjects
     /// <summary>
     /// Represents a 2D circle.
     /// </summary>
-    struct Circle
+    public struct Circle
     {
         /// <summary>
         /// Center position of the circle.

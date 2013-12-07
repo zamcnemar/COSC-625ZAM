@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Media;
@@ -20,7 +21,7 @@ namespace COSC625_Platformer.Levels
     /// The level owns the player and controls the game's win and lose
     /// conditions as well as scoring.
     /// </summary>
-    class Level : IDisposable
+    public class Level : IDisposable
     {
         // Physical structure of the level.
         private Tile[,] tiles;
@@ -29,11 +30,11 @@ namespace COSC625_Platformer.Levels
         private const int EntityLayer = 2;
 
         // Entities in the level.
-        public Player Player
+        /*public Player Player
         {
             get { return player; }
         }
-        Player player;
+        Player player;*/
 
         public ContentManager Content = Game1.content;
 
@@ -54,9 +55,6 @@ namespace COSC625_Platformer.Levels
         private Random random = new Random(354668); // Arbitrary, but constant seed
 
         // Camera Position relative to the level.
-        //public float cameraPosition;
-        //private float cameraPositionYAxis;
-
         public float cameraPosition { get; private set; }
 
         public float cameraPositionYAxis { get; private set; }
@@ -84,6 +82,8 @@ namespace COSC625_Platformer.Levels
         private SoundEffect exitReachedSound;
 
         ContentManager content;
+
+        int startCount = 0;
 
         #region Loading
 
@@ -165,7 +165,7 @@ namespace COSC625_Platformer.Levels
             }
 
             // Verify that the level has a beginning and an end.
-            if (Player == null)
+            if (GameScreen.players[0] == null)
                 throw new NotSupportedException("A level must have a starting point.");
             if (exit == InvalidPosition)
                 throw new NotSupportedException("A level must have an exit.");
@@ -212,7 +212,7 @@ namespace COSC625_Platformer.Levels
 
                 // Item
                 case 'G':
-                    return LoadGemTile("gold", 6 , x, y);
+                    return LoadGemTile("gold", 6, x, y);
 
                 case 'P':
                     return LoadPowerUpTile(x, y);
@@ -229,7 +229,7 @@ namespace COSC625_Platformer.Levels
                 case 'A':
                     return LoadBadGuyTile(x, y);
 
-                    //Lama
+                //Lama
                 case 'L':
                     return LoadLamaTile(x, y);
 
@@ -372,11 +372,46 @@ namespace COSC625_Platformer.Levels
         /// </summary>
         private Tile LoadStartTile(int x, int y)
         {
-            if (Player != null)
+            if (startCount > 0)
                 throw new NotSupportedException("A level may only have one starting point.");
 
+            startCount++;
+
             start = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
-            player = new Player(this, start);
+
+            //Multiplayer hard code testing
+            Player test = new Player(this, start);
+            test.controller = PlayerIndex.Two;
+            test.lives = 4;
+            GameScreen.players.Add(test);
+
+            if (GamePad.GetState(PlayerIndex.One).IsConnected)
+            {
+                Player temp = new Player(this, start);
+                temp.controller = PlayerIndex.One;
+                GameScreen.players.Add(temp);
+            }
+
+            if (GamePad.GetState(PlayerIndex.Two).IsConnected)
+            {
+                Player temp = new Player(this, start);
+                temp.controller = PlayerIndex.Two;
+                GameScreen.players.Add(temp);
+            }
+
+            if (GamePad.GetState(PlayerIndex.Three).IsConnected)
+            {
+                Player temp = new Player(this, start);
+                temp.controller = PlayerIndex.Three;
+                GameScreen.players.Add(temp);
+            }
+
+            if (GamePad.GetState(PlayerIndex.Four).IsConnected)
+            {
+                Player temp = new Player(this, start);
+                temp.controller = PlayerIndex.Four;
+                GameScreen.players.Add(temp);
+            }
 
             return new Tile(null, TileCollision.Passable);
         }
@@ -589,43 +624,49 @@ namespace COSC625_Platformer.Levels
         /// </summary>
         public void Update(GameTime gameTime)
         {
-            // Pause while the player is dead or time is expired.
-            if (!Player.IsAlive || TimeRemaining == TimeSpan.Zero)
+            foreach (Player p in GameScreen.players)
             {
-                // Still want to perform physics on the player.
-                Player.ApplyPhysics(gameTime);
+                // Pause while the player is dead or time is expired.
+                if (!p.IsAlive || TimeRemaining == TimeSpan.Zero)
+                {
+                    // Still want to perform physics on the player.
+                    p.ApplyPhysics(gameTime);
+                }
+                else if (ReachedExit)
+                {
+                    // Animate the time being converted into points.
+                    int seconds = (int)Math.Round(gameTime.ElapsedGameTime.TotalSeconds * 100.0f);
+                    seconds = Math.Min(seconds, (int)Math.Ceiling(TimeRemaining.TotalSeconds));
+                    timeRemaining -= TimeSpan.FromSeconds(seconds);
+                    score += seconds * PointsPerSecond;
+                }
+                else
+                {
+                    p.Update(gameTime);
+                    // Falling off the bottom of the level kills the player.
+                    if (p.BoundingRectangle.Top >= Height * Tile.Height)
+                        OnPlayerKilled(p, null);
+
+                    // The player has reached the exit if they are standing on the ground and
+                    // his bounding rectangle contains the center of the exit tile. They can only
+                    // exit when they have collected all of the items.
+                    if (p.IsAlive &&
+                        p.IsOnGround &&
+                        p.BoundingRectangle.Contains(exit))
+                    {
+                        OnExitReached();
+                    }
+                }
             }
-            else if (ReachedExit)
-            {
-                // Animate the time being converted into points.
-                int seconds = (int)Math.Round(gameTime.ElapsedGameTime.TotalSeconds * 100.0f);
-                seconds = Math.Min(seconds, (int)Math.Ceiling(TimeRemaining.TotalSeconds));
-                timeRemaining -= TimeSpan.FromSeconds(seconds);
-                score += seconds * PointsPerSecond;
-            }
-            else
+
+            if (!ReachedExit && !GameScreen.allPlayersOutofLives() && timeRemaining != TimeSpan.Zero)
             {
                 timeRemaining -= gameTime.ElapsedGameTime;
-                Player.Update(gameTime);
                 UpdateItems(gameTime);
-                // Falling off the bottom of the level kills the player.
-                if (Player.BoundingRectangle.Top >= Height * Tile.Height)
-                    OnPlayerKilled(null);
-
                 UpdateEnemies(gameTime);
 
                 UpdateMovableTiles(gameTime);
                 UpdateMovableTilesV(gameTime);
-
-                // The player has reached the exit if they are standing on the ground and
-                // his bounding rectangle contains the center of the exit tile. They can only
-                // exit when they have collected all of the items.
-                if (Player.IsAlive &&
-                    Player.IsOnGround &&
-                    Player.BoundingRectangle.Contains(exit))
-                {
-                    OnExitReached();
-                }
             }
 
             // Clamp the time remaining at zero.
@@ -639,10 +680,13 @@ namespace COSC625_Platformer.Levels
             {
                 tile.Update(gameTime);
 
-                if (tile.PlayerIsOn)
+                foreach (Player p in GameScreen.players)
                 {
-                    //Make player move with tile if the player is on top of tile
-                    player.Position += tile.Velocity;
+                    if (tile.PlayerIsOn)
+                    {
+                        //Make player move with tile if the player is on top of tile
+                        p.Position += tile.Velocity;
+                    }
                 }
             }
         }
@@ -653,10 +697,13 @@ namespace COSC625_Platformer.Levels
             {
                 tile.Update(gameTime);
 
-                if (tile.PlayerIsOn)
+                foreach (Player p in GameScreen.players)
                 {
-                    //Make player move with tile if the player is on top of tile
-                    player.Position += tile.Velocity;
+                    if (tile.PlayerIsOn)
+                    {
+                        //Make player move with tile if the player is on top of tile
+                        p.Position += tile.Velocity;
+                    }
                 }
             }
         }
@@ -669,10 +716,13 @@ namespace COSC625_Platformer.Levels
 
                 item.Update(gameTime);
 
-                if (item.Boundary.Intersects(Player.BoundingRectangle))
+                foreach (Player p in GameScreen.players)
                 {
-                    items.RemoveAt(i--);
-                    OnItemCollected(item, Player);
+                    if (item.Boundary.Intersects(p.BoundingRectangle))
+                    {
+                        items.RemoveAt(i--);
+                        OnItemCollected(item, p);
+                    }
                 }
             }
         }
@@ -680,39 +730,41 @@ namespace COSC625_Platformer.Levels
         /// <summary>
         /// Animates each enemy and allow them to kill the player.
         /// </summary>
-        
+
         private void UpdateEnemies(GameTime gameTime)
         {
             foreach (Enemy enemy in enemies)
             {
                 enemy.Update(gameTime);
 
-                // Touching an enemy results in the following.
-                if (enemy.IsAlive && enemy.BoundingRectangle.Intersects(Player.BoundingRectangle))
+                foreach (Player p in GameScreen.players)
                 {
-                    // If the player is powered up kill the enemy.
-                    if (Player.IsPoweredUp)
+                    // Touching an enemy results in the following.
+                    if (enemy.IsAlive && enemy.BoundingRectangle.Intersects(p.BoundingRectangle))
                     {
-                        OnEnemyKilled(enemy, Player);
-                    }
-                    else
-                    {
-                        // otherwise the player is killed.
-                        if (enemy.IsAlive && enemy.BoundingRectangle.Intersects(Player.MeleeRectangle))
+                        // If the player is powered up kill the enemy.
+                        if (p.IsPoweredUp)
                         {
-                            if (Player.isAttacking)
-                                OnEnemyKilled(enemy, Player);
-                                
+                            OnEnemyKilled(enemy, p);
+                        }
+                        else
+                        {
+                            // otherwise the player is killed.
+                            if (enemy.IsAlive && enemy.BoundingRectangle.Intersects(p.MeleeRectangle))
+                            {
+                                if (p.isAttacking)
+                                    OnEnemyKilled(enemy, p);
+
+                            }
+
+                            if (enemy.IsAlive && enemy.BoundingRectangle.Intersects(p.BoundingRectangle) && p.IsAlive)
+                            {
+                                OnPlayerKilled(p, enemy);
+                            }
                         }
 
-                        if (enemy.IsAlive && enemy.BoundingRectangle.Intersects(Player.BoundingRectangle))
-                        {
-                            OnPlayerKilled(enemy);
-                        }
                     }
-
                 }
-
             }
         }
 
@@ -744,9 +796,9 @@ namespace COSC625_Platformer.Levels
         /// The enemy who killed the player. This is null if the player was not killed by an
         /// enemy, such as when a player falls into a hole.
         /// </param>
-        private void OnPlayerKilled(Enemy killedBy)
+        private void OnPlayerKilled(Player player, Enemy killedBy)
         {
-            Player.OnKilled(killedBy);
+            player.OnKilled(killedBy);
         }
 
         /// <summary>
@@ -754,7 +806,11 @@ namespace COSC625_Platformer.Levels
         /// </summary>
         private void OnExitReached()
         {
-            Player.OnReachedExit();
+            foreach (Player p in GameScreen.players)
+            {
+                p.OnReachedExit();
+            }
+
             exitReachedSound.Play();
             reachedExit = true;
         }
@@ -762,9 +818,15 @@ namespace COSC625_Platformer.Levels
         /// <summary>
         /// Restores the player to the starting point to try the level again.
         /// </summary>
-        public void StartNewLife()
+        public void StartNewLife(Player p)
         {
-            Player.Reset(start);
+            if (p.lives > 0)
+            {
+                if (!GameScreen.allPlayersDead())
+                    p.Reset(GameScreen.activePlayer().Position);
+                else
+                    p.Reset(start);
+            }
         }
 
         #endregion
@@ -795,7 +857,10 @@ namespace COSC625_Platformer.Levels
 
             DrawItems(gameTime, spriteBatch);
 
-            Player.Draw(gameTime, spriteBatch);
+            foreach (Player p in GameScreen.players)
+            {
+                p.Draw(gameTime, spriteBatch);
+            }
 
             DrawEnemies(gameTime, spriteBatch);
 
@@ -828,17 +893,17 @@ namespace COSC625_Platformer.Levels
 
             // Calculate how far to scroll when the player is near the edges of the screen.
             float cameraMovement = 0.0f;
-            if (Player.Position.X < marginLeft)
-                cameraMovement = Player.Position.X - marginLeft;
-            else if (Player.Position.X > marginRight)
-                cameraMovement = Player.Position.X - marginRight;
+            if (GameScreen.activePlayer().Position.X < marginLeft)
+                cameraMovement = GameScreen.activePlayer().Position.X - marginLeft;
+            else if (GameScreen.activePlayer().Position.X > marginRight)
+                cameraMovement = GameScreen.activePlayer().Position.X - marginRight;
 
             // Calculate how far to vertically scroll when the player is near the top or bottom of the screen.
             float cameraMovementY = 0.0f;
-            if (Player.Position.Y < marginTop) // above the top margin
-                cameraMovementY = Player.Position.Y - marginTop;
-            else if (Player.Position.Y > marginBottom) // below the bottom margin
-                cameraMovementY = Player.Position.Y - marginBottom;
+            if (GameScreen.activePlayer().Position.Y < marginTop) // above the top margin
+                cameraMovementY = GameScreen.activePlayer().Position.Y - marginTop;
+            else if (GameScreen.activePlayer().Position.Y > marginBottom) // below the bottom margin
+                cameraMovementY = GameScreen.activePlayer().Position.Y - marginBottom;
 
             float maxCameraPositionYOffset = Tile.Height * Height - viewport.Height;
 
@@ -893,7 +958,7 @@ namespace COSC625_Platformer.Levels
             foreach (Enemy enemy in enemies)
                 if (enemy.Position.X > marginLeft && enemy.Position.X < marginRight)
                 {
-                    if(enemy.IsAlive || enemy.deathTime > 0)
+                    if (enemy.IsAlive || enemy.deathTime > 0)
                         enemy.Draw(gameTime, spriteBatch);
                 }
 

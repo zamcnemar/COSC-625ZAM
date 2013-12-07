@@ -8,7 +8,7 @@ using COSC625_Platformer.Levels;
 
 namespace COSC625_Platformer.GameObjects
 {
-    class MovableTileV
+    public class MovableTileV
     {
 
         private Texture2D texture;
@@ -90,7 +90,7 @@ namespace COSC625_Platformer.GameObjects
         public void Update(GameTime gameTime)
         {
             float elapsed = (float)gameTime.ElapsedGameTime.TotalSeconds;
-            
+
             // Calculate tile position based on the side we are moving towards
             float posY = Position.Y + localBounds.Height / 2 * (int)direction;
             /*
@@ -98,7 +98,7 @@ namespace COSC625_Platformer.GameObjects
             int tileX = (int)Math.Floor(Position.Y / Tile.Width);
             */
             // Calculate tile position based on the side we are moving towards. X from H move tiles.
-            float posX = Position.X + localBounds.Width / 2 ;
+            float posX = Position.X + localBounds.Width / 2;
             int tileX = (int)Math.Floor(posX / Tile.Width) - (int)direction;
             int tileY = (int)Math.Floor(posY / Tile.Height) - (int)direction;
 
@@ -114,7 +114,7 @@ namespace COSC625_Platformer.GameObjects
             }
             else
             {
-               
+
 
                 //If we're about to run into a wall that isn't a MovableTile move in other direction.
                 //if (Level.GetCollision(tileX + (int)direction, tileY) == TileCollision.Impassable ||

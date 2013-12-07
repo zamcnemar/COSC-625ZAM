@@ -78,6 +78,7 @@ Content\Overlays\spotlight2.xnb
 Content\Sprites\Enemies\SuperBeast\Prowl.xnb
 Content\Sprites\Enemies\Ninja\Idle.xnb
 Content\Sprites\Enemies\Ninja\Run.xnb
+Content\Sprites\Enemies\SuperBeast\Charge.xnb
 Content\Sprites\Enemies\Ninja\Die.xnb
 Content\Tiles\Vblock.xnb
 Content\Sounds\ExitReached.xnb
@@ -92,7 +93,7 @@ Content\Sounds\Powerup.xnb
 Content\Sounds\NG42.xnb
 Content\Sounds\NG42.wma
 Content\Sounds\metal weapon.xnb
-Content\Sprites\Enemies\SuperBeast\Charge.xnb
+Content\Sprites\Enemies\SuperBeast\UnProwl.xnb
 Content\Levels\0.txt
 Content\Levels\1.txt
 Content\Levels\2.txt

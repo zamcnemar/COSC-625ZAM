@@ -17,10 +17,12 @@ namespace COSC625_Platformer.Screens
     {
         Level1
     }
-    
+
     public class GameScreen
     {
         public static LevelState levelState;
+
+        public static List<Player> players;
 
         // Level content.        
 
@@ -34,7 +36,7 @@ namespace COSC625_Platformer.Screens
 
         // When the time remaining is less than the warning time, it blinks on the hud
         private static readonly TimeSpan WarningTime = TimeSpan.FromSeconds(30);
-        
+
         // The number of levels in the Levels directory of our content. We assume that
         // levels in our content are 0-based and that all numbers under this constant
         // have a level file present. This allows us to not need to check for the file
@@ -49,7 +51,7 @@ namespace COSC625_Platformer.Screens
 
         public GameScreen()
         {
-            
+            players = new List<Player>();
         }
         public void LoadContent()
         {
@@ -95,22 +97,25 @@ namespace COSC625_Platformer.Screens
 
             // Perform the appropriate action to advance the game and
             // to get the player back to playing.
-            if (ScreenManager.controls.AButton(PlayerIndex.One))
+            foreach (Player p in players)
             {
-                if (!level.Player.IsAlive && level.Player.lives > 0)
+                if (ScreenManager.controls.AButton(p.controller))
                 {
-                    level.StartNewLife();
-                }
-                else if (level.TimeRemaining == TimeSpan.Zero)
-                {
-                    if (level.ReachedExit)
-                        LoadNextLevel();
-                    else
-                        ReloadCurrentLevel();
-                }
-                else if (!level.Player.IsAlive && level.Player.lives <= 0)
-                {
-                     ScreenManager.gameState = GameState.Menu;
+                    if (allPlayersOutofLives())
+                    {
+                        ScreenManager.gameState = GameState.Menu;
+                    }
+                    else if (level.TimeRemaining == TimeSpan.Zero)
+                    {
+                        if (level.ReachedExit)
+                            LoadNextLevel();
+                        else
+                            ReloadCurrentLevel();
+                    }
+                    else if (!p.IsAlive && p.lives > 0)
+                    {
+                        level.StartNewLife(p);
+                    }
                 }
             }
         }
@@ -184,8 +189,9 @@ namespace COSC625_Platformer.Screens
 
             // Draw Lives 
             float livesHeight = ScreenManager.spriteFont.MeasureString(timeString).Y;
-            DrawShadowedString(spriteBatch, ScreenManager.spriteFont, "Lives: " + level.Player.lives.ToString(), hudLocation + new Vector2(0.0f, timeHeight * 2.4f), Color.Yellow);
-           
+            DrawShadowedString(spriteBatch, ScreenManager.spriteFont, "Lives: " + players[0].lives.ToString(), hudLocation + new Vector2(0.0f, timeHeight * 2.4f), Color.Yellow);
+
+
             // Determine the status overlay message to show.
             Texture2D status = null;
             if (level.TimeRemaining == TimeSpan.Zero)
@@ -199,12 +205,15 @@ namespace COSC625_Platformer.Screens
                     status = loseOverlay;
                 }
             }
-            else if (!level.Player.IsAlive)
+
+            else if (allPlayersOutofLives())
             {
-                if (level.Player.lives > 0)
-                    status = diedOverlay;
-                else
-                    status = loseOverlay;    
+                status = loseOverlay;
+            }
+
+            else if (allPlayersDead())
+            {
+                status = diedOverlay;
             }
 
             if (status != null)
@@ -221,6 +230,36 @@ namespace COSC625_Platformer.Screens
         {
             spriteBatch.DrawString(font, value, position + new Vector2(1.0f, 1.0f), Color.Black);
             spriteBatch.DrawString(font, value, position, color);
+        }
+
+        public static Boolean allPlayersOutofLives()
+        {
+            foreach (Player p in players)
+            {
+                if (p.IsAlive || p.lives > 0)
+                    return false;
+            }
+            return true;
+        }
+
+        public static Boolean allPlayersDead()
+        {
+            foreach (Player p in players)
+            {
+                if (p.IsAlive)
+                    return false;
+            }
+            return true;
+        }
+
+        public static Player activePlayer()
+        {
+            for (int i = 0; i < players.Count; i++)
+            {
+                if (players[i].IsAlive)
+                    return (players[i]);
+            }
+            return players[0];
         }
     }
 }

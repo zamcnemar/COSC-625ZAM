@@ -17,7 +17,7 @@ namespace COSC625_Platformer.Screens
         Pause
     }
 
-    public class ScreenManager:DrawableGameComponent
+    public class ScreenManager : DrawableGameComponent
     {
         public static GameState gameState = GameState.Menu;
         public static Controls controls;
@@ -31,7 +31,8 @@ namespace COSC625_Platformer.Screens
 
         GameState previous, current;
 
-        public ScreenManager(Game game) : base(game)
+        public ScreenManager(Game game)
+            : base(game)
         {
             screen_Game = new GameScreen();
             screen_Menu = new MenuScreen();

@@ -97,8 +97,11 @@ namespace COSC625_Platformer.GameObjects.Enemies
 
             UpdateBullets();
 
-            if (Level.Player.IsAlive)
-                DoShoot(gameTime);
+            foreach (Player p in GameScreen.players)
+            {
+                if (p.IsAlive)
+                    DoShoot(gameTime);
+            }
 
             if (flip == SpriteEffects.FlipHorizontally)
                 arm.position = new Vector2(position.X + 5, position.Y - 60);
@@ -229,19 +232,22 @@ namespace COSC625_Platformer.GameObjects.Enemies
                         bullet.sprite.Width * 4,
                         bullet.sprite.Height * 4);
 
-                    if (bulletRect.Intersects(level.Player.BoundingRectangle) && level.Player.IsAlive && level.Player.IsPoweredUp == false)
+                    foreach (Player p in GameScreen.players)
                     {
-                        level.Player.OnKilled(this);
-                        bullet.alive = false;
-                    }
-                    if (bulletRect.Intersects(level.Player.BoundingRectangle) && level.Player.IsAlive && level.Player.IsPoweredUp == true)
-                    {
-                        bullet.alive = false;
-                    }
-                    if (bulletRect.Intersects(level.Player.MeleeRectangle) && level.Player.isAttacking)
-                    {
-                        bullet.alive = false;
-                        bulletDeflect.Play(.5f, 0.0f, 0.0f);
+                        if (bulletRect.Intersects(p.BoundingRectangle) && p.IsAlive && p.IsPoweredUp == false)
+                        {
+                            p.OnKilled(this);
+                            bullet.alive = false;
+                        }
+                        if (bulletRect.Intersects(p.BoundingRectangle) && p.IsAlive && p.IsPoweredUp == true)
+                        {
+                            bullet.alive = false;
+                        }
+                        if (bulletRect.Intersects(p.MeleeRectangle) && p.isAttacking)
+                        {
+                            bullet.alive = false;
+                            bulletDeflect.Play(.5f, 0.0f, 0.0f);
+                        }
                     }
                     // Everything below here can below deleted if you want
                     // your bullets to shoot through all tiles.
@@ -378,7 +384,7 @@ namespace COSC625_Platformer.GameObjects.Enemies
 
 
         #endregion
-        
+
 
         #region Load
 
@@ -417,7 +423,7 @@ namespace COSC625_Platformer.GameObjects.Enemies
 
         public override void Draw(GameTime gameTime, SpriteBatch spritebatch)
         {
-            base.Draw(gameTime,spritebatch);
+            base.Draw(gameTime, spritebatch);
         }
 
         #endregion

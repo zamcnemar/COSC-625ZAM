@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Audio;
 using COSC625_Platformer.GameObjects;
+using COSC625_Platformer.Screens;
 using COSC625_Platformer.Levels;
 
 namespace COSC625_Platformer
@@ -22,7 +23,7 @@ namespace COSC625_Platformer
     /// <summary>
     /// A monster who is impeding the progress of our fearless adventurer.
     /// </summary>
-    class Enemy: Sprite
+    public class Enemy : Sprite
     {
         // GameObjects
         protected GameObject arm;
@@ -58,6 +59,9 @@ namespace COSC625_Platformer
         protected float JumpControlPower = 0.14f;
 
         public bool canShoot { get; set; }
+
+        protected int maxHealth = 1;
+        protected int health = 1;
 
 
         /// <summary>
@@ -98,19 +102,19 @@ namespace COSC625_Platformer
         /// The speed at which this enemy moves along the X axis.
         /// </summary>
         protected float MoveSpeed = 64.0f;
-        
+
         public Level Level
         {
             get { return level; }
         }
         protected Level level;
-         
+
         public bool IsAlive { get; set; }
 
-        //good dead bodies go away.
+        //Removes the defeated enemies from the updating after a certain amount of time.
         protected const float deathTimeMax = 3.0f;
         public float deathTime = deathTimeMax;
-         
+
         /// <summary>
         /// Position in world space of the bottom center of this enemy.
         /// </summary>
@@ -185,6 +189,18 @@ namespace COSC625_Platformer
             killedSound.Play();
         }
 
+
+        public virtual void OnHurt(Player hurtby, int dmgAmt)
+        {
+            this.health -= dmgAmt;
+
+            if (health < 0)
+            {
+                this.OnKilled(hurtby);
+            }
+            else
+                killedSound.Play();
+        }
         public Enemy()
         {
 
@@ -307,7 +323,7 @@ namespace COSC625_Platformer
             {
                 sprite.PlayAnimation(dieAnimation);
             }
-            else if (!Level.Player.IsAlive ||
+            else if (GameScreen.allPlayersDead() ||
                       Level.ReachedExit ||
                       Level.TimeRemaining == TimeSpan.Zero ||
                       waitTime > 0)

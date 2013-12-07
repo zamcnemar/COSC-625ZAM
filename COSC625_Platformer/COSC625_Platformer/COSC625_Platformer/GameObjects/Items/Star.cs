@@ -45,17 +45,17 @@ namespace COSC625_Platformer.GameObjects.Items
             collectedBy.PowerUp();
             base.OnCollected(collectedBy);
         }
-        
+
         public override void Update(GameTime gameTime)
         {
             colorChanger.Update(gameTime);
             base.Update(gameTime);
-            
+
         }
-         
+
 
         public void LoadContent()
-        { 
+        {
             spriteTexture = Level.Content.Load<Texture2D>("Sprites/Gem");
             origin = new Vector2(spriteTexture.Width / 2.0f, spriteTexture.Height / 2.0f);
             collectedSound = Level.Content.Load<SoundEffect>("Sounds/Powerup");
@@ -72,7 +72,7 @@ namespace COSC625_Platformer.GameObjects.Items
             Boundary = new Rectangle((int)this.Position.X, (int)this.Position.Y, this.Size.Width, this.Size.Height);
             spritebatch.Draw(spriteTexture, Position, null, colorChanger.CurrentColor, 0.0f, origin, 1.0f, SpriteEffects.None, 0.0f);
             //base.Draw(spritebatch, colorChanger.CurrentColor);
-        
+
         }
 
     }
