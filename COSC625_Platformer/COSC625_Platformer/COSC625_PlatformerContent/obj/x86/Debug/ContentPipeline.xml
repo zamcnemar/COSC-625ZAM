@@ -847,7 +847,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Tiles\spike.xnb</Output>
-      <Time>2013-12-06T00:31:05.6598416-05:00</Time>
+      <Time>2013-12-06T18:43:50.6941617-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\i1.png</Source>
@@ -856,7 +856,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\i1.xnb</Output>
-      <Time>2013-12-06T12:23:49.0073545-05:00</Time>
+      <Time>2013-12-06T18:43:50.6911615-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\i2.png</Source>
@@ -865,7 +865,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\i2.xnb</Output>
-      <Time>2013-12-06T12:29:23.2113436-05:00</Time>
+      <Time>2013-12-06T18:43:50.6921615-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\i3.png</Source>
@@ -874,7 +874,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\i3.xnb</Output>
-      <Time>2013-12-06T12:28:55.490095-05:00</Time>
+      <Time>2013-12-06T18:43:50.6931616-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\i4.png</Source>
@@ -883,7 +883,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\i4.xnb</Output>
-      <Time>2013-12-06T12:28:37.9868642-05:00</Time>
+      <Time>2013-12-06T18:43:50.6931616-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\Spreadgun.png</Source>
@@ -892,7 +892,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\Spreadgun.xnb</Output>
-      <Time>2013-12-06T12:23:26.5745151-05:00</Time>
+      <Time>2013-12-06T18:43:50.6901614-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Enemies\SuperBeast\UnProwl.png</Source>
@@ -901,7 +901,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\UnProwl.xnb</Output>
-      <Time>2013-12-06T00:56:00.0398568-05:00</Time>
+      <Time>2013-12-06T18:43:50.6891614-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

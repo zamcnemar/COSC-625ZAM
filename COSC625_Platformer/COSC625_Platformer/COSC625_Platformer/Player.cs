@@ -82,7 +82,7 @@ namespace COSC625_Platformer
             get { return velocity; }
             set { velocity = value; }
         }
-        Vector2 velocity; 
+        Vector2 velocity;
 
         // Constants for controling horizontal movement
         private const float MoveAcceleration = 13000.0f;
@@ -119,7 +119,7 @@ namespace COSC625_Platformer
         private bool isJumping;
         private bool wasJumping;
         private float jumpTime;
-	
+
         // Attacking state
         public bool isAttacking;
         const float MaxAttackTime = 0.33f;
@@ -135,7 +135,7 @@ namespace COSC625_Platformer
         }
 
         private bool wasClimbing;
-        
+
 
         private Rectangle localBounds;
         /// <summary>
@@ -207,16 +207,16 @@ namespace COSC625_Platformer
             celebrateAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/Celebrate - Ninja"), 0.1f, false);
             dieAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/Die - Ninja"), 0.1f, false);
             attackAnimation = new Animation(level.Content.Load<Texture2D>("Sprites/Player/Attack"), 0.1f, false);
-            climbAnimation = new Animation(level.Content.Load<Texture2D>("Sprites/Player/Climb"),0.1f,true);
+            climbAnimation = new Animation(level.Content.Load<Texture2D>("Sprites/Player/Climb"), 0.1f, true);
 
-            // Calculate bounds within texture size.            
+            // Calculate bounds within texture size.
             int width = (int)(idleAnimation.FrameWidth * 0.4);
             int left = (idleAnimation.FrameWidth - width) / 2;
             int height = (int)(idleAnimation.FrameWidth * 0.8);
             int top = idleAnimation.FrameHeight - height;
             localBounds = new Rectangle(left, top, width, height);
 
-            // Load sounds.            
+            // Load sounds.
             killedSound = Level.Content.Load<SoundEffect>("Sounds/PlayerKilled");
             jumpSound = Level.Content.Load<SoundEffect>("Sounds/PlayerJump");
             fallSound = Level.Content.Load<SoundEffect>("Sounds/PlayerFall");
@@ -254,7 +254,7 @@ namespace COSC625_Platformer
 
             if (IsPoweredUp)
                 powerUpTime = Math.Max(0.0f, powerUpTime - (float)gameTime.ElapsedGameTime.TotalSeconds);
- 
+
 
             if (IsAlive)
             {
@@ -309,7 +309,7 @@ namespace COSC625_Platformer
             UpdateBullets();
         }
 
-        private void FireBullet()
+        private void FireBullet(double angle)
         {
             foreach (GameObject bullet in bullets)
             {
@@ -318,51 +318,7 @@ namespace COSC625_Platformer
                 {
                     //And set it to alive
                     bullet.alive = true;
-                    //if (ScreenManager.controls.UpRight(controller))
-                    //{
-                    //    float armCos = (float)Math.Cos(arm.rotation - MathHelper.PiOver2);
-                    //    float armSin = (float)Math.Sin(arm.rotation - MathHelper.PiOver2);
 
-                    //    //float armCos = (float)Math.Cos(45.0);
-                    //    //float armSin = (float)Math.Sin(45.0);
-
-                    //    // bullet.position = Vector2FromAngle(.785,true);
-
-                    //    bullet.position = new Vector2(
-                    //       arm.position.X + 42 * armCos,
-                    //       arm.position.Y + 42 * armSin);
-
-
-
-                    //    bullet.Velocity = new Vector2(
-                    //        (float)Math.Cos(arm.rotation - MathHelper.PiOver4 + MathHelper.Pi + MathHelper.PiOver2),
-                    //        (float)Math.Sin(arm.rotation - MathHelper.PiOver4 + MathHelper.Pi + MathHelper.PiOver2)) * 15.0f;
-
-
-                    //}
-
-
-                    //else if (ScreenManager.controls.UpLeft(controller))
-                    //{
-                    //    float armCos = (float)Math.Cos(arm.rotation - MathHelper.PiOver2);
-                    //    float armSin = (float)Math.Sin(arm.rotation - MathHelper.PiOver2);
-
-                    //    //float armCos = (float)Math.Cos(45.0);
-                    //    //float armSin = (float)Math.Sin(45.0);
-
-                    //    // bullet.position = Vector2FromAngle(.785,true);
-
-                    //    bullet.position = new Vector2(
-                    //       arm.position.X + 42 * armCos,
-                    //       arm.position.Y + 42 * armSin);
-
-
-
-                    //    bullet.Velocity = new Vector2(
-                    //        (float)Math.Cos(arm.rotation - MathHelper.PiOver4 - (2 * MathHelper.Pi)),
-                    //        (float)Math.Sin(arm.rotation - MathHelper.PiOver4 - (2 * MathHelper.Pi))) * 15.0f;
-
-                    //}
                     if (flip == SpriteEffects.FlipHorizontally) //Facing right
                     {
                         float armCos = (float)Math.Cos(arm.rotation - MathHelper.PiOver2);
@@ -377,14 +333,23 @@ namespace COSC625_Platformer
 
                         // And give it a velocity of the direction we're aiming.
                         // Increae/decrease speed by changeing 15.0f
+                        // bullet.Velocity = new Vector2(
+                        // (float)Math.Cos(arm.rotation - MathHelper.PiOver2),
+                        // (float)Math.Sin(arm.rotation - MathHelper.PiOver2)) * 15.0f;
+
                         bullet.Velocity = new Vector2(
-                            (float)Math.Cos(arm.rotation - MathHelper.PiOver2),
-                            (float)Math.Sin(arm.rotation - MathHelper.PiOver2)) * 15.0f;
+                            (float)Math.Cos(arm.rotation - MathHelper.ToRadians((float)angle)),
+                            (float)Math.Sin(arm.rotation - MathHelper.ToRadians((float)angle))) * 15.0f;
+
                     }
+
                     else //Facing left
                     {
-                        float armCos = (float)Math.Cos(arm.rotation + MathHelper.PiOver2);
-                        float armSin = (float)Math.Sin(arm.rotation + MathHelper.PiOver2);
+                        float armCos = (float)Math.Cos(arm.rotation + MathHelper.ToRadians((float)angle));
+                        float armSin = (float)Math.Sin(arm.rotation + MathHelper.ToRadians((float)angle));
+
+                        // float armCos = (float)Math.Cos(arm.rotation + MathHelper.PiOver2);
+                        //float armSin = (float)Math.Sin(arm.rotation + MathHelper.PiOver2);
 
                         //Set the initial position of our bullet at the end of our gun arm
                         //42 is obtained be taking the width of the Arm_Gun texture / 2
@@ -396,8 +361,8 @@ namespace COSC625_Platformer
                         //And give it a velocity of the direction we're aiming.
                         //Increase/decrease speed by changing 15.0f
                         bullet.Velocity = new Vector2(
-                           -armCos,
-                           -armSin) * 15.0f;
+                          -armCos,
+                          -armSin) * 15.0f;
                     }
 
                     return;
@@ -419,7 +384,7 @@ namespace COSC625_Platformer
                     // Move our bullet based on it's velocity
                     bullet.position += bullet.Velocity;
 
-                    // Rectangle the size of the screen so bullets that 
+                    // Rectangle the size of the screen so bullets that
                     // leave the screen are deleted.
                     Rectangle screenRect = new Rectangle((int)level.cameraPosition, (int)level.cameraPositionYAxis, Game1.screenWidth, Game1.screenHeight);
                     if (!screenRect.Contains(new Point(
@@ -430,7 +395,7 @@ namespace COSC625_Platformer
                         continue;
                     }
 
-                    // Collision rectangle for each bullet - Will also be 
+                    // Collision rectangle for each bullet - Will also be
                     // used for collisions with enemies
                     Rectangle bulletRect = new Rectangle(
                         (int)bullet.position.X - bullet.sprite.Width * 2,
@@ -508,7 +473,7 @@ namespace COSC625_Platformer
             // If any digital horizontal movement input is found, override the analog movement.
             if (ScreenManager.controls.Left(controller))
             {
-                movement.X = -1.25f;// 9.28.13 // Z - made the guy move more with 
+                movement.X = -1.25f;// 9.28.13 // Z - made the guy move more with
             }
             else if (ScreenManager.controls.Right(controller))
             {
@@ -552,7 +517,7 @@ namespace COSC625_Platformer
 
             // Check if the player wants to jump.
             isJumping = ScreenManager.controls.Jump(controller);
-         
+
 
             // Arm Rotation
             // 9.28.13 - Z - Noticed movement is slower with the Thumbstics than with pad or keyboard.
@@ -575,19 +540,19 @@ namespace COSC625_Platformer
             }
             else // Facing left
             {
-                // Once again, if we try to aim behind us then 
+                // Once again, if we try to aim behind us then
                 // flip our character.
                 if (arm.rotation > 0)
                     flip = SpriteEffects.FlipHorizontally;
             }
 
-            // If we're not rotating our arm, default it to 
+            // If we're not rotating our arm, default it to
             //aim in the same direction we're facing.
             if (arm.rotation == 0 && Math.Abs(ScreenManager.controls.ControllerState(controller).ThumbSticks.Left.Length()) < 0.5f)
             {
 
-                    //arm.rotation = -MathHelper.PiOver2;
-                    arm.rotation = -MathHelper.PiOver2;
+                //arm.rotation = -MathHelper.PiOver2;
+                arm.rotation = -MathHelper.PiOver2;
 
             }
 
@@ -618,17 +583,24 @@ namespace COSC625_Platformer
             }
 
             /*
-            //angled up shot, still working on angle down, they need to be changed as the player facing changes to update correctly
-            if (ScreenManager.controls.aimUp(controller))
-                arm.rotation = MathHelper.PiOver4;
-            else if (ScreenManager.controls.aimDown(controller))
-                arm.rotation = -MathHelper.PiOver4;
-            */
+//angled up shot, still working on angle down, they need to be changed as the player facing changes to update correctly
+if (ScreenManager.controls.aimUp(controller))
+arm.rotation = MathHelper.PiOver4;
+else if (ScreenManager.controls.aimDown(controller))
+arm.rotation = -MathHelper.PiOver4;
+*/
 
 
             // Shoot = RightTrigger
             if (ScreenManager.controls.Fire(controller))
-                FireBullet();
+            {
+                //increment angle by 45 to spread by 3 bullets or 22.5 for 5 bullets
+                for (double angle = 45; angle <= 135; angle = angle + 22.5)
+                {
+                    FireBullet(angle);
+                }
+                //FireBullet();
+            }
 
             if (ScreenManager.controls.Attack(controller))
             {
@@ -706,7 +678,7 @@ namespace COSC625_Platformer
             else
                 velocity.X *= AirDragFactor;
 
-            // Prevent the player from running faster than his top speed.            
+            // Prevent the player from running faster than his top speed.
             velocity.X = MathHelper.Clamp(velocity.X, -MaxMoveSpeed, MaxMoveSpeed);
 
             // Apply velocity.
@@ -764,7 +736,7 @@ namespace COSC625_Platformer
                 }
                 else
                 {
-                     // Reached the apex of the jump and has double jumps
+                    // Reached the apex of the jump and has double jumps
                     if (velocityY > -MaxFallSpeed * 0.5f && !wasJumping && numberOfJumps < 1)
                     {
                         velocityY =
@@ -774,10 +746,10 @@ namespace COSC625_Platformer
                     }
                     else
                     {
-                    // Reached the apex of the jump
-                    jumpTime = 0.0f;
+                        // Reached the apex of the jump
+                        jumpTime = 0.0f;
+                    }
                 }
-            }
             }
             else
             {
@@ -788,29 +760,29 @@ namespace COSC625_Platformer
 
             return velocityY;
         }
-            private int numberOfJumps = 0;
+        private int numberOfJumps = 0;
 
         private void DoAttack(GameTime gameTime)
         {
-           // If the player wants to attack
-           if (isAttacking)
-           {
-               // Begin or continue an attack
-               if (AttackTime > 0.0f)
-               {
-                   AttackTime -= (float)gameTime.ElapsedGameTime.TotalSeconds;
-               }
+            // If the player wants to attack
+            if (isAttacking)
+            {
+                // Begin or continue an attack
+                if (AttackTime > 0.0f)
+                {
+                    AttackTime -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+                }
                 else
-               {
-                   isAttacking = false;
-               }
-           }
-           else
-           {
-               //Continues not attack or cancels an attack in progress
-               AttackTime = 0.0f;
-           }
-       }           
+                {
+                    isAttacking = false;
+                }
+            }
+            else
+            {
+                //Continues not attack or cancels an attack in progress
+                AttackTime = 0.0f;
+            }
+        }
 
         /// <summary>
         /// Detects and resolves all collisions between the player and his neighboring
@@ -950,29 +922,29 @@ namespace COSC625_Platformer
             {
                 float absDepthX = Math.Abs(depth.X);
                 float absDepthY = Math.Abs(depth.Y);
- 
+
                 // Resolve the collision along the shallow axis.
                 if (absDepthY < absDepthX || collision == TileCollision.Platform)
                 {
                     // If we crossed the top of a tile, we are on the ground.
                     if (previousBottom <= tileBounds.Top)
                         isOnGround = true;
- 
+
                     // Ignore platforms, unless we are on the ground.
                     if (collision == TileCollision.Impassable || IsOnGround)
                     {
                         // Resolve the collision along the Y axis.
                         Position = new Vector2(Position.X, Position.Y + depth.Y);
- 
+
                         // Perform further collisions with the new bounds.
                         bounds = BoundingRectangle;
                     }
                 }
-                else if(collision == TileCollision.Impassable) // Ignore platforms.
+                else if (collision == TileCollision.Impassable) // Ignore platforms.
                 {
                     // Resolve the collision along the X axis.
                     Position = new Vector2(Position.X + depth.X, Position.Y);
- 
+
                     // Perform further collisions with the new bounds.
                     bounds = BoundingRectangle;
                 }
@@ -1021,7 +993,7 @@ namespace COSC625_Platformer
             else if (Velocity.X < 0)
                 flip = SpriteEffects.None;
 
-            // Calculate  a tint color based on power up state.
+            // Calculate a tint color based on power up state.
             Color color;
             if (IsPoweredUp)
             {
