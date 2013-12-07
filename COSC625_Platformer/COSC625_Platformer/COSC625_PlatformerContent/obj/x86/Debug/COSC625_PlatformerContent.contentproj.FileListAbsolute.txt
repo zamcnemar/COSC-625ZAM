@@ -2,3 +2,4 @@ C:\Users\Kyle\documents\visual studio 2010\Projects\COSC625_Platformer\COSC625_P
 C:\Users\Kyle\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_PlatformerContent\obj\x86\Debug\COSC625_PlatformerContent.contentprojResolveAssemblyReference.cache
 C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_PlatformerContent\obj\x86\Debug\COSC625_PlatformerContent.contentprojResolveAssemblyReference.cache
 C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_PlatformerContent\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\COSC625\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_PlatformerContent\obj\x86\Debug\ResolveAssemblyReference.cache

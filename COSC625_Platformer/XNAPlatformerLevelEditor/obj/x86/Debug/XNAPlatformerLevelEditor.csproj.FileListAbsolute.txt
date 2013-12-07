@@ -26,3 +26,13 @@ C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\XNAPlatformerL
 C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\XNAPlatformerLevelEditor\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\XNAPlatformerLevelEditor\obj\x86\Debug\XNAPlatformerLevelEditor.exe
 C:\Users\zamcnemar0\Desktop\GitHub\COSC-625ZAM\COSC625_Platformer\XNAPlatformerLevelEditor\obj\x86\Debug\XNAPlatformerLevelEditor.pdb
+D:\COSC625\COSC-625ZAM\COSC625_Platformer\XNAPlatformerLevelEditor\bin\Debug\XNAPlatformerLevelEditor.exe
+D:\COSC625\COSC-625ZAM\COSC625_Platformer\XNAPlatformerLevelEditor\bin\Debug\XNAPlatformerLevelEditor.pdb
+D:\COSC625\COSC-625ZAM\COSC625_Platformer\XNAPlatformerLevelEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\COSC625\COSC-625ZAM\COSC625_Platformer\XNAPlatformerLevelEditor\obj\x86\Debug\XNAPlatformerLevelEditor.Form1.resources
+D:\COSC625\COSC-625ZAM\COSC625_Platformer\XNAPlatformerLevelEditor\obj\x86\Debug\XNAPlatformerLevelEditor.NewLevelForm.resources
+D:\COSC625\COSC-625ZAM\COSC625_Platformer\XNAPlatformerLevelEditor\obj\x86\Debug\XNAPlatformerLevelEditor.Properties.Resources.resources
+D:\COSC625\COSC-625ZAM\COSC625_Platformer\XNAPlatformerLevelEditor\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\COSC625\COSC-625ZAM\COSC625_Platformer\XNAPlatformerLevelEditor\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\COSC625\COSC-625ZAM\COSC625_Platformer\XNAPlatformerLevelEditor\obj\x86\Debug\XNAPlatformerLevelEditor.exe
+D:\COSC625\COSC-625ZAM\COSC625_Platformer\XNAPlatformerLevelEditor\obj\x86\Debug\XNAPlatformerLevelEditor.pdb

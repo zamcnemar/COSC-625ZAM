@@ -318,6 +318,9 @@ namespace COSC625_Platformer
                 {
                     //And set it to alive
                     bullet.alive = true;
+<<<<<<< HEAD
+
+=======
 
                     if (flip == SpriteEffects.FlipHorizontally) //Facing right
                     {
@@ -333,23 +336,15 @@ namespace COSC625_Platformer
 
                         // And give it a velocity of the direction we're aiming.
                         // Increae/decrease speed by changeing 15.0f
-                        // bullet.Velocity = new Vector2(
-                        // (float)Math.Cos(arm.rotation - MathHelper.PiOver2),
-                        // (float)Math.Sin(arm.rotation - MathHelper.PiOver2)) * 15.0f;
-
                         bullet.Velocity = new Vector2(
-                            (float)Math.Cos(arm.rotation - MathHelper.ToRadians((float)angle)),
-                            (float)Math.Sin(arm.rotation - MathHelper.ToRadians((float)angle))) * 15.0f;
-
+                            (float)Math.Cos(arm.rotation - MathHelper.PiOver2),
+                            (float)Math.Sin(arm.rotation - MathHelper.PiOver2)) * 15.0f;
                     }
 
                     else //Facing left
                     {
-                        float armCos = (float)Math.Cos(arm.rotation + MathHelper.ToRadians((float)angle));
-                        float armSin = (float)Math.Sin(arm.rotation + MathHelper.ToRadians((float)angle));
-
-                        // float armCos = (float)Math.Cos(arm.rotation + MathHelper.PiOver2);
-                        //float armSin = (float)Math.Sin(arm.rotation + MathHelper.PiOver2);
+                        float armCos = (float)Math.Cos(arm.rotation + MathHelper.PiOver2);
+                        float armSin = (float)Math.Sin(arm.rotation + MathHelper.PiOver2);
 
                         //Set the initial position of our bullet at the end of our gun arm
                         //42 is obtained be taking the width of the Arm_Gun texture / 2
@@ -369,6 +364,80 @@ namespace COSC625_Platformer
                 }// End if
             }// End foreach
         }// End FireBullets();
+
+
+
+        private void FireSpreadshot(double angle)
+        {
+            foreach (GameObject bullet in bullets)
+            {
+
+
+                // Find a bullet that isn't alive
+                if (!bullet.alive)
+                {
+                    //And set it to alive
+                    bullet.alive = true;
+
+>>>>>>> merge-branch
+                    if (flip == SpriteEffects.FlipHorizontally) //Facing right
+                    {
+                        float armCos = (float)Math.Cos(arm.rotation - MathHelper.PiOver2);
+                        float armSin = (float)Math.Sin(arm.rotation - MathHelper.PiOver2);
+
+                        // Set the initial position of our bullets at the end of our gun arm
+                        // 42 is obtained by taking the width of the Arm_Gun texture / 2
+                        // and subtracting the width of the Bullet texture / 2. ((96/2)=(12/2))
+                        bullet.position = new Vector2(
+                            arm.position.X + 42 * armCos,
+                            arm.position.Y + 42 * armSin);
+
+                        // And give it a velocity of the direction we're aiming.
+                        // Increae/decrease speed by changeing 15.0f
+<<<<<<< HEAD
+                        // bullet.Velocity = new Vector2(
+                        // (float)Math.Cos(arm.rotation - MathHelper.PiOver2),
+=======
+                        //  bullet.Velocity = new Vector2(
+                        //  (float)Math.Cos(arm.rotation - MathHelper.PiOver2),
+>>>>>>> merge-branch
+                        // (float)Math.Sin(arm.rotation - MathHelper.PiOver2)) * 15.0f;
+
+                        bullet.Velocity = new Vector2(
+                            (float)Math.Cos(arm.rotation - MathHelper.ToRadians((float)angle)),
+                            (float)Math.Sin(arm.rotation - MathHelper.ToRadians((float)angle))) * 15.0f;
+
+                    }
+
+                    else //Facing left
+                    {
+                        float armCos = (float)Math.Cos(arm.rotation + MathHelper.ToRadians((float)angle));
+                        float armSin = (float)Math.Sin(arm.rotation + MathHelper.ToRadians((float)angle));
+<<<<<<< HEAD
+
+                        // float armCos = (float)Math.Cos(arm.rotation + MathHelper.PiOver2);
+                        //float armSin = (float)Math.Sin(arm.rotation + MathHelper.PiOver2);
+=======
+>>>>>>> merge-branch
+
+                        //Set the initial position of our bullet at the end of our gun arm
+                        //42 is obtained be taking the width of the Arm_Gun texture / 2
+                        //and subtracting the width of the Bullet texture / 2. ((96/2)-(12/2))
+                        bullet.position = new Vector2(
+                            arm.position.X - 42 * armCos,
+                            arm.position.Y - 42 * armSin);
+
+                        //And give it a velocity of the direction we're aiming.
+                        //Increase/decrease speed by changing 15.0f
+                        bullet.Velocity = new Vector2(
+                          -armCos,
+                          -armSin) * 15.0f;
+                    }
+
+                    return;
+                }// End if
+            }// End foreach
+        }// End FireSpreadshot();
 
 
         private void UpdateBullets()
@@ -590,10 +659,10 @@ else if (ScreenManager.controls.aimDown(controller))
 arm.rotation = -MathHelper.PiOver4;
 */
 
-
             // Shoot = RightTrigger
             if (ScreenManager.controls.Fire(controller))
             {
+<<<<<<< HEAD
                 //increment angle by 45 to spread by 3 bullets or 22.5 for 5 bullets
                 for (double angle = 45; angle <= 135; angle = angle + 22.5)
                 {
@@ -601,6 +670,24 @@ arm.rotation = -MathHelper.PiOver4;
                 }
                 //FireBullet();
             }
+=======
+                if (IsPoweredUp)
+                {
+                    //increment angle by 45 to spread by 3 bullets or 22.5 for 5 bullets
+                    for (double angle = 45; angle <= 135; angle = angle + 22.5)
+                    {
+                        FireSpreadshot(angle);
+                    }
+                }
+                else
+                {
+                    FireBullet();
+                }
+
+            }
+           
+            
+>>>>>>> merge-branch
 
             if (ScreenManager.controls.Attack(controller))
             {
