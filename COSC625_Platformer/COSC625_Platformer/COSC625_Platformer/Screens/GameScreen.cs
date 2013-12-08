@@ -99,25 +99,28 @@ namespace COSC625_Platformer.Screens
             // to get the player back to playing.
             foreach (Player p in players)
             {
-                if (ScreenManager.controls.AButton(p.controller))
-                {
-                    if (allPlayersOutofLives())
+                    if (ScreenManager.controls.AButton(p.controller))
                     {
-                        ScreenManager.gameState = GameState.Menu;
-                    }
-                    else if (level.TimeRemaining == TimeSpan.Zero)
-                    {
-                        if (level.ReachedExit)
-                            LoadNextLevel();
-                        else
-                            ReloadCurrentLevel();
-                    }
-                    else if (!p.IsAlive && p.lives > 0)
-                    {
-                        level.StartNewLife(p);
+                        if (allPlayersOutofLives())
+                        {
+                            ScreenManager.gameState = GameState.Menu;
+                        }
+                        else if (level.TimeRemaining == TimeSpan.Zero)
+                        {
+                            if (level.ReachedExit)
+                            {
+                                LoadNextLevel();
+                                break;
+                            }
+                            else
+                                ReloadCurrentLevel();
+                        }
+                        else if (!p.IsAlive && p.lives > 0)
+                        {
+                            level.StartNewLife(p);
+                        }
                     }
                 }
-            }
         }
 
         private void LoadNextLevel()

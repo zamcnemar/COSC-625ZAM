@@ -34,8 +34,15 @@ namespace XNAPlatformerLevelEditor
             {'M', "/Tiles/BlockB0.png"},
             {'T', "/Tiles/Vblock.png"},
 
+
+            //Items
+            {'!', "/Sprites/Items/Spreadgun.png"},
+            {'^', "/Sprites/Items/Pengun.png"},
+            {'$', "/Sprites/Items/i1.png"},
             {'G', "/Sprites/Items/gold0.png"},
-            {'P', "/Sprites/Items/gold4.png"},
+            {'P', "/Sprites/gem.png"},
+
+
             {'-', "/Tiles/Platform.png"},
             {'_', "/Tiles/pf1.png"},
             {'~', "/Tiles/Platform.png"}, 

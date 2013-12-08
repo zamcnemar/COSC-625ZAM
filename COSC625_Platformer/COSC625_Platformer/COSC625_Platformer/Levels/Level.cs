@@ -217,6 +217,15 @@ namespace COSC625_Platformer.Levels
                 case 'P':
                     return LoadPowerUpTile(x, y);
 
+                case '!':
+                    return LoadSpreadGunTile(x, y);
+
+                case '^':
+                    return LoadPenGunTile(x, y);
+
+                case '$':
+                    return LoadExtraLifeTile(x, y);
+
                 // Floating platform
                 case '-':
                     return LoadTile("Platform", TileCollision.Platform);
@@ -379,11 +388,8 @@ namespace COSC625_Platformer.Levels
 
             start = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
 
-            //Multiplayer hard code testing
-            Player test = new Player(this, start);
-            test.controller = PlayerIndex.Two;
-            test.lives = 4;
-            GameScreen.players.Add(test);
+            GameScreen.players.Clear();
+
 
             if (GamePad.GetState(PlayerIndex.One).IsConnected)
             {
@@ -391,6 +397,12 @@ namespace COSC625_Platformer.Levels
                 temp.controller = PlayerIndex.One;
                 GameScreen.players.Add(temp);
             }
+
+            //Multiplayer hard code testing
+            Player test = new Player(this, start);
+            test.controller = PlayerIndex.Two;
+            test.lives = 4;
+            GameScreen.players.Add(test);
 
             if (GamePad.GetState(PlayerIndex.Two).IsConnected)
             {
@@ -525,6 +537,39 @@ namespace COSC625_Platformer.Levels
         {
             Point position = GetBounds(x, y).Center;
             items.Add(new Star(this, new Vector2(position.X, position.Y)));
+
+            return new Tile(null, TileCollision.Passable);
+        }
+
+        /// <summary>
+        /// Instantiates an ExtraLife item Pickup and puts it in the level.
+        /// </summary>
+        private Tile LoadExtraLifeTile(int x, int y)
+        {
+            Point position = GetBounds(x, y).Center;
+            items.Add(new ExtraLife(this, new Vector2(position.X, position.Y)));
+
+            return new Tile(null, TileCollision.Passable);
+        }
+
+        /// <summary>
+        /// Instantiates a SpreadGun powerup and puts it in the level.
+        /// </summary>
+        private Tile LoadSpreadGunTile(int x, int y)
+        {
+            Point position = GetBounds(x, y).Center;
+            items.Add(new SpreadGun(this, new Vector2(position.X, position.Y)));
+
+            return new Tile(null, TileCollision.Passable);
+        }
+
+        /// <summary>
+        /// Instantiates a SpreadGun powerup and puts it in the level.
+        /// </summary>
+        private Tile LoadPenGunTile(int x, int y)
+        {
+            Point position = GetBounds(x, y).Center;
+            items.Add(new PenGun(this, new Vector2(position.X, position.Y)));
 
             return new Tile(null, TileCollision.Passable);
         }
@@ -669,6 +714,8 @@ namespace COSC625_Platformer.Levels
                 UpdateMovableTilesV(gameTime);
             }
 
+            
+
             // Clamp the time remaining at zero.
             if (timeRemaining < TimeSpan.Zero)
                 timeRemaining = TimeSpan.Zero;
@@ -735,7 +782,10 @@ namespace COSC625_Platformer.Levels
         {
             foreach (Enemy enemy in enemies)
             {
-                enemy.Update(gameTime);
+                if (GameScreen.players.Count > 0)
+                { 
+                    enemy.Update(gameTime);
+                }             
 
                 foreach (Player p in GameScreen.players)
                 {
@@ -750,12 +800,11 @@ namespace COSC625_Platformer.Levels
                         else
                         {
                             // otherwise the player is killed.
-                            if (enemy.IsAlive && enemy.BoundingRectangle.Intersects(p.MeleeRectangle))
-                            {
-                                if (p.isAttacking)
-                                    OnEnemyKilled(enemy, p);
-
-                            }
+                            //if (enemy.IsAlive && enemy.BoundingRectangle.Intersects(p.MeleeRectangle))
+                            //{
+                            //   if (p.isAttacking)
+                            //       OnEnemyKilled(enemy, p);
+                            //}
 
                             if (enemy.IsAlive && enemy.BoundingRectangle.Intersects(p.BoundingRectangle) && p.IsAlive)
                             {

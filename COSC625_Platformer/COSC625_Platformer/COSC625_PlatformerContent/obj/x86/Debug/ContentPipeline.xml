@@ -476,7 +476,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\Attack.xnb</Output>
-      <Time>2013-12-07T13:07:37.2327593-05:00</Time>
+      <Time>2013-12-08T03:10:25.4951006-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\ladder0.png</Source>
@@ -758,15 +758,6 @@
       <Time>2013-12-07T13:07:37.1317535-05:00</Time>
     </Item>
     <Item>
-      <Source>Sounds\GemCollected.wma</Source>
-      <Name>Sounds\GemCollected</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\GemCollected.xnb</Output>
-      <Time>2013-12-07T13:07:37.1327536-05:00</Time>
-    </Item>
-    <Item>
       <Source>Sounds\MonsterKilled.wma</Source>
       <Name>Sounds\MonsterKilled</Name>
       <Importer>WmaImporter</Importer>
@@ -813,15 +804,6 @@
       <Time>2013-12-07T13:07:37.1837565-05:00</Time>
     </Item>
     <Item>
-      <Source>Sounds\Powerup.wma</Source>
-      <Name>Sounds\Powerup</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb</Output>
-      <Time>2013-12-07T13:07:37.1847565-05:00</Time>
-    </Item>
-    <Item>
       <Source>Sounds\Ninja Gaiden - NES - Act 4-2.mp3</Source>
       <Name>Sounds\NG42</Name>
       <Importer>Mp3Importer</Importer>
@@ -848,6 +830,105 @@
       <Options>None</Options>
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SuperBeast\UnProwl.xnb</Output>
       <Time>2013-12-07T13:40:14.5717127-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\monstershot.png</Source>
+      <Name>Sprites\Player\monstershot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Player\monstershot.xnb</Output>
+      <Time>2013-12-08T00:11:03.7573967-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\i1.png</Source>
+      <Name>Sprites\Items\i1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\i1.xnb</Output>
+      <Time>2013-12-08T01:17:08.6742544-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\i2.png</Source>
+      <Name>Sprites\Items\i2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\i2.xnb</Output>
+      <Time>2013-12-08T01:03:33.9107746-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\i3.png</Source>
+      <Name>Sprites\Items\i3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\i3.xnb</Output>
+      <Time>2013-12-08T01:03:33.9107746-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\i4.png</Source>
+      <Name>Sprites\Items\i4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\i4.xnb</Output>
+      <Time>2013-12-08T01:03:33.9107746-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\Spreadgun.png</Source>
+      <Name>Sprites\Items\Spreadgun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\Spreadgun.xnb</Output>
+      <Time>2013-12-08T02:37:02.0436765-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\titlescreenwtitle.png</Source>
+      <Name>Menu\titlescreenwtitle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Menu\titlescreenwtitle.xnb</Output>
+      <Time>2013-12-08T02:43:31.3418635-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\genericbackground.png</Source>
+      <Name>Menu\genericbackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Menu\genericbackground.xnb</Output>
+      <Time>2013-12-08T02:49:05.4219025-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\Pengun.png</Source>
+      <Name>Sprites\Items\Pengun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\Pengun.xnb</Output>
+      <Time>2013-12-08T03:34:52.2512381-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Powerup.wma</Source>
+      <Name>Sounds\Powerup</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb</Output>
+      <Time>2013-12-07T13:07:37.1847565-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\GemCollected.wma</Source>
+      <Name>Sounds\gemCollected</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\gemCollected.xnb</Output>
+      <Time>2013-12-05T22:34:26-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

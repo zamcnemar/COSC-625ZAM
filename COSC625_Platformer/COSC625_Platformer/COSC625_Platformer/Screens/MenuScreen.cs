@@ -27,6 +27,8 @@ namespace COSC625_Platformer.Screens
 
         int selection;
         Texture2D popWindow;
+        Texture2D titleScreen;
+        Texture2D gbackground;
 
         public MenuScreen()
         {
@@ -93,6 +95,8 @@ namespace COSC625_Platformer.Screens
             #endregion
 
             popWindow = Game1.content.Load<Texture2D>("Menu/popupmenuquit");
+            titleScreen = Game1.content.Load<Texture2D>("Menu/titlescreenwtitle");
+            gbackground = Game1.content.Load<Texture2D>("Menu/genericbackground");
         }
 
         public void Update(GameTime gametime)
@@ -293,6 +297,7 @@ namespace COSC625_Platformer.Screens
             #region Menu
             if (mState == MenuState.Main)
             {
+                spriteBatch.Draw(titleScreen, new Rectangle(0, 0, titleScreen.Width, titleScreen.Height), Color.White);
                 foreach (Text t in menuEntries)
                     t.Draw(spriteBatch);
             }
@@ -301,6 +306,7 @@ namespace COSC625_Platformer.Screens
             #region Help
             else if (mState == MenuState.Help)
             {
+                spriteBatch.Draw(gbackground, new Rectangle(0, 0, titleScreen.Width, titleScreen.Height), Color.White);
                 foreach (Text t in helpContents)
                     t.Draw(spriteBatch);
             }
@@ -309,6 +315,7 @@ namespace COSC625_Platformer.Screens
             #region Options
             else if (mState == MenuState.Options)
             {
+                spriteBatch.Draw(gbackground, new Rectangle(0, 0, titleScreen.Width, titleScreen.Height), Color.White);
                 foreach (Text t in optionEntries)
                     t.Draw(spriteBatch);
             }

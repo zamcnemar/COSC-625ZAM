@@ -17,6 +17,16 @@ namespace COSC625_Platformer
     /// </summary>
     public class Player
     {
+
+        public enum Gun
+        {
+            Normal,
+            PenGun,
+            SpreadGun
+        }
+
+        protected Gun currentGun = Gun.Normal;
+
         // GameObjects
         GameObject arm;
         GameObject[] bullets;
@@ -135,7 +145,6 @@ namespace COSC625_Platformer
         }
 
         private bool wasClimbing;
-
 
         private Rectangle localBounds;
         /// <summary>
@@ -309,7 +318,7 @@ namespace COSC625_Platformer
             UpdateBullets();
         }
 
-        private void FireBullet()
+        private void FireBullet(double angle)
         {
             foreach (GameObject bullet in bullets)
             {
@@ -375,16 +384,40 @@ namespace COSC625_Platformer
                             arm.position.X + 42 * armCos,
                             arm.position.Y + 42 * armSin);
 
-                        // And give it a velocity of the direction we're aiming.
-                        // Increae/decrease speed by changeing 15.0f
-                        bullet.Velocity = new Vector2(
-                            (float)Math.Cos(arm.rotation - MathHelper.PiOver2),
-                            (float)Math.Sin(arm.rotation - MathHelper.PiOver2)) * 15.0f;
+                        // And give it a velocity of the direction we're aiming based on what powerup
+                        //      is currently obtained.
+
+                        if (currentGun == Gun.SpreadGun)
+                        {
+                            bullet.Velocity = new Vector2(
+                                (float)Math.Cos(arm.rotation - MathHelper.ToRadians((float)angle)),
+                                (float)Math.Sin(arm.rotation - MathHelper.ToRadians((float)angle))) * 15.0f;
+                        }
+                        else if (currentGun == Gun.Normal || currentGun == Gun.PenGun)
+                        {
+                            bullet.Velocity = new Vector2(
+                                (float)Math.Cos(arm.rotation - MathHelper.PiOver2),
+                                (float)Math.Sin(arm.rotation - MathHelper.PiOver2)) * 15.0f;
+                        }
+
                     }
                     else //Facing left
                     {
                         float armCos = (float)Math.Cos(arm.rotation + MathHelper.PiOver2);
                         float armSin = (float)Math.Sin(arm.rotation + MathHelper.PiOver2);
+
+                        if (currentGun == Gun.SpreadGun)
+                        {
+                            armCos = (float)Math.Cos(arm.rotation + MathHelper.ToRadians((float)angle));
+                            armSin = (float)Math.Sin(arm.rotation + MathHelper.ToRadians((float)angle));
+                        }
+                        else if (currentGun == Gun.Normal || currentGun == Gun.PenGun)
+                        {
+                            armCos = (float)Math.Cos(arm.rotation + MathHelper.PiOver2);
+                            armSin = (float)Math.Sin(arm.rotation + MathHelper.PiOver2);
+                        }
+
+                        
 
                         //Set the initial position of our bullet at the end of our gun arm
                         //42 is obtained be taking the width of the Arm_Gun texture / 2
@@ -443,7 +476,7 @@ namespace COSC625_Platformer
                     {
                         if (bulletRect.Intersects(enemy.BoundingRectangle) && enemy.IsAlive)
                         {
-                            enemy.OnKilled(this);
+                            enemy.OnHurt(this, 1);
                             bullet.alive = false;
                         }
                     }
@@ -451,37 +484,46 @@ namespace COSC625_Platformer
                     // Everything below here can below deleted if you want
                     // your bullets to shoot through all tiles.
 
-                    // Look for adjacent tiles to the bullet
-                    Rectangle bounds = new Rectangle(
-                        bulletRect.Center.X - 6,
-                        bulletRect.Center.Y - 6,
-                        bulletRect.Width / 4,
-                        bulletRect.Height / 4);
-                    int leftTile = (int)Math.Floor((float)bounds.Left / Tile.Width);
-                    int rightTile = (int)Math.Ceiling(((float)bounds.Right / Tile.Width)) - 1;
-                    int topTile = (int)Math.Floor((float)bounds.Top / Tile.Height);
-                    int bottomTile = (int)Math.Ceiling(((float)bounds.Bottom / Tile.Height)) - 1;
-
-
-                    // Fore each potentially colliding tile
-                    for (int y = topTile; y <= bottomTile; ++y)
+                    if (currentGun == Gun.PenGun)
                     {
-                        for (int x = leftTile; x <= rightTile; ++x)
+
+                    }
+                    else if (currentGun == Gun.Normal || currentGun == Gun.SpreadGun)
+                    {
+
+                        // Look for adjacent tiles to the bullet
+                        Rectangle bounds = new Rectangle(
+                            bulletRect.Center.X - 6,
+                            bulletRect.Center.Y - 6,
+                            bulletRect.Width / 4,
+                            bulletRect.Height / 4);
+                        int leftTile = (int)Math.Floor((float)bounds.Left / Tile.Width);
+                        int rightTile = (int)Math.Ceiling(((float)bounds.Right / Tile.Width)) - 1;
+                        int topTile = (int)Math.Floor((float)bounds.Top / Tile.Height);
+                        int bottomTile = (int)Math.Ceiling(((float)bounds.Bottom / Tile.Height)) - 1;
+
+
+                        // Fore each potentially colliding tile
+                        for (int y = topTile; y <= bottomTile; ++y)
                         {
-                            TileCollision collision = Level.GetCollision(x, y);
-
-                            // If we collide with an impassible or Platform tile
-                            // then delete our bullet
-                            if (collision == TileCollision.Impassable ||
-                                collision == TileCollision.Platform)
+                            for (int x = leftTile; x <= rightTile; ++x)
                             {
-                                if (bulletRect.Intersects(bounds))
-                                    bullet.alive = false;
-                            }
+                                TileCollision collision = Level.GetCollision(x, y);
 
-                        }// End for loop x axis
+                                // If we collide with an impassible or Platform tile
+                                // then delete our bullet
+                                if (collision == TileCollision.Impassable ||
+                                    collision == TileCollision.Platform)
+                                {
+                                    if (bulletRect.Intersects(bounds))
+                                        bullet.alive = false;
+                                }
 
-                    }// End for loop y axis
+                            }// End for loop x axis
+
+                        }// End for loop y axis
+
+                    }// End of Gun Check
 
                 }// End IF alive
 
@@ -555,8 +597,8 @@ namespace COSC625_Platformer
                 position.X = level.cameraPosition + BoundingRectangle.Width / 2;
             if (position.X > level.cameraPosition + Game1.screenWidth - BoundingRectangle.Width / 2)
                 position.X = level.cameraPosition + Game1.screenWidth - BoundingRectangle.Width / 2;
-            if (position.Y > level.cameraPositionYAxis + Game1.screenHeight)
-                OnKilled(null);
+           //if (position.Y > level.cameraPositionYAxis + Game1.screenHeight)
+             //   OnKilled(null);
             if (position.Y < level.cameraPositionYAxis)
                 position.Y = level.cameraPositionYAxis;
 
@@ -636,9 +678,20 @@ namespace COSC625_Platformer
             */
 
 
-            // Shoot = RightTrigger
+            // Shoot = X
             if (ScreenManager.controls.Fire(controller))
-                FireBullet();
+            {
+                if (currentGun == Gun.SpreadGun)
+                {
+                    //increment angle by 45 to spread by 3 bullets or 22.5 for 5 bullets
+                    for (double angle = 45; angle <= 135; angle = angle + 22.5)
+                    {
+                        FireBullet(angle);
+                    }
+                }
+                else if (currentGun == Gun.Normal || currentGun == Gun.PenGun)
+                    FireBullet(45);
+            }
 
             if (ScreenManager.controls.Attack(controller))
             {
@@ -990,6 +1043,16 @@ namespace COSC625_Platformer
             return bounds;
         }
 
+        // Called to activate the player's spreadgun
+        public void gotSpreadGun()
+        {
+            currentGun = Gun.SpreadGun;
+        }
+
+        public void gotPenGun()
+        {
+            currentGun = Gun.PenGun;
+        }
 
 
         /// <summary>
@@ -1010,6 +1073,7 @@ namespace COSC625_Platformer
 
             sprite.PlayAnimation(dieAnimation);
             lives--;
+            currentGun = Gun.Normal;
         }
 
         /// <summary>

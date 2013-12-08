@@ -82,16 +82,25 @@ Content\Sprites\Enemies\SuperBeast\Charge.xnb
 Content\Sprites\Enemies\Ninja\Die.xnb
 Content\Tiles\Vblock.xnb
 Content\Sounds\ExitReached.xnb
-Content\Sounds\GemCollected.xnb
 Content\Sounds\MonsterKilled.xnb
 Content\Sounds\Music.xnb
 Content\Sounds\PlayerFall.xnb
 Content\Sounds\PlayerJump.xnb
 Content\Sounds\PlayerKilled.xnb
-Content\Sounds\Powerup.xnb
 Content\Sounds\NG42.xnb
 Content\Sounds\metal weapon.xnb
 Content\Sprites\Enemies\SuperBeast\UnProwl.xnb
+Content\Sprites\Player\monstershot.xnb
+Content\Sprites\Items\i1.xnb
+Content\Sprites\Items\i2.xnb
+Content\Sprites\Items\i3.xnb
+Content\Sprites\Items\i4.xnb
+Content\Sprites\Items\Spreadgun.xnb
+Content\Menu\titlescreenwtitle.xnb
+Content\Menu\genericbackground.xnb
+Content\Sprites\Items\Pengun.xnb
+Content\Sounds\Powerup.xnb
+Content\Sounds\gemCollected.xnb
 Content\Sounds\Music.wma
 Content\Sounds\NG42.wma
 Content\Levels\0.txt

@@ -12,7 +12,7 @@ using COSC625_Platformer.Levels;
 
 namespace COSC625_Platformer.GameObjects.Items
 {
-    class Star : Item
+    class ExtraLife : Item
     {
         ColorChanger colorChanger;
 
@@ -22,7 +22,7 @@ namespace COSC625_Platformer.GameObjects.Items
         }
         Level level;
 
-        public Star(Level level, Vector2 position)
+        public ExtraLife(Level level, Vector2 position)
         {
             this.level = level;
             this.basePosition = position;
@@ -32,7 +32,8 @@ namespace COSC625_Platformer.GameObjects.Items
             colorChanger = new ColorChanger(
             .25f, // Time between color changes
             true, // Is the color changer active?
-            Color.Yellow, Color.Red, Color.Blue);
+            Color.Orange, Color.Green, // all the colors you want to cycle through
+                Color.Red, Color.Blue);
             Color = colorChanger.CurrentColor;
 
             LoadContent();
@@ -40,9 +41,8 @@ namespace COSC625_Platformer.GameObjects.Items
 
         public override void OnCollected(Player collectedBy)
         {
-
-            collectedBy.PowerUp();
             base.OnCollected(collectedBy);
+            collectedBy.lives += 1;
         }
 
         public override void Update(GameTime gameTime)
@@ -55,9 +55,9 @@ namespace COSC625_Platformer.GameObjects.Items
 
         public void LoadContent()
         {
-            spriteTexture = Level.Content.Load<Texture2D>("Sprites/Gem");
+            spriteTexture = Level.Content.Load<Texture2D>("Sprites/Items/i1");
             origin = new Vector2(spriteTexture.Width / 2.0f, spriteTexture.Height / 2.0f);
-            collectedSound = Level.Content.Load<SoundEffect>("Sounds/Powerup");
+            collectedSound = Level.Content.Load<SoundEffect>("Sounds/gemCollected");
             Size = new Rectangle(0, 0, (int)(spriteTexture.Width * Scale), (int)(spriteTexture.Height * Scale));
 
             // how to use the color changer.

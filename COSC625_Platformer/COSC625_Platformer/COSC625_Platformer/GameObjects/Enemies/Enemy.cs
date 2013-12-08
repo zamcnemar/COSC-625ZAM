@@ -193,8 +193,8 @@ namespace COSC625_Platformer
         public virtual void OnHurt(Player hurtby, int dmgAmt)
         {
             this.health -= dmgAmt;
-
-            if (health < 0)
+            
+            if (health < 1)
             {
                 this.OnKilled(hurtby);
             }
@@ -217,7 +217,7 @@ namespace COSC625_Platformer
             spotlightTexture = level.Content.Load<Texture2D>("Overlays/spotlight2");
         }
 
-        private void LoadGun()
+        protected void LoadGun()
         {
             if (canShoot)
             {

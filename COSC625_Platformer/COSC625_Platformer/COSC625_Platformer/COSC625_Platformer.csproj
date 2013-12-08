@@ -121,8 +121,11 @@
     <Compile Include="GameObjects\Enemies\RunningMan.cs" />
     <Compile Include="GameObjects\Enemies\SuperBeast.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
+    <Compile Include="GameObjects\Items\ExtraLife.cs" />
     <Compile Include="GameObjects\Items\Gem.cs" />
     <Compile Include="GameObjects\Items\Item.cs" />
+    <Compile Include="GameObjects\Items\PenGun.cs" />
+    <Compile Include="GameObjects\Items\SpreadGun.cs" />
     <Compile Include="GameObjects\Items\Star.cs" />
     <Compile Include="GameObjects\Layer.cs" />
     <Compile Include="GameObjects\MovableTile.cs" />
