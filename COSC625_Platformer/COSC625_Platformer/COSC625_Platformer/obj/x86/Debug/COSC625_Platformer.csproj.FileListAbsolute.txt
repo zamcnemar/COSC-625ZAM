@@ -415,3 +415,7 @@ C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Pl
 C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Menu\titlescreenwtitle.xnb
 C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Menu\genericbackground.xnb
 C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Items\Pengun.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SentryTurret\die.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SentryTurret\idle.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SentryTurret\alert.xnb
+C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SentryTurret\cooldown.xnb

@@ -930,6 +930,42 @@
       <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sounds\gemCollected.xnb</Output>
       <Time>2013-12-05T22:34:26-05:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\Enemies\SentryTurret\die.png</Source>
+      <Name>Sprites\Enemies\SentryTurret\die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SentryTurret\die.xnb</Output>
+      <Time>2013-12-08T16:17:39.9857077-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\SentryTurret\idle.png</Source>
+      <Name>Sprites\Enemies\SentryTurret\idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SentryTurret\idle.xnb</Output>
+      <Time>2013-12-08T16:18:17.0608492-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\SentryTurret\alert.png</Source>
+      <Name>Sprites\Enemies\SentryTurret\alert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SentryTurret\alert.xnb</Output>
+      <Time>2013-12-08T16:18:17.0708492-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\SentryTurret\cooldown.png</Source>
+      <Name>Sprites\Enemies\SentryTurret\cooldown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zach McNemar\Documents\GitHub\COSC-625ZAM\COSC625_Platformer\COSC625_Platformer\COSC625_Platformer\bin\x86\Debug\Content\Sprites\Enemies\SentryTurret\cooldown.xnb</Output>
+      <Time>2013-12-08T16:18:17.0708492-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

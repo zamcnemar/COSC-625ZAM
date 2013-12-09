@@ -257,6 +257,8 @@ namespace COSC625_Platformer.Levels
                 case 'W':
                     return LoadNinjaTile(x, y);
 
+                case ',':
+                    return LoadSentryTile(x, y);
 
                 // Platform block
                 case '~':
@@ -459,6 +461,17 @@ namespace COSC625_Platformer.Levels
         {
             Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
             enemies.Add(new Ninja(this, position));
+
+            return new Tile(null, TileCollision.Passable);
+        }
+
+        /// <summary>
+        /// Instantiates an enemy and puts him in the level.
+        /// </summary>
+        private Tile LoadSentryTile(int x, int y)
+        {
+            Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
+            enemies.Add(new SentryTurret(this, position));
 
             return new Tile(null, TileCollision.Passable);
         }

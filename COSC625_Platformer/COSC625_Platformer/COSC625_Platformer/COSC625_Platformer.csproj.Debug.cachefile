@@ -101,6 +101,10 @@ Content\Menu\genericbackground.xnb
 Content\Sprites\Items\Pengun.xnb
 Content\Sounds\Powerup.xnb
 Content\Sounds\gemCollected.xnb
+Content\Sprites\Enemies\SentryTurret\die.xnb
+Content\Sprites\Enemies\SentryTurret\idle.xnb
+Content\Sprites\Enemies\SentryTurret\alert.xnb
+Content\Sprites\Enemies\SentryTurret\cooldown.xnb
 Content\Sounds\Music.wma
 Content\Sounds\NG42.wma
 Content\Levels\0.txt
