@@ -21,7 +21,9 @@ namespace COSC625_Platformer.GameObjects.Enemies
             this.position = position;
             this.IsAlive = true;
             this.spriteSet = "EvilLama";
-            this.MoveSpeed *= 2;
+            this.maxHealth = 5;
+            this.health = 5;
+            this.MoveSpeed *= 4;
 
             LoadContent();
         }
@@ -169,10 +171,10 @@ namespace COSC625_Platformer.GameObjects.Enemies
         public override void Draw(GameTime gameTime, SpriteBatch spritebatch)
         {
             //Draws a visual representation of the enemy's field of view.
-            if (iSeeYou)
-                spritebatch.Draw(spotlightTexture, SpotlightRectangle, null, Color.Red);
-            else
-                spritebatch.Draw(spotlightTexture, SpotlightRectangle, null, Color.White);
+            //if (iSeeYou)
+            //    spritebatch.Draw(spotlightTexture, SpotlightRectangle, null, Color.Red);
+            //else
+            //    spritebatch.Draw(spotlightTexture, SpotlightRectangle, null, Color.White);
 
             base.Draw(gameTime, spritebatch);
         }

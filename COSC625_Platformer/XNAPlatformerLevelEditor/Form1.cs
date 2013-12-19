@@ -71,6 +71,7 @@ namespace XNAPlatformerLevelEditor
             {'Q', "/Sprites/Enemies/Bat/Idle.png"},
             {'E', "/Sprites/Enemies/EvilLama/Idle.png"},
             {'W', "/Sprites/Enemies/Ninja/Idle.png"},
+            {',', "/Sprites/Enemies/SentryTurret/idle.png"},
 
             //Start Position
             {'0', "/Sprites/Player/Idle - Ninja.png"},    

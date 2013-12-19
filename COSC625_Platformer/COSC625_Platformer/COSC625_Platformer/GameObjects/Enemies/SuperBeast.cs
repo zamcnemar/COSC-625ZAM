@@ -51,8 +51,8 @@ namespace COSC625_Platformer.GameObjects.Enemies
             this.spriteSet = "SuperBeast";
             this.MoveSpeed = baseMovespeed * 2;
             this.MaxWaitTime = 0.001f;
-            this.maxHealth = 10;
-            this.health = 10;
+            this.maxHealth = 25;
+            this.health = 25;
             this.canShoot = true;
             this.numbullets = 3;
 

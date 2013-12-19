@@ -31,8 +31,14 @@ namespace COSC625_Platformer.Screens
         private Texture2D diedOverlay;
 
         // Meta-level game state.
-        private int levelIndex = -1;
+        public static int Levelindex
+        {
+            get { return levelIndex; }
+        }
+        private static int levelIndex = -1;
+
         private Level level;
+
 
         // When the time remaining is less than the warning time, it blinks on the hud
         private static readonly TimeSpan WarningTime = TimeSpan.FromSeconds(30);
@@ -41,7 +47,7 @@ namespace COSC625_Platformer.Screens
         // levels in our content are 0-based and that all numbers under this constant
         // have a level file present. This allows us to not need to check for the file
         // or handle exceptions, both of which can add unnecessary time to level loading.
-        private const int numberOfLevels = 3;
+        private const int numberOfLevels = 4;
 
         /// <summary>
         /// LoadContent will be called once per game and is the place to load
@@ -60,10 +66,7 @@ namespace COSC625_Platformer.Screens
             loseOverlay = Game1.content.Load<Texture2D>("Overlays/you_lose");
             diedOverlay = Game1.content.Load<Texture2D>("Overlays/you_died");
 
-            //Known issue that you get exceptions if you use Media PLayer while connected to your PC
-            //See http://social.msdn.microsoft.com/Forums/en/windowsphone7series/thread/c8a243d2-d360-46b1-96bd-62b1ef268c66
-            //Which means its impossible to test this from VS.
-            //So we have to catch the exception and throw it away
+            /*
             try
             {
                 MediaPlayer.Volume = .30f;
@@ -71,7 +74,8 @@ namespace COSC625_Platformer.Screens
                 MediaPlayer.Play(Game1.content.Load<Song>("Sounds/NG42"));
             }
             catch { }
-
+            */
+             
             LoadNextLevel();
         }
 
@@ -193,7 +197,6 @@ namespace COSC625_Platformer.Screens
             // Draw Lives 
             float livesHeight = ScreenManager.spriteFont.MeasureString(timeString).Y;
             DrawShadowedString(spriteBatch, ScreenManager.spriteFont, "Lives: " + players[0].lives.ToString(), hudLocation + new Vector2(0.0f, timeHeight * 2.4f), Color.Yellow);
-
 
             // Determine the status overlay message to show.
             Texture2D status = null;

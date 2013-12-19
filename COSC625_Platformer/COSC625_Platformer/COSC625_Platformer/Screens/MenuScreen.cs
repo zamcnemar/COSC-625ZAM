@@ -324,6 +324,7 @@ namespace COSC625_Platformer.Screens
             #region PopUp
             else if (mState == MenuState.PopUp)
             {
+                spriteBatch.Draw(titleScreen, new Rectangle(0, 0, titleScreen.Width, titleScreen.Height), Color.White);
                 foreach (Text t in menuEntries)
                     t.Draw(spriteBatch);
 

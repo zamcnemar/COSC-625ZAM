@@ -24,6 +24,12 @@ namespace COSC625_Platformer.Screens
         public static SpriteFont spriteFont;
         public static bool isExiting = false;
 
+        int songindex;
+        Song MenuSong;
+        Song PauseSong;
+        Song Game1Song;
+        Song BossSong;
+
         MenuScreen screen_Menu;
         GameScreen screen_Game;
         PauseScreen screen_Pause;
@@ -45,6 +51,15 @@ namespace COSC625_Platformer.Screens
             spritebatch = new SpriteBatch(GraphicsDevice);
             spriteFont = Game1.content.Load<SpriteFont>("Fonts/Hud");
 
+            songindex = 0;
+
+            MenuSong = Game1.content.Load<Song>("Music/Vanguard");
+            PauseSong = Game1.content.Load<Song>("Music/Elevator");
+            Game1Song = Game1.content.Load<Song>("Music/EndlessSand");
+            BossSong = Game1.content.Load<Song>("Music/KingBoss");
+            MediaPlayer.IsRepeating = true;
+
+
             screen_Menu.UpdateTextPositioning();
             screen_Pause.UpdateTextPositioning();
             screen_Game.LoadContent();
@@ -62,6 +77,47 @@ namespace COSC625_Platformer.Screens
                 screen_Game.Update(gameTime);
             else if (gameState == GameState.Pause)
                 screen_Pause.Update(gameTime);
+
+            if (gameState == GameState.Menu)
+            {
+                if (MediaPlayer.State != MediaState.Playing || songindex != 0)
+                {
+                    MediaPlayer.Stop();
+                    MediaPlayer.Play(MenuSong);
+                    songindex = 0;
+                }
+            }
+            else if (gameState == GameState.Pause)
+            {
+                if (MediaPlayer.State != MediaState.Playing || songindex != 1)
+                {
+                    MediaPlayer.Stop();
+                    MediaPlayer.Play(PauseSong);
+                    songindex = 1;
+                }
+
+            }
+            else if (gameState == GameState.Play && (GameScreen.Levelindex == 0 || GameScreen.Levelindex == 1 || GameScreen.Levelindex == 2))
+            {
+                if (MediaPlayer.State != MediaState.Playing || songindex != 2)
+                {
+                    MediaPlayer.Stop();
+                    MediaPlayer.Play(Game1Song);
+                    songindex = 2;
+                }
+            }
+            else if (gameState == GameState.Play && GameScreen.Levelindex == 3 )
+            {
+                if (MediaPlayer.State != MediaState.Playing || songindex != 3)
+                {
+                    MediaPlayer.Stop();
+                    MediaPlayer.Play(BossSong);
+                    songindex = 3;
+                }
+            }
+
+
+
 
             TransitionManagement();
             base.Update(gameTime);

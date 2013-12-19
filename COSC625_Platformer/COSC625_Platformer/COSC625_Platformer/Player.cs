@@ -60,6 +60,21 @@ namespace COSC625_Platformer
         }
         bool isAlive;
 
+        /* Tile Bug Fix attempt
+        public bool IsOnMovable
+        {
+            get { return isOnMovable; }
+            //set { isOnMovable = value;}
+        }
+        bool isOnMovable;
+
+        public MovableTile TileImOn
+        {
+            get { return tileImOn;}
+        }
+        MovableTile tileImOn;
+         */ 
+
         public int lives = 3;
 
         // Powerup state
@@ -898,6 +913,7 @@ namespace COSC625_Platformer
             {
                 // Reset flag to search for movable tile collision.
                 movableTile.PlayerIsOn = false;
+                //isOnMovable = false;
 
                 //check to see if player is on tile.
                 if ((BoundingRectangle.Bottom == movableTile.BoundingRectangle.Top + 1) &&
@@ -905,6 +921,8 @@ namespace COSC625_Platformer
                     BoundingRectangle.Right <= movableTile.BoundingRectangle.Right + (BoundingRectangle.Width / 2)))
                 {
                     movableTile.PlayerIsOn = true;
+                    //tileImOn = movableTile;
+                    //isOnMovable = true;
                 }
 
                 bounds = HandleCollision(bounds, movableTile.Collision, movableTile.BoundingRectangle);
@@ -1105,7 +1123,15 @@ namespace COSC625_Platformer
             }
             else
             {
-                color = Color.White;
+                if(controller == PlayerIndex.One)
+                    color = Color.White;
+                else if (controller == PlayerIndex.Two)
+                    color = Color.OrangeRed;
+                else if (controller == PlayerIndex.Three)
+                    color = Color.Cyan;
+                else
+                    color = Color.HotPink;
+                
             }
 
             // Draw that sprite.

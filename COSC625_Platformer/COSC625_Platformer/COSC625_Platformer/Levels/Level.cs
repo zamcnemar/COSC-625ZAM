@@ -77,6 +77,7 @@ namespace COSC625_Platformer.Levels
         }
         TimeSpan timeRemaining;
 
+
         private const int PointsPerSecond = 5;
 
         private SoundEffect exitReachedSound;
@@ -401,10 +402,10 @@ namespace COSC625_Platformer.Levels
             }
 
             //Multiplayer hard code testing
-            Player test = new Player(this, start);
-            test.controller = PlayerIndex.Two;
-            test.lives = 4;
-            GameScreen.players.Add(test);
+            //Player test = new Player(this, start);
+            //test.controller = PlayerIndex.Two;
+            //test.lives = 4;
+            //GameScreen.players.Add(test);
 
             if (GamePad.GetState(PlayerIndex.Two).IsConnected)
             {
@@ -740,12 +741,26 @@ namespace COSC625_Platformer.Levels
             {
                 tile.Update(gameTime);
 
+
                 foreach (Player p in GameScreen.players)
                 {
+                    /* 3rd attempt
+                    if (p.IsOnMovable)
+                    {
+                        p.Position += p.TileImOn.Velocity;
+                    }
+                     */
+                    /* 2nd attempt
+                    if (p.IsOnMovable)
+                    {
+                            p.Position += tile.Velocity;
+                    }
+                     */
+
                     if (tile.PlayerIsOn)
                     {
                         //Make player move with tile if the player is on top of tile
-                        p.Position += tile.Velocity;
+                        //p.Position += tile.Velocity;
                     }
                 }
             }
